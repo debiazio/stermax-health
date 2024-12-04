@@ -1,0 +1,165 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4",
+      "flex-layout.col#deals5"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal1",
+      "rich-text#deal1"
+    ]
+  },
+  "flex-layout.col#deal1": {
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/cartao-1.svg",
+      "maxHeight": "50px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Parcele em até 10x\n sem juros",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "flex-layout.col#deal2":{
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/barcode.svg",
+      "maxHeight": "50px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "Não tem saldo no cartão,\nparcele no boleto",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal3",
+      "rich-text#deal3"
+    ]
+  },
+  "flex-layout.col#deal3":{
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/star.svg",
+      "maxHeight": "50px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "Compre com garantia\noficial da fábrica",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal4",
+      "rich-text#deal4"
+    ]
+  },
+  "flex-layout.col#deal4":{
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/frete.svg",
+      "maxHeight": "35px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "Entregamos\nem todo Brasil",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals5": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal5",
+      "rich-text#deal5"
+    ]
+  },
+  "flex-layout.col#deal5":{
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal5"
+    ]
+  },
+  "image#deal5": {
+    "props": {
+      "src": "assets/trocas.svg",
+      "maxHeight": "50px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal5": {
+    "props": {
+      "text": "Facilidade de troca\ne devolução",
+      "blockClass": "deals"
+    }
+  }
+}

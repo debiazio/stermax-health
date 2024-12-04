@@ -1,0 +1,179 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      // "flex-layout.row#1-desktop",
+      "flex-layout.row#3-desktop",
+      "sticky-layout#cabecalho-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#cabecalho-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#cabecalho-container-desktop"]
+  },
+  "flex-layout.row#cabecalho-container-desktop": {
+    "props": {
+      "blockClass": "cabecalho-desktop"
+    },
+    "children": [
+      "flex-layout.row#menu-superior-linha-esquerda",
+      "flex-layout.row#menu-superior-linha-central",
+      "flex-layout.row#menu-superior-linha-direita"
+    ]
+  },
+  //linha menu superior esquerda
+  "flex-layout.row#menu-superior-linha-esquerda": {
+    "props": {
+      "blockClass": "menu-superior-linha-esqueda"
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  //linha menu superior central
+  "flex-layout.row#menu-superior-linha-central": {
+    "props": {
+      "blockClass": "menu-superior-linha-central"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "coluna-logo"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "blockClass": "logo",
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/STERMAX HEALTH LOGO 1.svg",
+      "width": "243",
+      "height": "89"
+    }
+  },
+
+  //linha menu superior Direita
+  "flex-layout.row#menu-superior-linha-direita": {
+    "props": {
+      "blockClass": "menu-supeiro-linha-direita"
+    },
+    "children": [
+      "flex-layout.col#search-bar-header",
+      "flex-layout.col#login-header",
+      "flex-layout.col#minicart-header"
+    ]
+  },
+  "flex-layout.col#search-bar-header": {
+    "props": {
+      "blockClass": "search-bar-desktop"
+    },
+    "children": [
+      "search-bar"
+    ]
+  },
+  "flex-layout.col#login-header": {
+    "props": {
+      "blockClass": "login-header-desktop"
+    },
+    "children": [
+      "login"
+    ]
+  },
+  "flex-layout.col#minicart-header": {
+    "props": {
+      "blockClass": "minicart-header-desktop"
+    },
+    "children": [
+      "minicart.v2"
+    ]
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#loja",
+      "menu-item#linha"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "77.5",
+      "height": "27.5"
+    }
+  }
+}

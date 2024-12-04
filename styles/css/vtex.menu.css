@@ -1,0 +1,14 @@
+.menuContainerNav {
+  width: 100%;
+}
+
+.menuContainer {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.styledLinkContent {
+  color: var(--paleta);
+  font-size: 16px;
+}
