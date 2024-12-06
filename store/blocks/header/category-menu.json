@@ -4,9 +4,9 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#loja",
       "menu-item#quem-somos",
-      "menu-item#linha"
+      "menu-item#loja",
+      "menu-item#contato"
     ]
   },
   "menu-item#loja": {
@@ -100,7 +100,7 @@
       }
     }
   },
-  "menu-item#linha": {
+  "menu-item#contato": {
     "props": {
       "id": "menu-item-custom-sale",
       "type": "custom",
@@ -109,8 +109,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Linha",
-        "text": "LINHA"
+        "tagTitle": "contato",
+        "text": "CONTATO"
       }
     },
     "blocks": [

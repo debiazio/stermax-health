@@ -13,12 +13,12 @@
     ]
   },
 
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
+  // "flex-layout.row#1-desktop": {
+  //   "children": ["telemarketing"],
+  //   "props": {
+  //     "fullWidth": true
+  //   }
+  // },
 
   "flex-layout.row#3-desktop": {
     "props": {
@@ -29,7 +29,7 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
+      // "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer"
     ]
   },
@@ -117,15 +117,23 @@
   },
   "flex-layout.col#login-header": {
     "props": {
-      "blockClass": "login-header-desktop"
+      "blockClass": "login-header-desktop",
+      "colSizing": "auto"
     },
     "children": [
       "login"
     ]
   },
+  "login": {
+    "props": {
+      "hideIconLabel": true,
+      "showIconProfile": true
+    }
+  },
   "flex-layout.col#minicart-header": {
     "props": {
-      "blockClass": "minicart-header-desktop"
+      "blockClass": "minicart-header-desktop",
+      "colSizing": "auto"
     },
     "children": [
       "minicart.v2"
@@ -160,7 +168,7 @@
     "children": [
       "menu-item#quem-somos",
       "menu-item#loja",
-      "menu-item#linha"
+      "menu-item#contato"
     ],
     "props": {
       "orientation": "vertical"

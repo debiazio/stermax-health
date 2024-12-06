@@ -1,0 +1,11 @@
+.openContainerIcon{
+  padding: 0;
+  margin: 0;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-header-desktop) .cartIcon {
+  width: 23px;
+  height: 23px;
+  overflow: visible;
+}

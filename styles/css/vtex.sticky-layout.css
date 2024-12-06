@@ -1,4 +1,5 @@
 .container--sticky-header
 {
   background-color: var(--background);
+  height: 200px;
 }

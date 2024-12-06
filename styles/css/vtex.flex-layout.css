@@ -1,4 +1,15 @@
-.flexColChild--deal-col{
+.flexCol--login-header-desktop{
+  width: fit-content;
+}
+
+.flexColChild--login-header-desktop {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.flexColChild--deal-col {
   display: flex;
   align-items: center;
 }
@@ -9,7 +20,7 @@
   padding: 10px;
 }
 
-.flexColChild--linha-deal-icon{
+.flexColChild--linha-deal-icon {
   display: flex;
   align-items: center;
 }
