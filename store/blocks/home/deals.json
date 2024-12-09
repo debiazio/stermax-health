@@ -5,7 +5,8 @@
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
       "flex-layout.col#deals4",
-      "flex-layout.col#deals5"
+      "flex-layout.col#deals5",
+      "flex-layout.col#deals6"
     ],
     "props": {
       "blockClass": "deals"
@@ -31,14 +32,14 @@
   },
   "image#deal1": {
     "props": {
-      "src": "assets/cartao-1.svg",
-      "maxHeight": "50px",
+      "src": "assets/Artboard 9.svg",
+      "maxHeight": "40px",
       "blockClass": "icon-deal"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Parcele em até 10x\n sem juros",
+      "text": "**Certificação Anvisa:**\nProdutos que\n atendem às normas\n mais rigorosas.",
       "blockClass": "deals"
     }
   },
@@ -61,14 +62,14 @@
   },
   "image#deal2": {
     "props": {
-      "src": "assets/barcode.svg",
+      "src": "assets/Artboard 9_1.svg",
       "maxHeight": "50px",
       "blockClass": "icon-deal"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "Não tem saldo no cartão,\nparcele no boleto",
+      "text": "**Qualidade Internacional(ISO):**\nReconhecida no\nBrasil e no mundo.",
       "blockClass": "deals"
     }
   },
@@ -91,14 +92,14 @@
   },
   "image#deal3": {
     "props": {
-      "src": "assets/star.svg",
+      "src": "assets/Artboard 9_2.svg",
       "maxHeight": "50px",
       "blockClass": "icon-deal"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Compre com garantia\noficial da fábrica",
+      "text": "**Experiência Comprovada:**\nMais de 250 mil\n autoclaves vendidas.",
       "blockClass": "deals"
     }
   },
@@ -121,14 +122,14 @@
   },
   "image#deal4": {
     "props": {
-      "src": "assets/frete.svg",
-      "maxHeight": "35px",
+      "src": "assets/Artboard 9_3.svg",
+      "maxHeight": "50px",
       "blockClass": "icon-deal"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Entregamos\nem todo Brasil",
+      "text": "**Fabricação Própria:**\nEquipamentos 100%\n nacionais.",
       "blockClass": "deals"
     }
   },
@@ -151,14 +152,44 @@
   },
   "image#deal5": {
     "props": {
-      "src": "assets/trocas.svg",
+      "src": "assets/Artboard 9_4.svg",
       "maxHeight": "50px",
       "blockClass": "icon-deal"
     }
   },
   "rich-text#deal5": {
     "props": {
-      "text": "Facilidade de troca\ne devolução",
+      "text": "**Garantia de Fábrica:**\nMaior segurança para\n o seu investimento.",
+      "blockClass": "deals"
+    }
+  },
+"flex-layout.col#deals6": {
+    "props": {
+      "blockClass": "deal-col"
+    },
+    "children": [
+      "flex-layout.col#deal6",
+      "rich-text#deal6"
+    ]
+  },
+  "flex-layout.col#deal6":{
+    "props": {
+      "blockClass": "linha-deal-icon"
+    },
+    "children": [
+      "image#deal6"
+    ]
+  },
+  "image#deal6": {
+    "props": {
+      "src": "assets/Artboard 9_5.svg",
+      "maxHeight": "50px",
+      "blockClass": "icon-deal"
+    }
+  },
+  "rich-text#deal6": {
+    "props": {
+      "text": "**Maior rede de\n assistência do Brasil:**\nSempre ao seu lado.",
       "blockClass": "deals"
     }
   }
