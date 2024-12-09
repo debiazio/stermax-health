@@ -1,5 +1,7 @@
-.flexCol--login-header-desktop{
-  width: fit-content;
+.flexCol--coluna-login-minicart{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .flexColChild--login-header-desktop {

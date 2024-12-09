@@ -1,4 +1,4 @@
-:global(.vtex-flex-layout-0-x-flexCol--login-header-desktop) .profileIcon {
+.container :global(.vtex-login-2-x-profileIcon) {
   width: 23px;
   height: 23px;
   overflow: visible;
