@@ -1,3 +1,20 @@
+.searchBarIcon--search .searchIcon{
+  overflow: visible;
+  margin-top: -30px;
+  height: 1px;
+  padding: 10px;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group){
+  display: flex;
+  flex-direction: row-reverse;
+}
+.autoCompleteOuterContainer :global(.vtex-input__suffix){
+  background-color: #EDE6DC;
+  margin-right: -2px;
+}
+
+
 .searchBarContainer :global(.vtex-input-prefix__group){
   border: none;
   border-radius: 20px;

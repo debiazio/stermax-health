@@ -109,11 +109,27 @@
   "flex-layout.col#search-bar-header": {
     "props": {
       "blockClass": "search-bar-desktop"
+
     },
     "children": [
       "search-bar"
     ]
   },
+  "search-bar":{
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Pesquisar",
+      "blockClass": "barra-pesquisa"
+    }
+  },
+"autocomplete-result-list.v2":{
+  "blocks": ["product-summary"],
+  "props": {
+    "productLayout": "HORIZONTAL"
+  }
+},
+
   "flex-layout.col#coluna-login-minicart":{
     "props": {
       "blockClass": "coluna-login-minicart",

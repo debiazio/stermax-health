@@ -1,5 +1,5 @@
 .container--sticky-header {
-  background-color: var(--background);
+  background-color: white;
   height: 200px;
   display: flex;
   flex-direction: column;

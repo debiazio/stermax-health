@@ -1,3 +1,7 @@
+.stretchChildrenWidth .flexCol--coluna-login-minicart{
+  width: 33%!important;
+}
+
 .flexCol--coluna-login-minicart{
   display: flex;
   flex-direction: row;
