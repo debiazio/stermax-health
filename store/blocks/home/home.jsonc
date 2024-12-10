@@ -2,19 +2,21 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
+      "flex-layout.row#banner-stermaxHealth-personas",
       "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#banner-segundo",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "flex-layout.row#banner-terceiro",
+      "flex-layout.row#banner-quarto",
+
       "newsletter"
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 570,
       "preload": true,
@@ -42,19 +44,180 @@
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
+  "flex-layout.row#banner-stermaxHealth-personas": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": "personas",
+      "fullWidth": true
+    },
+    "children": [
+      "image#banner-personas"
+    ]
+  },
+  "image#banner-personas": {
+    "props": {
+      "blockClass": "imagem-personas",
+      "src": "assets/personas-stermaxHealth-unificado.webp",
+      "alt": "Público StermaxHealth",
+      "title": "Público StermaxHealth",
+      "fullWidth": true
+    }
+  },
+  //banner "não comprometa sua saúde..."
+  "flex-layout.row#banner-segundo": {
+    "props": {
+      "blockClass": "secao-banner-segundo",
+      "fullWidth": true
+    },
+    "children": [
+      "image#banner-segundo",
+      "rich-text#titulo-banner-segundo"
+    ]
+  },
+  "image#banner-segundo": {
+    "props": {
+      "src": "assets/gatilho.webp",
+      "alt": "Banner não comprometa sua saúde",
+      "blockClass": "imagem-banner-segundo"
+    }
+  },
+  "rich-text#titulo-banner-segundo": {
+    "props": {
+      "text": "GARANTA A TRANQUILIDADE QUE SEUS PACIENTES E SUA EQUIPE MERECEM!",
+      "blockClass": "titulo-banner-secundario"
+    }
+  },
+  "flex-layout.row#banner-terceiro":{
+    "props": {
+      "blockClass": "banner-terceiro",
+      "fullWidth": true
+    },
+    "children": [
+      "image#banner-terceiro"
+    ]
+  },
+  "image#banner-terceiro":{
+    "props": {
+      "blockClass": "imagem-banner-terceiro",
+      "src": "assets/modelos.webp",
+      "alt": "modelos de produtos Stermax health"
+    }
+  },
+  "flex-layout.row#banner-quarto":{
+    "props": {
+      "blockClass": "secao-banner-quarto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#banner-quarto-esq",
+      "flex-layout.row#banner-quarto-dir"
+    ]
+  },
+  "flex-layout.row#banner-quarto-esq":{
+    "props": {
+      "blockClass": "coluna-banner-esquerdo--imagem",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#coluna-1-banner-coluna-esq",
+      "flex-layout.col#coluna-2-banner-coluna-esq"
+    ]
+  },
+  "flex-layout.col#coluna-1-banner-coluna-esq":{
+    "props": {
+      "blockClass": "coluna-imagem"
+    },
+    "children": [
+      "image#brasil"
+    ]
+  },
+  "image#brasil":{
+    "props": {
+      "blockClass": "assistencias-img",
+      "src": "assets/brasil-autoclave.webp",
+      "alt": "Assistências no Brasil"
+    }
+  },
+  "flex-layout.col#coluna-2-banner-coluna-esq":{
+    "props": {
+      "blockClass": "banner-coluna2-esq"
+    },
+    "children": [
+      "rich-text#titulo",
+      "rich-text#subtitulo"
+    ]
+  },
+  "rich-text#titulo":{
+    "props": {
+      "text": "### Assistência e suporte ### \n ### sempre ao seu alcance ###",
+      "blockClass": "titulo-banner-esquerdo"
+    }
+  },
+  "rich-text#subtitulo":{
+    "props": {
+      "text": "Com a maior rede de Assistência\n técnica do Brasil,garantimos que \n vocÊ estará sempre protegido",
+      "blockClass": "titulo-banner-esquerdo"
+    }
+  },
+  "flex-layout.row#banner-quarto-dir":{
+    "props": {
+      "blockClass": "coluna-banner-direito--imagem"
+    },
+    "children": [
+      "flex-layout.col#coluna-1-banner-coluna-dir",
+      "flex-layout.col#coluna-2-banner-coluna-dir"
+    ]
+  },
+  "flex-layout.col#coluna-1-banner-coluna-dir":{
+    "props": {
+      "blockClass": "coluna-imagem"
+    },
+    "children": [
+      "rich-text#titulo-dir",
+      "rich-text#subtitulo-dir"
+    ]
+  },
+  "rich-text#titulo-dir":{
+    "props": {
+      "text": "### Estoques limitados ### \n ### em pronta entrega ###",
+      "blockClass": "titulo-banner-direito"
+    }
+  },
+  "rich-text#subtitulo-dir":{
+    "props": {
+      "text": "**Garanta já sua autoclave Stermax!**\nNão perca a chance de modernizar\n sua clínica com a melhor tecnologia\n do mercado. Estoques prontos para\n envio imediato, aproveite agora!"
+    }
+  },
+  "flex-layout.col#coluna-2-banner-coluna-dir":{
+    "props": {
+      "blockClass": "animacao-banner-direita"
+    },
+    "children": [
+      "video#animacao-direita"
+    ]
+  },
+  "video#animacao-direita":{
+    "props": {
+      "blockclass": "video-banner",
+      "src": "assets/pronta-entrega.mp4",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "height": "100%",
+      "width": "100%"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -69,34 +232,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": true,
-      "textPosition": "right",
-      "imageUrl": "assets/Rectangle 137.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "left"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

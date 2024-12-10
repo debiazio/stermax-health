@@ -1,3 +1,28 @@
+.flexRowContent--secao-banner-segundo{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--secao-banner-segundo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100%!important;
+}
+
+.container--titulo-banner-secundario :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100%!important;
+}
+
+
+
+.flexCol--coluna-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexRowContent--personas{
+  display: flex;
+  flex-direction: column;
+}
+
 .stretchChildrenWidth .flexCol--coluna-login-minicart{
   width: 33%!important;
 }
@@ -143,6 +168,7 @@
   margin: 40px 10px;
   padding: 14px;
   border-radius: 166px;
+  margin-top: -90px;
 }
 
 .flexRow--deals .stretchChildrenWidth {

@@ -1,5 +1,23 @@
+.paragraph--titulo-banner-secundario{
+  background-color: #1F7ECA;
+  padding: 15px;
+  border-radius: 166px;
+  color: white;
+  font-size: 27px;
+  font-family: "fraunces-regular";
+  margin-right: 50px;
+}
 
-.strong--deals{
+.container--titulo-banner-secundario {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 100px;
+  position: relative;
+  bottom: 58px;
+}
+
+.wrapper--deals,
+.strong--deals {
   font-family: "jost-regular";
 }
 
