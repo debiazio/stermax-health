@@ -4,13 +4,30 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#footer-texto-digitando",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
   },
+  "flex-layout.row#footer-texto-digitando":{
+    "props": {
+      "blockClass": "container-footer-digitando"
+    },
+    "children": [
+      "rich-text#digitando"
+    ]
+  },
+  "rich-text#digitando":{
+    "props": {
+      "text": "Stermax Health: Pure Health, Expert Care.",
+      "blockClass": "texto-digitando"
+    }
+  },
   "flex-layout.row#footer-1-desktop": {
     "children": [
+      "flex-layout.col#infos",
+
       "vtex.menu@2.x:menu#Products",
       "vtex.menu@2.x:menu#footer-clothing",
       "vtex.menu@2.x:menu#footer-decoration",
@@ -24,7 +41,33 @@
       "paddingBottom": 3
     }
   },
+  "flex-layout.col#infos":{
+    "props": {
+      "blockClass": "coluna-infos-empresa",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#infos-empresa-nome",
+      "rich-text#infos-empresa-endereco",
+      "rich-text#infos-empresa-grupo"
 
+    ]
+  },
+  "rich-text#infos-empresa-nome":{
+    "props": {
+      "text": "Stermax Health"
+    }
+  },
+  "rich-text#infos-empresa-endereco":{
+    "props": {
+      "text": "R. Emma Rohrsetzer, 1011 - Emiliano\nPerneta, Pinhais - PR, 83324-190"
+    }
+  },
+  "rich-text#infos-empresa-grupo":{
+    "props": {
+      "text": "**Empresa do Grupo MFM**"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [

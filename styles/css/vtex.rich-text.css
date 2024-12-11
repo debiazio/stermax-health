@@ -1,9 +1,32 @@
-.container--subtitulo-banner-esquerdo{
+.wrapper--texto-digitando{
+  color: #ffffff;
+  font-size: 40px;
+  font-family: var(--fonte-secundaria);
+}
+
+/* Stermax Health: Pure Health, Expert Care. */
+.paragraph--texto-digitando{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.container--texto-digitando {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--subtitulo-banner-esquerdo {
   text-align: right;
 }
 
 .container--titulo-banner-direito,
-.container--subtitulo-banner-direito{
+.container--subtitulo-banner-direito {
   text-align: left;
 }
 
@@ -11,31 +34,31 @@
 .paragraph--titulo-banner-direito,
 .paragraph--titulo-banner-esquerdo,
 .paragraph--subtitulo-banner-direito,
-.paragraph--subtitulo-banner-esquerdo{
+.paragraph--subtitulo-banner-esquerdo {
   margin: 0;
   padding: 0;
 }
 
 .paragraph--titulo-banner-direito,
-.paragraph--titulo-banner-esquerdo{
+.paragraph--titulo-banner-esquerdo {
   font-family: "fraunces-regular";
   font-size: 50px;
   margin-top: 40px;
 }
 
 .paragraph--subtitulo-banner-direito,
-.paragraph--subtitulo-banner-esquerdo{
+.paragraph--subtitulo-banner-esquerdo {
   font-family: "jost-regular";
   font-size: 24px;
 }
 
 .wrapper--titulo-banner-esquerdo,
-.wrapper--titulo-banner-esquerdo{
+.wrapper--titulo-banner-esquerdo {
   text-align: right;
 
 }
 
-.paragraph--titulo-banner-secundario{
+.paragraph--titulo-banner-secundario {
   background-color: #1F7ECA;
   padding: 15px;
   border-radius: 166px;

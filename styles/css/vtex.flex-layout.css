@@ -1,3 +1,8 @@
+.flexRow--container-footer-digitando{
+  height: 70px;
+  background-color: #CCC7C0;
+}
+
 .flexRow--container-secao-divisoria-link {
   height: 150px;
   display: flex;
@@ -7,6 +12,7 @@
   border-top: 1px solid #000000;
   max-width: 1400px;
   margin: 70px auto 0;
+  
 }
 
 
