@@ -1,4 +1,16 @@
-.flexRow--secao-banner-quarto{
+.flexRow--container-secao-divisoria-link {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 70px;
+  border-top: 1px solid #000000;
+  max-width: 1400px;
+  margin: 70px auto 0;
+}
+
+
+.flexRow--secao-banner-quarto {
   margin-top: 50px;
 }
 
@@ -15,6 +27,7 @@
   width: 100%;
 
 }
+
 .flexColChild--banner-coluna2-esq {
   height: 100%;
   display: flex;
@@ -238,7 +251,8 @@
   margin: 40px 10px;
   padding: 14px;
   border-radius: 166px;
-  margin-top: -90px;
+  max-width: 1528px;
+  margin: -90px auto 50px;
 }
 
 .flexRow--deals .stretchChildrenWidth {

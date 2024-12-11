@@ -48,7 +48,6 @@
 .container--titulo-banner-secundario {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 100px;
   position: relative;
   bottom: 58px;
 }

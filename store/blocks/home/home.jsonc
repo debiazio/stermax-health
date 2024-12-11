@@ -8,9 +8,8 @@
       "flex-layout.row#banner-segundo",
       "flex-layout.row#banner-terceiro",
       "flex-layout.row#shelf",
-      "flex-layout.row#banner-quarto",
-
-      "newsletter"
+      "flex-layout.row#secao-divisoria-link",
+      "flex-layout.row#banner-quarto"
     ]
   },
   "list-context.image-list#demo": {
@@ -47,7 +46,7 @@
   "flex-layout.row#banner-stermaxHealth-personas": {
     "props": {
       "blockClass": "personas",
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "image#banner-personas"
@@ -66,7 +65,7 @@
   "flex-layout.row#banner-segundo": {
     "props": {
       "blockClass": "secao-banner-segundo",
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "image#banner-segundo",
@@ -89,7 +88,7 @@
   "flex-layout.row#banner-terceiro":{
     "props": {
       "blockClass": "banner-terceiro",
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "image#banner-terceiro"
@@ -102,10 +101,28 @@
       "alt": "modelos de produtos Stermax health"
     }
   },
+  "flex-layout.row#secao-divisoria-link":{
+    "props": {
+      "blockClass": "container-secao-divisoria-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "link#ver-mais-autoclaves"
+    ]
+  },
+  "link#ver-mais-autoclaves":{
+    "props": {
+      "blockClass": "link-ver-mais-autoclaves",
+      "href": "#",
+      "label": "VER MAIS AUTOCLAVES"
+    }
+  },
   "flex-layout.row#banner-quarto":{
     "props": {
       "blockClass": "secao-banner-quarto",
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "flex-layout.row#banner-quarto-esq",
@@ -233,8 +250,8 @@
       "loop": true,
       "autoPlay": true,
       "controlsType": "none",
-      "height": "456px",
-      "width": "456px",
+      "height": "520px",
+      "width": "500px",
       "muted": true
     }
   },
