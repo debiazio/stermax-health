@@ -6,8 +6,8 @@
       "flex-layout.row#deals",
       "__fold__",
       "flex-layout.row#banner-segundo",
-      "flex-layout.row#shelf",
       "flex-layout.row#banner-terceiro",
+      "flex-layout.row#shelf",
       "flex-layout.row#banner-quarto",
 
       "newsletter"
@@ -124,7 +124,8 @@
   },
   "flex-layout.col#coluna-1-banner-coluna-esq":{
     "props": {
-      "blockClass": "coluna-imagem"
+      "blockClass": "coluna-imagem",
+      "width": "30%"
     },
     "children": [
       "image#brasil"
@@ -134,28 +135,47 @@
     "props": {
       "blockClass": "assistencias-img",
       "src": "assets/brasil-autoclave.webp",
-      "alt": "Assistências no Brasil"
+      "alt": "Assistências no Brasil",
+      "maxHeight": "429px",
+      "maxWidth": "406px"
     }
   },
   "flex-layout.col#coluna-2-banner-coluna-esq":{
     "props": {
-      "blockClass": "banner-coluna2-esq"
+      "blockClass": "banner-coluna2-esq",
+      "width": "70%"
     },
     "children": [
       "rich-text#titulo",
-      "rich-text#subtitulo"
+      "rich-text#subtitulo",
+      "flex-layout.row#link-especialista"
     ]
   },
   "rich-text#titulo":{
     "props": {
-      "text": "### Assistência e suporte ### \n ### sempre ao seu alcance ###",
+      "text": "Assistência e suporte \n sempre ao seu alcance",
       "blockClass": "titulo-banner-esquerdo"
     }
   },
   "rich-text#subtitulo":{
     "props": {
-      "text": "Com a maior rede de Assistência\n técnica do Brasil,garantimos que \n vocÊ estará sempre protegido",
-      "blockClass": "titulo-banner-esquerdo"
+      "text": "Com a maior rede de assistência\n técnica do Brasil,garantimos que \n você estará sempre protegido!",
+      "blockClass": "subtitulo-banner-esquerdo"
+    }
+  },
+  "flex-layout.row#link-especialista":{
+    "props": {
+      "blockClass": "container-link-epecialista"
+    },
+    "children": [
+      "link#fale-com-especialista"
+    ]
+  },
+  "link#fale-com-especialista":{
+    "props": {
+      "href": "#",
+      "label": "FALE COM UM ESPECIALISTA",
+      "blockClass": "link-banner-quarto"
     }
   },
   "flex-layout.row#banner-quarto-dir":{
@@ -169,27 +189,38 @@
   },
   "flex-layout.col#coluna-1-banner-coluna-dir":{
     "props": {
-      "blockClass": "coluna-imagem"
+      "blockClass": "coluna-textos",
+      "width": "70%"
     },
     "children": [
       "rich-text#titulo-dir",
-      "rich-text#subtitulo-dir"
+      "rich-text#subtitulo-dir",
+      "link#compre-agora-em-10x"
     ]
   },
   "rich-text#titulo-dir":{
     "props": {
-      "text": "### Estoques limitados ### \n ### em pronta entrega ###",
+      "text": "Estoques limitados \n em pronta entrega",
       "blockClass": "titulo-banner-direito"
     }
   },
   "rich-text#subtitulo-dir":{
     "props": {
-      "text": "**Garanta já sua autoclave Stermax!**\nNão perca a chance de modernizar\n sua clínica com a melhor tecnologia\n do mercado. Estoques prontos para\n envio imediato, aproveite agora!"
+      "text": "**Garanta já sua autoclave Stermax!**\nNão perca a chance de modernizar\n sua clínica com a melhor tecnologia\n do mercado. Estoques prontos para\n envio imediato, aproveite agora!",
+      "blockClass": "subtitulo-banner-direito"
+    }
+  },
+  "link#compre-agora-em-10x":{
+    "props": {
+      "href": "#",
+      "label": "COMPRE AGORA EM ATÉ 10x SEM JUROS",
+      "blockClass": "link-banner-quarto"
     }
   },
   "flex-layout.col#coluna-2-banner-coluna-dir":{
     "props": {
-      "blockClass": "animacao-banner-direita"
+      "blockClass": "animacao-banner-direita",
+      "width": "30%"
     },
     "children": [
       "video#animacao-direita"
@@ -197,13 +228,14 @@
   },
   "video#animacao-direita":{
     "props": {
-      "blockclass": "video-banner",
+      "blockClass": "video-banner",
       "src": "assets/pronta-entrega.mp4",
       "loop": true,
       "autoPlay": true,
       "controlsType": "none",
-      "height": "100%",
-      "width": "100%"
+      "height": "456px",
+      "width": "456px",
+      "muted": true
     }
   },
   "flex-layout.row#shelf": {
@@ -219,7 +251,7 @@
       "slider-layout#demo-products"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByPriceDESC"
     }
   },
   "slider-layout#demo-products": {

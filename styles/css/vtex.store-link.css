@@ -1,0 +1,11 @@
+.link--link-banner-quarto{
+  text-decoration: none;
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+  color: #5C5A58;
+  border: 1px solid #5C5A58;
+  border-radius: 85px;
+  padding: 10px;
+  text-wrap-mode: nowrap;
+}
+

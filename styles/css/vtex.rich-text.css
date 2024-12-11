@@ -1,3 +1,40 @@
+.container--subtitulo-banner-esquerdo{
+  text-align: right;
+}
+
+.container--titulo-banner-direito,
+.container--subtitulo-banner-direito{
+  text-align: left;
+}
+
+.paragraph--subtitulo-banner-direito,
+.paragraph--titulo-banner-direito,
+.paragraph--titulo-banner-esquerdo,
+.paragraph--subtitulo-banner-direito,
+.paragraph--subtitulo-banner-esquerdo{
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph--titulo-banner-direito,
+.paragraph--titulo-banner-esquerdo{
+  font-family: "fraunces-regular";
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+.paragraph--subtitulo-banner-direito,
+.paragraph--subtitulo-banner-esquerdo{
+  font-family: "jost-regular";
+  font-size: 24px;
+}
+
+.wrapper--titulo-banner-esquerdo,
+.wrapper--titulo-banner-esquerdo{
+  text-align: right;
+
+}
+
 .paragraph--titulo-banner-secundario{
   background-color: #1F7ECA;
   padding: 15px;

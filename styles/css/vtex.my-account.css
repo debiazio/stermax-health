@@ -3,4 +3,12 @@
   --stermax-azul-claro: #9fbae1;
   --background: #fffaf4;
   --bege-02: #EDE6DC;
+  --mapa: #F9F4EC;
+  --fonte-primaria: "jost-regular";
+  --fonte-secundaria: "fraunces-regular"
+}
+
+
+:global(.vtex-store-components-3-x-content) p{
+  color: #1f80ca!important;
 }

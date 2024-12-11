@@ -1,33 +1,103 @@
-.flexRowContent--secao-banner-segundo{
+.flexRow--secao-banner-quarto{
+  margin-top: 50px;
+}
+
+.flexRowContent--container-link-epecialista {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flexCol--banner-coluna2-esq {
+  width: 100%;
+
+}
+.flexColChild--banner-coluna2-esq {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.flexColChild--coluna-textos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.flexColChild--coluna-imagem {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.flexCol--coluna-textos {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.flexCol--coluna-imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexCol--banner-coluna2-esq {
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flexRowContent--coluna-banner-esquerdo--imagem {
+  background-color: var(--mapa);
+  height: 520px;
+}
+
+.flexRowContent--coluna-banner-direito--imagem {
+  background-color: var(--bege-02);
+  height: 520px;
+}
+
+.flexRowContent--secao-banner-segundo {
   display: flex;
   flex-direction: column;
 }
 
 .flexRowContent--secao-banner-segundo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .container--titulo-banner-secundario :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 
 
-.flexCol--coluna-cards{
+.flexCol--coluna-cards {
   display: flex;
   flex-direction: row;
 }
 
-.flexRowContent--personas{
+.flexRowContent--personas {
   display: flex;
   flex-direction: column;
 }
 
-.stretchChildrenWidth .flexCol--coluna-login-minicart{
-  width: 33%!important;
+.stretchChildrenWidth .flexCol--coluna-login-minicart {
+  width: 33% !important;
 }
 
-.flexCol--coluna-login-minicart{
+.flexCol--coluna-login-minicart {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -43,7 +113,7 @@
 .flexColChild--deal-col {
   display: flex;
   align-items: center;
-  height: unset!important;
+  height: unset !important;
 }
 
 
