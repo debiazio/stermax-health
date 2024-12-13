@@ -1,4 +1,45 @@
-.flexRow--container-footer-digitando{
+.flexColChild--coluna-infos-empresa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.flexRowContent--container-selos {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--container-horarios,
+.flexCol--container-meios-contato {
+  display: flex;
+  flex-direction: column;
+  text-wrap-mode: nowrap;
+  text-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.flexCol--container-contatos,
+.flexCol--coluna-infos-empresa {
+  display: flex;
+  flex-direction: column;
+  margin-left: 136px;
+}
+
+.flexCol--container-compra-segura {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 136px;
+}
+
+.flexRowContent--menu-row {
+  margin: 0;
+  padding: 0;
+  background-color: #EDE6DC;
+}
+
+.flexRow--container-footer-digitando {
   height: 70px;
   background-color: #CCC7C0;
 }
@@ -12,7 +53,7 @@
   border-top: 1px solid #000000;
   max-width: 1400px;
   margin: 70px auto 0;
-  
+
 }
 
 

@@ -50,19 +50,40 @@
   },
   "rich-text#infos-empresa-nome": {
     "props": {
+      "blockClass": "contatos-footer-titulo",
       "text": "Stermax Health"
     }
   },
   "rich-text#infos-empresa-endereco": {
     "props": {
+      "blockClass": "linha-texto",
       "text": "R. Emma Rohrsetzer, 1011 - Emiliano\nPerneta, Pinhais - PR, 83324-190"
     }
   },
   "rich-text#infos-empresa-grupo": {
     "props": {
+      "blockClass": "linha-texto",
       "text": "**Empresa do Grupo MFM**"
     }
   },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [{
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        }
+      ]
+    }
+  },
+
   "newsletter-form#footer": {
     "props": {
       "blockClass": "container-newsletter"
@@ -127,7 +148,8 @@
   "flex-layout.col#icone0800": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "10%"
     },
     "children": [
       "image#contato-icone-telefone"
@@ -137,13 +159,14 @@
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-telefone.svg",
-      "alt": "ìcone de telefone"
+      "alt": "Ícone de telefone"
     }
   },
   "flex-layout.col#texto0800": {
     "props": {
       "blockClass": "linha-texto",
       "colSizing": "auto"
+
     },
     "children": [
       "rich-text#0800"
@@ -168,7 +191,8 @@
   "flex-layout.col#icone-tel-fixo": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "10%"
     },
     "children": [
       "image#contato-icone-telefone"
@@ -201,7 +225,9 @@
   "flex-layout.col#icone-whatsapp": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "10%"
+
     },
     "children": [
       "image#whatsapp-icon"
@@ -211,7 +237,7 @@
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-whatsapp.svg",
-      "alt": "ìcone de whatsapp"
+      "alt": "Ícone de whatsapp"
     }
   },
   "flex-layout.col#texto-whatsapp": {
@@ -241,7 +267,8 @@
   "flex-layout.col#icone-email": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "10%"
     },
     "children": [
       "image#contato-icone-email"
@@ -251,7 +278,7 @@
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-email.svg",
-      "alt": "ìcone de email"
+      "alt": "Ícone de email"
     }
   },
   "flex-layout.col#texto-email": {
@@ -312,21 +339,21 @@
       "image#selo3- anvisa"
     ]
   },
-  "image#selo1-ISO":{
+  "image#selo1-ISO": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/iso-selo-areia.svg",
       "alt": "Imagem selo ISO"
     }
   },
-  "image#selo2-garantia-fabrica":{
+  "image#selo2-garantia-fabrica": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/garantia-fabrica-selo-areia.svg",
       "alt": "Imagem selo garantia de fábrica"
     }
   },
-  "image#selo3- anvisa":{
+  "image#selo3- anvisa": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/anvisa-selo-areia.svg",
@@ -343,21 +370,21 @@
       "image#selo6- since"
     ]
   },
-  "image#selo4-fab-self":{
+  "image#selo4-fab-self": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/fabricacao-propria-selo-areia.svg",
       "alt": "Imagem selo fabricação própria"
     }
   },
-  "image#selo5-lider":{
+  "image#selo5-lider": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/lider-mercado-selo-areia.svg",
       "alt": "Imagem selo líder de mercado"
     }
   },
-  "image#selo6- since":{
+  "image#selo6- since": {
     "props": {
       "blockClass": "imgs-selos",
       "src": "assets/since-selo-areia.svg",
@@ -368,33 +395,98 @@
   "flex-layout.col#compra-segura": {
     "props": {
       "blockClass": "container-compra-segura"
-    }
+    },
+    "children": [
+      "rich-text#titulo-compra-segura",
+      "flex-layout.row#icones-compra",
+      "link#produtos",
+      "link#manuais",
+      "link#suporte-tecnico",
+      "link#politica-garantia",
+      "link#trocas-devolucoes",
+      "image#whatsapp-footer"
+    ]
   },
-
-
-  "social-networks": {
+  "rich-text#titulo-compra-segura": {
     "props": {
-      "socialNetworks": [{
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "blockClass": "contatos-footer-titulo",
+      "text": "Compre com Segurança"
     }
   },
-
-
+  "flex-layout.row#icones-compra": {
+    "props": {
+      "blockClass": "container-icones-bandeiras"
+    },
+    "children": [
+      "image#visa",
+      "image#master",
+      "image#boleto"
+    ]
+  },
+  "image#visa": {
+    "props": {
+      "blockClass": "icones-bandeiras",
+      "src": "assets/visa.svg",
+      "alt": "Imagem Visa"
+    }
+  },
+  "image#master": {
+    "props": {
+      "blockClass": "icones-bandeiras",
+      "src": "assets/master.svg",
+      "alt": "Imagem mastercard"
+    }
+  },
+  "image#boleto": {
+    "props": {
+      "blockClass": "icones-bandeiras",
+      "src": "assets/boleto.svg",
+      "alt": "Imagem boleto"
+    }
+  },
+  "link#produtos":{
+    "props": {
+      "blockClass": "footer-links",
+      "href": "#",
+      "label": "Produtos"
+    }
+  },
+  "link#manuais":{
+    "props": {
+      "blockClass": "footer-links",
+      "href": "#",
+      "label": "Manuais"
+    }
+  },
+  "link#suporte-tecnico":{
+    "props": {
+      "blockClass": "footer-links",
+      "href": "#",
+      "label": "Suporte Técnico"
+    }
+  },
+  "link#politica-garantia":{
+    "props": {
+      "blockClass": "footer-links",
+      "href": "#",
+      "label": "Política de Garantia"
+    }
+  },
+  "link#trocas-devolucoes":{
+    "props": {
+      "blockClass": "footer-links",
+      "href": "#",
+      "label": "Troca e Devoluções"
+    }
+  },
+  "image#whatsapp-footer":{
+    "props": {
+      "blockClass": "icone-whatsapp-footer",
+      "src": "assets/icone-whatsapp-grande.svg",
+      "alt": "Ícone Whatsapp",
+      "title": "Fale com um especialista"
+    }
+  },
 
 
 

@@ -1,0 +1,37 @@
+.newsletterForm--container-newsletter {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+
+.emailInputContainer--input-email :global(.vtex-input-prefix__group) {
+  height: 100%;
+}
+.emailInputContainer--input-email :global(.vtex-input-prefix__group):hover {
+  border: none;
+}
+.emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: #FFF9F4;
+  color: #868181;
+  border-radius: 35px;
+  width: 330px;
+  height: 60px;
+  font-family: var(--fonte-secundaria);
+}
+
+
+.formSubmitContainer--submit :global(.vtex-button){
+  background-color: #FFF9F4;
+  border: none;
+  color: #868181;
+  font-family: var(--fonte-secundaria);
+  height: 60px;
+  width: 200px;
+  border-radius: 35px;
+  text-transform: capitalize;
+  display: flex;
+  margin-top: 26px;
+}
