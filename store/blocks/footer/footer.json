@@ -5,12 +5,10 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-texto-digitando",
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-1-desktop"
     ]
   },
-  "flex-layout.row#footer-texto-digitando":{
+  "flex-layout.row#footer-texto-digitando": {
     "props": {
       "blockClass": "container-footer-digitando"
     },
@@ -18,7 +16,7 @@
       "rich-text#digitando"
     ]
   },
-  "rich-text#digitando":{
+  "rich-text#digitando": {
     "props": {
       "text": "Stermax Health: Pure Health, Expert Care.",
       "blockClass": "texto-digitando"
@@ -27,13 +25,8 @@
   "flex-layout.row#footer-1-desktop": {
     "children": [
       "flex-layout.col#infos",
-
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#contatos",
+      "flex-layout.col#compra-segura"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -41,7 +34,7 @@
       "paddingBottom": 3
     }
   },
-  "flex-layout.col#infos":{
+  "flex-layout.col#infos": {
     "props": {
       "blockClass": "coluna-infos-empresa",
       "colSizing": "auto"
@@ -49,29 +42,284 @@
     "children": [
       "rich-text#infos-empresa-nome",
       "rich-text#infos-empresa-endereco",
-      "rich-text#infos-empresa-grupo"
+      "rich-text#infos-empresa-grupo",
+      "newsletter-form#footer",
+      "social-networks"
 
     ]
   },
-  "rich-text#infos-empresa-nome":{
+  "rich-text#infos-empresa-nome": {
     "props": {
       "text": "Stermax Health"
     }
   },
-  "rich-text#infos-empresa-endereco":{
+  "rich-text#infos-empresa-endereco": {
     "props": {
       "text": "R. Emma Rohrsetzer, 1011 - Emiliano\nPerneta, Pinhais - PR, 83324-190"
     }
   },
-  "rich-text#infos-empresa-grupo":{
+  "rich-text#infos-empresa-grupo": {
     "props": {
       "text": "**Empresa do Grupo MFM**"
     }
   },
+  "newsletter-form#footer": {
+    "props": {
+      "blockClass": "container-newsletter"
+    },
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "blockClass": "input-email",
+      "placeholderText": "E-mail"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "blockClass": "submit",
+      "submitButtonLabel": "Enviar"
+    }
+  },
+  "flex-layout.col#contatos": {
+    "props": {
+      "blockClass": "container-contatos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#falecom",
+      "flex-layout.col#meios-contato",
+      "flex-layout.row#horarios",
+      "flex-layout.row#selos"
+
+    ]
+  },
+  "rich-text#falecom": {
+    "props": {
+      "blockClass": "texto-falecom",
+      "text": "Fale com a Stermax Health"
+    }
+  },
+  "flex-layout.col#meios-contato": {
+    "props": {
+      "blockClass": "container-meios-contato",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#0800",
+      "flex-layout.row#tel-fixo",
+      "flex-layout.row#whatsapp",
+      "flex-layout.row#email"
+    ]
+  },
+  "flex-layout.row#0800": {
+    "props": {
+      "blockClass": "linha-contatos-icone-texto"
+    },
+    "children": [
+      "flex-layout.col#icone0800",
+      "flex-layout.col#texto0800"
+    ]
+  },
+  "flex-layout.col#icone0800":{
+    "props": {
+      "blockClass": "linha-contatos-icone",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#contato-icone-telefone"
+    ]
+  },
+  "image#contato-icone-telefone":{
+    "props": {
+      "blockClass": "footer-contato-icone",
+      "src": "assets/icone-telefone.svg",
+      "alt": "ìcone de telefone"
+    }
+  },
+  "flex-layout.col#texto0800":{
+    "props": {
+      "blockClass": "linha-texto",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#0800"
+    ]
+  },
+  "rich-text#0800":{
+    "props": {
+      "blockClass": "texto-numeros",
+      "text": "0800 721 8533"
+    }
+  },
+
+  "flex-layout.row#tel-fixo": {
+    "props": {
+      "blockClass": "linha-contatos-icone-texto"
+    },
+    "children": [
+      "flex-layout.col#icone-tel-fixo",
+      "flex-layout.col#texto-tel-fixo"
+    ]
+  },
+  "flex-layout.col#icone-tel-fixo":{
+    "props": {
+      "blockClass": "linha-contatos-icone",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#contato-icone-telefone"
+    ]
+  },
+  "flex-layout.col#texto-tel-fixo":{
+    "props": {
+      "blockClass": "linha-texto",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#tel-fixo"
+    ]
+  },
+  "rich-text#tel-fixo":{
+    "props": {
+      "blockClass": "texto-numeros",
+      "text": "41 3668 2144"
+    }
+  },
+  "flex-layout.row#whatsapp": {
+    "props": {
+      "blockClass": "linha-contatos-icone-texto"
+    },
+    "children": [
+      "flex-layout.col#icone-whatsapp",
+      "flex-layout.col#texto-whatsapp"
+    ]
+  },
+  "flex-layout.col#icone-whatsapp":{
+    "props": {
+      "blockClass": "linha-contatos-icone",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#whatsapp-icon"
+    ]
+  },
+  "image#whatsapp-icon":{
+    "props": {
+      "blockClass": "footer-contato-icone",
+      "src": "assets/icone-whatsapp.svg",
+      "alt": "ìcone de whatsapp"
+    }
+  },
+  "flex-layout.col#texto-whatsapp":{
+    "props": {
+      "blockClass": "linha-texto",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#whatsapp"
+    ]
+  },
+  "rich-text#whatsapp":{
+    "props": {
+      "blockClass": "texto-numeros",
+      "text": "41 9 98551 6332"
+    }
+  },
+  "flex-layout.row#email": {
+    "props": {
+      "blockClass": "linha-contatos-icone-texto"
+    },
+    "children": [
+      "flex-layout.col#icone-email",
+      "flex-layout.col#texto-email"
+    ]
+  },
+  "flex-layout.col#icone-email":{
+    "props": {
+      "blockClass": "linha-contatos-icone",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#contato-icone-email"
+    ]
+  },
+  "image#contato-icone-email":{
+    "props": {
+      "blockClass": "footer-contato-icone",
+      "src": "assets/icone-email.svg",
+      "alt": "ìcone de email"
+    }
+  },
+  "flex-layout.col#texto-email":{
+    "props": {
+      "blockClass": "linha-texto",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#email"
+    ]
+  },
+  "rich-text#email":{
+    "props": {
+      "blockClass": "texto-numeros",
+      "text": "stermax@stermax.com.br"
+    }
+  },
+  "flex-layout.row#horarios": {
+    "props": {
+      "blockClass": "container-horarios"
+    },
+    "children": [
+      "rich-text#horario-titulo",
+      "rich-text#horario-desc"
+    ]
+  },
+  "rich-text#horario-titulo":{
+
+  },
+  "rich-text#horario-desc":{
+
+  },
+
+  "flex-layout.col#compra-segura": {
+    "props": {
+      "blockClass": "container-compra-segura"
+    }
+  },
+  "flex-layout.row#selos":{
+    "props": {
+      "blockClass": "container-selos"
+    },
+    "children": [
+      "flex-layout.row#selos-row1",
+      "flex-layout.row#selos-row2"
+    ]
+  },
+  "flex-layout.row#selos-row1":{
+    "props": {
+      "blockClass": "container-selos-rows"
+    },
+    "children": [
+
+    ]
+  },
+  "flex-layout.row#selos-row2":{
+    "props": {
+      "blockClass": "container-selos-rows"
+    },
+    "children": [
+
+    ]
+  },
+
+
   "social-networks": {
     "props": {
-      "socialNetworks": [
-        {
+      "socialNetworks": [{
           "name": "Facebook",
           "url": "https://www.facebook.com/vtexonline/"
         },
@@ -91,30 +339,9 @@
     }
   },
 
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
 
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
+
+
 
   "footer-layout.mobile": {
     "children": [
