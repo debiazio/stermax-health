@@ -99,7 +99,7 @@
   },
   "rich-text#falecom": {
     "props": {
-      "blockClass": "texto-falecom",
+      "blockClass": "contatos-footer-titulo",
       "text": "Fale com a Stermax Health"
     }
   },
@@ -124,7 +124,7 @@
       "flex-layout.col#texto0800"
     ]
   },
-  "flex-layout.col#icone0800":{
+  "flex-layout.col#icone0800": {
     "props": {
       "blockClass": "linha-contatos-icone",
       "colSizing": "auto"
@@ -133,14 +133,14 @@
       "image#contato-icone-telefone"
     ]
   },
-  "image#contato-icone-telefone":{
+  "image#contato-icone-telefone": {
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-telefone.svg",
       "alt": "ìcone de telefone"
     }
   },
-  "flex-layout.col#texto0800":{
+  "flex-layout.col#texto0800": {
     "props": {
       "blockClass": "linha-texto",
       "colSizing": "auto"
@@ -149,7 +149,7 @@
       "rich-text#0800"
     ]
   },
-  "rich-text#0800":{
+  "rich-text#0800": {
     "props": {
       "blockClass": "texto-numeros",
       "text": "0800 721 8533"
@@ -165,7 +165,7 @@
       "flex-layout.col#texto-tel-fixo"
     ]
   },
-  "flex-layout.col#icone-tel-fixo":{
+  "flex-layout.col#icone-tel-fixo": {
     "props": {
       "blockClass": "linha-contatos-icone",
       "colSizing": "auto"
@@ -174,7 +174,7 @@
       "image#contato-icone-telefone"
     ]
   },
-  "flex-layout.col#texto-tel-fixo":{
+  "flex-layout.col#texto-tel-fixo": {
     "props": {
       "blockClass": "linha-texto",
       "colSizing": "auto"
@@ -183,7 +183,7 @@
       "rich-text#tel-fixo"
     ]
   },
-  "rich-text#tel-fixo":{
+  "rich-text#tel-fixo": {
     "props": {
       "blockClass": "texto-numeros",
       "text": "41 3668 2144"
@@ -198,7 +198,7 @@
       "flex-layout.col#texto-whatsapp"
     ]
   },
-  "flex-layout.col#icone-whatsapp":{
+  "flex-layout.col#icone-whatsapp": {
     "props": {
       "blockClass": "linha-contatos-icone",
       "colSizing": "auto"
@@ -207,14 +207,14 @@
       "image#whatsapp-icon"
     ]
   },
-  "image#whatsapp-icon":{
+  "image#whatsapp-icon": {
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-whatsapp.svg",
       "alt": "ìcone de whatsapp"
     }
   },
-  "flex-layout.col#texto-whatsapp":{
+  "flex-layout.col#texto-whatsapp": {
     "props": {
       "blockClass": "linha-texto",
       "colSizing": "auto"
@@ -223,7 +223,7 @@
       "rich-text#whatsapp"
     ]
   },
-  "rich-text#whatsapp":{
+  "rich-text#whatsapp": {
     "props": {
       "blockClass": "texto-numeros",
       "text": "41 9 98551 6332"
@@ -238,7 +238,7 @@
       "flex-layout.col#texto-email"
     ]
   },
-  "flex-layout.col#icone-email":{
+  "flex-layout.col#icone-email": {
     "props": {
       "blockClass": "linha-contatos-icone",
       "colSizing": "auto"
@@ -247,14 +247,14 @@
       "image#contato-icone-email"
     ]
   },
-  "image#contato-icone-email":{
+  "image#contato-icone-email": {
     "props": {
       "blockClass": "footer-contato-icone",
       "src": "assets/icone-email.svg",
       "alt": "ìcone de email"
     }
   },
-  "flex-layout.col#texto-email":{
+  "flex-layout.col#texto-email": {
     "props": {
       "blockClass": "linha-texto",
       "colSizing": "auto"
@@ -263,7 +263,7 @@
       "rich-text#email"
     ]
   },
-  "rich-text#email":{
+  "rich-text#email": {
     "props": {
       "blockClass": "texto-numeros",
       "text": "stermax@stermax.com.br"
@@ -278,19 +278,22 @@
       "rich-text#horario-desc"
     ]
   },
-  "rich-text#horario-titulo":{
-
-  },
-  "rich-text#horario-desc":{
-
-  },
-
-  "flex-layout.col#compra-segura": {
+  "rich-text#horario-titulo": {
     "props": {
-      "blockClass": "container-compra-segura"
+      "blockClass": "contatos-footer-titulo",
+      "text": "Horário de atendimento"
+    }
+
+  },
+  "rich-text#horario-desc": {
+    "props": {
+      "blockClass": "texto-numeros",
+      "text": "Segunda a Quinta - 08:00 às 18:00\nSexta - 08:00 às 17:00 "
     }
   },
-  "flex-layout.row#selos":{
+
+
+  "flex-layout.row#selos": {
     "props": {
       "blockClass": "container-selos"
     },
@@ -299,21 +302,73 @@
       "flex-layout.row#selos-row2"
     ]
   },
-  "flex-layout.row#selos-row1":{
+  "flex-layout.row#selos-row1": {
     "props": {
       "blockClass": "container-selos-rows"
     },
     "children": [
-
+      "image#selo1-ISO",
+      "image#selo2-garantia-fabrica",
+      "image#selo3- anvisa"
     ]
   },
-  "flex-layout.row#selos-row2":{
+  "image#selo1-ISO":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/iso-selo-areia.svg",
+      "alt": "Imagem selo ISO"
+    }
+  },
+  "image#selo2-garantia-fabrica":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/garantia-fabrica-selo-areia.svg",
+      "alt": "Imagem selo garantia de fábrica"
+    }
+  },
+  "image#selo3- anvisa":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/anvisa-selo-areia.svg",
+      "alt": "Imagem selo Anvisa"
+    }
+  },
+  "flex-layout.row#selos-row2": {
     "props": {
       "blockClass": "container-selos-rows"
     },
     "children": [
-
+      "image#selo4-fab-self",
+      "image#selo5-lider",
+      "image#selo6- since"
     ]
+  },
+  "image#selo4-fab-self":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/fabricacao-propria-selo-areia.svg",
+      "alt": "Imagem selo fabricação própria"
+    }
+  },
+  "image#selo5-lider":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/lider-mercado-selo-areia.svg",
+      "alt": "Imagem selo líder de mercado"
+    }
+  },
+  "image#selo6- since":{
+    "props": {
+      "blockClass": "imgs-selos",
+      "src": "assets/since-selo-areia.svg",
+      "alt": "Imagem selo desde 1991"
+    }
+  },
+
+  "flex-layout.col#compra-segura": {
+    "props": {
+      "blockClass": "container-compra-segura"
+    }
   },
 
 
