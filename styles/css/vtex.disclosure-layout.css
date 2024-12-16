@@ -1,0 +1,8 @@
+.trigger--disclosure-trigger-linha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  border-radius: 56px;
+}
+

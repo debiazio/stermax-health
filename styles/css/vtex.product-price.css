@@ -1,23 +1,30 @@
 .listPrice {
-  color: #727273;
+  color: #5C5A58;
   margin-bottom: .25rem;
   font-size: 1rem;
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #5C5A58;
+  font-family: var(--fonte-secundaria);
   font-size: 1.25rem;
 }
 
 .sellingPriceValue {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .installments {
-  color: #727273;
+  color: #5C5A58;
   margin-bottom: 1rem;
+  font-family: var(--fonte-secundaria);
+  font-size: 2.25rem;
+  font-weight: 700;
+
 }
+
+
 
 .savings {
   font-weight: 500;

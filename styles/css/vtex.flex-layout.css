@@ -1,3 +1,19 @@
+
+.flexRow--container-fotos-info-produto,
+
+.flexRow--linha-descricao{
+  margin: 0 60px;
+}
+
+.flexRow--deals{
+  margin: -60px 60px 60px 60px;
+}
+
+.flexRowContent--linha-disclosure .stretchChildrenWidth{
+  display: flex;
+  flex-direction: column;
+}
+
 .flexRow--container-icones-bandeiras{
   margin-bottom: 30px;
 }
@@ -50,6 +66,7 @@
   text-wrap-mode: nowrap;
   text-wrap: nowrap;
   flex-wrap: nowrap;
+  gap: 10px;
 }
 
 .flexCol--container-contatos,
@@ -281,14 +298,14 @@
 }
 
 .flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--sticky-header {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
 
   .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--sticky-header {
     padding: 0 1rem;
   }
 }
@@ -296,7 +313,7 @@
 @media screen and (min-width: 80rem) {
 
   .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--sticky-header {
     padding: 0 0.25rem;
   }
 }
@@ -306,11 +323,11 @@
   color: #fff;
 }
 
-.flexRowContent--main-header {
+.flexRowContent--sticky-header {
   background-color: #f0f0f0;
 }
 
-.flexRowContent--main-header-mobile {
+.flexRowContent--sticky-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
@@ -321,18 +338,18 @@
   font-size: 14px;
 }
 
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+.flexRowContent--sticky-header :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
   font-size: 14px;
 }
 
 .flexRow--deals {
   background-color: var(--bege-02);
-  margin: 40px 10px;
+  /* margin: 40px 10px; */
   padding: 14px;
   border-radius: 166px;
   max-width: 1528px;
-  margin: -90px auto 50px;
+  /* margin: -90px auto 50px; */
 }
 
 .flexRow--deals .stretchChildrenWidth {

@@ -1,3 +1,13 @@
+.wrapper--titulo-descricao{
+  font-family: var(--fonte-secundaria);
+  font-size: 48px;
+  color: #5C5A58;
+}
+
+.paragraph--titulo-descricao{
+  margin: 0 50px;
+  padding: 0;
+}
 
 .container--texto-numeros{
   font-family: var(--fonte-secundaria);
@@ -25,7 +35,7 @@
 
 .paragraph--contatos-footer-titulo{
   font-family: var(--fonte-secundaria);
-  font-size: 30px;
+  font-size: 24px;
   margin-top: 63px;
 }
 

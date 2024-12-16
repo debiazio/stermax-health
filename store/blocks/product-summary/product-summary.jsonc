@@ -86,5 +86,11 @@
       ],
       "blockClass": "summary"
     }
+  },
+  "add-to-cart-button":{
+    "props": {
+      "text": "Comprar",
+      "blockClass": "botao-comprar"
+    }
   }
 }

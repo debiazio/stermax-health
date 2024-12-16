@@ -16,6 +16,11 @@
 
 .trigger :global(.vtex-store-icons-0-x-caretIcon) {
   margin-right: 1rem;
+  padding: 8px;
+  color: #5C5A58;
+  border-radius: 50px;
+  background-color: #FFFAF4;
+  box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.3);
 }
 
 .content--answer {

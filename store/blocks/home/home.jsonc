@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "list-context.image-list#carrossel-home-desktop",
       "flex-layout.row#banner-stermaxHealth-personas",
       "flex-layout.row#deals",
       "__fold__",
@@ -12,26 +12,42 @@
       "flex-layout.row#banner-quarto"
     ]
   },
-  "list-context.image-list#demo": {
+  "list-context.image-list#carrossel-home-desktop": {
     "children": [
-      "slider-layout#demo-images"
+      "slider-layout#carrossel-home-desktop"
     ],
     "props": {
       "height": 570,
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "image": "assets/banner-home-desktop-numero1.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        },
+        {
+          "image": "assets/banner-home-desktop-flex-vertical.webp",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/banner-home-desktop-esterilizacao.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "assets/banner-home-desktop-confianca.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "assets/banner-home-desktop-focada-na-saude.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "assets/banner-home-desktop-flex.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#carrossel-home-desktop": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -40,7 +56,8 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "autoplay": {"timeout": 5000}
     }
   },
   "flex-layout.row#banner-stermaxHealth-personas": {

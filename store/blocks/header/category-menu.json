@@ -16,15 +16,13 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "Loja",
         "text": "LOJA"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    }
+
   },
   "vtex.menu@2.x:submenu#category-apparel": {
     "props": {
@@ -93,7 +91,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "Quem somos",
         "text": "QUEM SOMOS"
@@ -112,10 +110,7 @@
         "tagTitle": "contato",
         "text": "CONTATO"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
+    }
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {
