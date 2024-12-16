@@ -122,7 +122,7 @@
   "flex-layout.row#banner-quarto":{
     "props": {
       "blockClass": "secao-banner-quarto",
-      "fullWidth": false
+      "fullWidth": true
     },
     "children": [
       "flex-layout.row#banner-quarto-esq",

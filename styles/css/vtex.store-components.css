@@ -1,3 +1,12 @@
+.imageElement--icones-bandeiras{
+  width: 73px;
+  max-width: none;
+}
+
+.imageElement--imgs-selos{
+  width: 140px;
+  max-width: none;
+}
 
 .stretchChildrenWidth .imageElement--imagem-banner-segundo{
   width: 100%;

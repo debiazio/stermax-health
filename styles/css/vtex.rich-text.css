@@ -1,3 +1,21 @@
+
+.container--texto-numeros{
+  font-family: var(--fonte-secundaria);
+}
+
+.link--texto-numeros{
+  text-decoration: none;
+  color: var(--cinza-medio);
+}
+
+.paragraph--texto-numeros{
+  margin: 0;
+}
+
+.container--linha-texto{
+  margin-bottom: 30px;
+}
+
 .paragraph--linha-texto{
   margin: 0;
   padding: 0;
@@ -7,7 +25,7 @@
 
 .paragraph--contatos-footer-titulo{
   font-family: var(--fonte-secundaria);
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 63px;
 }
 

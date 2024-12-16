@@ -31,7 +31,8 @@
     "props": {
       "blockClass": "menu-row",
       "paddingTop": 6,
-      "paddingBottom": 3
+      "paddingBottom": 3,
+      "fullWidth": true
     }
   },
   "flex-layout.col#infos": {
@@ -43,7 +44,7 @@
       "rich-text#infos-empresa-nome",
       "rich-text#infos-empresa-endereco",
       "rich-text#infos-empresa-grupo",
-      "newsletter-form#footer",
+      "flex-layout.row#newsletter",
       "social-networks"
 
     ]
@@ -70,20 +71,27 @@
     "props": {
       "socialNetworks": [{
           "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
+          "url": "https://www.facebook.com/stermaxbiosseguranca"
         },
         {
           "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "url": "https://www.youtube.com/@stermaxbiosseguranca5091/videos"
         },
         {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "url": "https://www.instagram.com/stermaxbiosseguranca/"
         }
       ]
     }
   },
-
+  "flex-layout.row#newsletter":{
+    "props": {
+      "blockClass": "linha-newsletter"
+    },
+    "children": [
+      "newsletter-form#footer"
+    ]
+  },
   "newsletter-form#footer": {
     "props": {
       "blockClass": "container-newsletter"
@@ -331,7 +339,7 @@
   },
   "flex-layout.row#selos-row1": {
     "props": {
-      "blockClass": "container-selos-rows"
+      "blockClass": ["container-selos-rows", "container-selos-rows-linha1" ]
     },
     "children": [
       "image#selo1-ISO",
@@ -484,7 +492,10 @@
       "blockClass": "icone-whatsapp-footer",
       "src": "assets/icone-whatsapp-grande.svg",
       "alt": "Ícone Whatsapp",
-      "title": "Fale com um especialista"
+      "title": "Fale com um especialista",
+      "link": {
+        "url": "https://wa.me/55419985516332"
+      }
     }
   },
 

@@ -1,7 +1,40 @@
+.flexRow--container-icones-bandeiras{
+  margin-bottom: 30px;
+}
+
+.flexColChild--container-compra-segura{
+  height: 50%;
+}
+
+.flexRowContent--container-icones-bandeiras{
+  gap: 30px;
+}
+
+.flexRowContent--container-selos-rows{
+  gap: 20px;
+}
+
+.flexRowContent--container-selos-rows-linha1{
+  margin-bottom: -40px;
+}
+
+.flexColChild--linha-contatos-icone {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--linha-newsletter {
+  margin: 50px 0;
+}
+
 .flexColChild--coluna-infos-empresa {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: auto !important;
 }
 
 
@@ -35,7 +68,7 @@
 
 .flexRowContent--menu-row {
   margin: 0;
-  padding: 0;
+  padding: 0 0 80px 0;
   background-color: #EDE6DC;
 }
 
