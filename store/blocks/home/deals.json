@@ -10,7 +10,7 @@
     ],
     "props": {
       "blockClass": "deals",
-      "fullWidth": false
+      "fullWidth": true
     }
   },
 

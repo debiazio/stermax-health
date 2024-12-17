@@ -20,6 +20,7 @@
 
 .paragraph--texto-numeros{
   margin: 0;
+  color: var(--cinza-medio);
 }
 
 .container--linha-texto{
@@ -31,12 +32,14 @@
   padding: 0;
   font-family: var(--fonte-secundaria);
   font-size: 15px;
+  color: var(--cinza-medio);
 }
 
 .paragraph--contatos-footer-titulo{
   font-family: var(--fonte-secundaria);
   font-size: 24px;
   margin-top: 63px;
+  color: var(--cinza-medio);
 }
 
 .wrapper--texto-digitando{

@@ -4,5 +4,12 @@
   align-items: center;
   border: none;
   border-radius: 56px;
+  background-color: #EDE6DC;
 }
+
+.content--visible{
+  margin: 40px;
+}
+
+
 

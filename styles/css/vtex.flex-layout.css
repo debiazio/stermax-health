@@ -1,36 +1,48 @@
+.flexRowContent--linha-especificacao-values{
+  margin: 20px 0;;
+}
+
+.flexColChild--linha-especificacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexColChild--linha-disclosure {
+  padding: 30px 0;
+}
 
 .flexRow--container-fotos-info-produto,
-
-.flexRow--linha-descricao{
+.flexRow--linha-descricao {
   margin: 0 60px;
 }
 
-.flexRow--deals{
-  margin: -60px 60px 60px 60px;
+.flexRow--deals {
+  margin: -60px 177px 60px 177px;
 }
 
-.flexRowContent--linha-disclosure .stretchChildrenWidth{
+.flexRowContent--linha-disclosure .stretchChildrenWidth {
   display: flex;
   flex-direction: column;
 }
 
-.flexRow--container-icones-bandeiras{
+.flexRow--container-icones-bandeiras {
   margin-bottom: 30px;
 }
 
-.flexColChild--container-compra-segura{
+.flexColChild--container-compra-segura {
   height: 50%;
 }
 
-.flexRowContent--container-icones-bandeiras{
+.flexRowContent--container-icones-bandeiras {
   gap: 30px;
 }
 
-.flexRowContent--container-selos-rows{
+.flexRowContent--container-selos-rows {
   gap: 20px;
 }
 
-.flexRowContent--container-selos-rows-linha1{
+.flexRowContent--container-selos-rows-linha1 {
   margin-bottom: -40px;
 }
 
@@ -348,7 +360,7 @@
   /* margin: 40px 10px; */
   padding: 14px;
   border-radius: 166px;
-  max-width: 1528px;
+  /* max-width: 1528px; */
   /* margin: -90px auto 50px; */
 }
 

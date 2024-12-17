@@ -8,7 +8,6 @@
       "flex-layout.row#specifications-title",
 
       "shelf.relatedProducts",
-      "product-reviews",
       "product-questions-and-answers"
     ]
   },
@@ -53,10 +52,71 @@
   },
   "disclosure-content#specification": {
     "children": [
+      "flex-layout.col#linha-especificacoes"
+
+    ]
+  },
+  "flex-layout.col#linha-especificacoes":{
+    "props": {
+      "blockClass": "linha-especificacoes"
+    },
+    "children": [
       "product-specification-group#table"
     ]
   },
+  "product-specification-group#table":{
+    "props": {
+      "blockClass": "table"
+    },
+    "children": [
+      "product-specification-text#group",
+      "product-specification"
+    ]
+  },
+  "product-specification": {
+    "props":{
+      "blockClass": "product-specification"
+    },
+    "children": [
+      "flex-layout.row#linha-especificacoes"
 
+    ]
+  },
+  "flex-layout.row#linha-especificacoes":{
+    "props": {
+      "blockClass": "linha-especificacao-values",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-values"
+    ]
+  },
+  "product-specification-values": {
+    "props":{
+      "blockClass": "product-specification-values"
+    },
+    "children": ["product-specification-text#value"]
+  },
+  "product-specification-text#group": {
+    "props": {
+      "blockClass": "product-specification-text",
+      "message": "{groupName}"
+    }
+  },
+
+  "product-specification-text#specification": {
+    "props": {
+      "blockClass": "product-specification-specification",
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value": {
+    "props": {
+      "blockClass": "product-specification-specification-value",
+      "message": "{specificationValue}"
+    }
+  },
 
   "flex-layout.row#description": {
     "props": {
