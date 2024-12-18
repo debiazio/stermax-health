@@ -86,14 +86,14 @@
 .paragraph--titulo-banner-direito,
 .paragraph--titulo-banner-esquerdo {
   font-family: "fraunces-regular";
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 40px;
 }
 
 .paragraph--subtitulo-banner-direito,
 .paragraph--subtitulo-banner-esquerdo {
   font-family: "jost-regular";
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .wrapper--titulo-banner-esquerdo,

@@ -263,7 +263,7 @@
   "video#animacao-direita":{
     "props": {
       "blockClass": "video-banner",
-      "src": "assets/pronta-entrega.mp4",
+      "src": "https://stermax.com.br/images_idealine/pronta-entrega.mp4",
       "loop": true,
       "autoPlay": true,
       "controlsType": "none",
