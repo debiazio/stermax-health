@@ -1,3 +1,10 @@
+.installments--summary :global(.vtex-button){
+  background-color: transparent;
+  color: #5C5A58;
+  border-radius: 50px;
+  border-color: #5C5A58;
+}
+
 .listPrice {
   color: #5C5A58;
   margin-bottom: .25rem;
@@ -68,6 +75,7 @@
 .installments--summary {
   margin-bottom: 2rem;
   font-size: 0.875rem;
+  text-align: center;
 }
 
 .savings--summaryPercentage {

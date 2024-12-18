@@ -8,7 +8,10 @@
       "flex-layout.row#specifications-title",
 
       "shelf.relatedProducts",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "flex-layout.row#relatedProducts",
+      "flex-layout.row#secao-divisoria-link"
+
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -56,7 +59,7 @@
 
     ]
   },
-  "flex-layout.col#linha-especificacoes":{
+  "flex-layout.col#linha-especificacoes": {
     "props": {
       "blockClass": "linha-especificacoes"
     },
@@ -64,7 +67,7 @@
       "product-specification-group#table"
     ]
   },
-  "product-specification-group#table":{
+  "product-specification-group#table": {
     "props": {
       "blockClass": "table"
     },
@@ -74,7 +77,7 @@
     ]
   },
   "product-specification": {
-    "props":{
+    "props": {
       "blockClass": "product-specification"
     },
     "children": [
@@ -82,7 +85,7 @@
 
     ]
   },
-  "flex-layout.row#linha-especificacoes":{
+  "flex-layout.row#linha-especificacoes": {
     "props": {
       "blockClass": "linha-especificacao-values",
       "preventHorizontalStretch": true
@@ -93,7 +96,7 @@
     ]
   },
   "product-specification-values": {
-    "props":{
+    "props": {
       "blockClass": "product-specification-values"
     },
     "children": ["product-specification-text#value"]
@@ -173,7 +176,6 @@
       "showTitle": false
     }
   },
-
 
   "condition-layout.product#availability": {
     "props": {
@@ -314,6 +316,57 @@
       "blockClass": "message-availability"
     },
     "children": ["availability-subscriber"]
+  },
+  // PRODUTOS RELACIONADOS
+  "flex-layout.row#relatedProducts": {
+    "props": {
+      "blockClass": "produtos-relacionados"
+    },
+    "children": [
+      "flex-layout.col#relatedProducts"
+    ],
+    "title": "Produtos relacionados"
+  },
+  "flex-layout.col#relatedProducts": {
+    "props": {
+      "blockClass": "coluna-relacionados"
+    },
+    "children": [
+      "rich-text#produtos-relacionados",
+      "list-context.product-list#produtos-relacionados"
+    ]
+  },
+  "rich-text#produtos-relacionados": {
+    "props": {
+      "text": "Produtos Relacionados",
+      "blockClass": "rich-text-produtos-relacionados"
+    }
+  },
+  "list-context.product-list#produtos-relacionados": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#produtos-relacionados-stermaxh"
+    ],
+    "props": {
+      "collection": "208",
+      "blockClass": "summary-produtos-relacionados"
+    }
+  },
+  "slider-layout#produtos-relacionados-stermaxh": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "pdp-slider-relacinado",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never"
+    }
   }
 
 
