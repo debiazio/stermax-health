@@ -3,6 +3,7 @@
     "blocks": [
       "list-context.image-list#carrossel-home-desktop",
       "flex-layout.row#banner-stermaxHealth-personas",
+      "responsive-layout.mobile#deals-mobile",
       "flex-layout.row#deals",
       "__fold__",
       "flex-layout.row#banner-segundo",
@@ -22,27 +23,27 @@
       "images": [
         {
           "image": "assets/banner-home-desktop-numero1.webp",
-          "mobileImage": "assets/banner-home-desktop-numero1.webp"
+          "mobileImage": "assets/banner-home-mobile-numero1.webp"
         },
         {
           "image": "assets/banner-home-desktop-flex-vertical.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/banner-home-mobile-flex-vertical.webp"
         },
         {
           "image": "assets/banner-home-desktop-esterilizacao.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/banner-home-mobile-esterilizacao.webp"
         },
         {
           "image": "assets/banner-home-desktop-confianca.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/banner-home-mobile-confianca.webp"
         },
         {
           "image": "assets/banner-home-desktop-focada-na-saude.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/banner-home-mobile-focada-na-saude.webp"
         },
         {
           "image": "assets/banner-home-desktop-flex.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/banner-home-mobile-flex.webp"
         }
       ]
     }
@@ -78,6 +79,89 @@
       "fullWidth": true
     }
   },
+// DEALS MOBILE
+"responsive-layout.mobile#deals-mobile":{
+  "children": [
+    "flex-layout.row#deals-mobile-linha1",
+    "flex-layout.row#deals-mobile-linha2"
+  ]
+},
+"flex-layout.row#deals-mobile-linha1":{
+  "props": {
+    "blockClass": "deals-mobile-row"
+  },
+  "children": [
+    "flex-layout.col#linha1-coluna1",
+    "flex-layout.col#linha1-coluna2",
+    "flex-layout.col#linha1-coluna3"
+  ]
+},
+"flex-layout.col#linha1-coluna1":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal1",
+    "rich-text#deal1"
+  ]
+},
+"flex-layout.col#linha1-coluna2":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal2",
+    "rich-text#deal2"
+  ]
+},
+"flex-layout.col#linha1-coluna3":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal3",
+    "rich-text#deal3"
+  ]
+},
+// segunda linha do deals mobile
+"flex-layout.row#deals-mobile-linha2":{
+  "props": {
+    "blockClass": "deals-mobile-row"
+  },
+  "children": [
+    "flex-layout.col#linha2-coluna1",
+    "flex-layout.col#linha2-coluna2",
+    "flex-layout.col#linha2-coluna3"
+  ]
+},
+"flex-layout.col#linha2-coluna1":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal4",
+    "rich-text#deal4"
+  ]
+},
+"flex-layout.col#linha2-coluna2":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal5",
+    "rich-text#deal5"
+  ]
+},
+"flex-layout.col#linha2-coluna3":{
+  "props": {
+    "blockClass": "deals-mobile-coluna"
+  },
+  "children": [
+    "image#deal6",
+    "rich-text#deal6"
+  ]
+},
+
   //banner "não comprometa sua saúde..."
   "flex-layout.row#banner-segundo": {
     "props": {
@@ -257,7 +341,7 @@
       "width": "30%"
     },
     "children": [
-      "video#animacao-direita"
+      // "video#animacao-direita"
     ]
   },
   "video#animacao-direita":{
