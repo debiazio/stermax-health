@@ -22,7 +22,7 @@
       "images": [
         {
           "image": "assets/banner-home-desktop-numero1.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "mobileImage": "assets/banner-home-desktop-numero1.webp"
         },
         {
           "image": "assets/banner-home-desktop-flex-vertical.webp",
