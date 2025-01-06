@@ -1,19 +1,19 @@
-.productBrand--quickview{
+.productBrand--quickview {
   text-transform: uppercase;
   font-family: var(--fonte-secundaria);
 }
 
-.imageElement--icones-bandeiras{
+.imageElement--icones-bandeiras {
   width: 73px;
   max-width: none;
 }
 
-.imageElement--imgs-selos{
+.imageElement--imgs-selos {
   width: 140px;
   max-width: none;
 }
 
-.stretchChildrenWidth .imageElement--imagem-banner-segundo{
+.stretchChildrenWidth .imageElement--imagem-banner-segundo {
   width: 100%;
 }
 
@@ -182,8 +182,20 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .sizeDesktop{
+  .sizeDesktop {
     margin: 0;
     padding: 0;
+  }
+
+  .imageElement--icon-deal {
+    background-color: white;
+    border-radius: 50px;
+    padding: 4px;
+    max-height: 30px!important;
+  }
+
+  .sizeMobile{
+    display: flex;
+    flex-direction: column;
   }
 }

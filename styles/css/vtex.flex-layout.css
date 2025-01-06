@@ -420,15 +420,22 @@
 }
 
 .flexCol--deals-mobile-coluna,
-.flexRowContent--deals-mobile-row{
+.flexRowContent--deals-mobile-row {
   display: flex;
   flex-direction: row;
 }
 
-.flexColChild--deals-mobile-coluna{
+.flexColChild--deals-mobile-coluna {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.flexRow--deals-mobile-row {
+  background-color: var(--bege-02);
+  margin: 12px;
+  border-radius: 50px;
+  padding: 5px 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -436,4 +443,3 @@
     display: none;
   }
 }
-

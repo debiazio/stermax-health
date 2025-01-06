@@ -150,7 +150,6 @@
 }
 
 .container--deals .paragraph {
-  margin: 0;
   text-align: left;
 }
 
@@ -228,6 +227,21 @@
 
 @media only screen and (max-width: 1000px) {
   .container--deals {
+    font-size:6px;
+  }
+
+  .paragraph--deals{
+     margin: 0 0 0 10px;
+  }
+
+  .paragraph--titulo-banner-secundario {
+    padding: 10px;
     font-size: 8px;
+    margin-right: 0px;
+  }
+
+  .container--titulo-banner-secundario {
+
+    bottom: 20px;
   }
 }
