@@ -28,3 +28,10 @@
   padding: 15px;
   background-color: var(--paleta);
 }
+
+@media screen and (max-width: 1000px){
+  .link--link-banner-quarto{
+    font-size: 9px;
+  }
+
+}

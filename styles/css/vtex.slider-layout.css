@@ -6,7 +6,6 @@
   background-color: transparent;
   min-height: 450px;
   padding-bottom: 50px;
-  margin-top: -50px;
 }
 
 .sliderTrackContainer {
@@ -30,4 +29,19 @@
   padding-left: .5rem;
   padding-right: .5rem;
   min-height: 550px;
+}
+
+@media only screen and (max-width: 1000px){
+  .sliderLayoutContainer--carousel{
+    margin-top: -45px;
+  }
+
+  .sliderLayoutContainer--shelf{
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+  }
+
+  .slide--shelf{
+    min-height: unset;
+  }
 }

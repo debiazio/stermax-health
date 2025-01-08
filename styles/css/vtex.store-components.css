@@ -198,4 +198,8 @@
     display: flex;
     flex-direction: column;
   }
+
+  .imageElement--assistencias-img{
+    max-width: 206px!important;
+  }
 }

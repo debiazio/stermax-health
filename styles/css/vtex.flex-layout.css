@@ -118,11 +118,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 70px;
   border-top: 1px solid #000000;
   max-width: 1400px;
   margin: 70px auto 0;
-
 }
 
 
@@ -441,5 +439,32 @@
 @media screen and (max-width: 1000px) {
   .flexRow--deals {
     display: none;
+  }
+
+  .flexColChild--productRating,
+  .flexCol--productRating{
+    display: none;
+  }
+
+  .flexRow--container-secao-divisoria-link {
+    margin: 0px auto 0;
+    max-width: max-content;
+  }
+
+  .flexRow--secao-banner-quarto{
+    margin-top: 0px;
+  }
+
+  .flexCol--banner-coluna2-esq{
+    margin-right: 15px;
+  }
+
+  .flexRowContent--coluna-banner-esquerdo--imagem{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexRowContent--coluna-banner-esquerdo--imagem{
+    height: unset;
   }
 }

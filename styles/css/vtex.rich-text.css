@@ -241,7 +241,14 @@
   }
 
   .container--titulo-banner-secundario {
-
     bottom: 20px;
+  }
+
+  .paragraph--titulo-banner-esquerdo{
+    font-size: 18px;
+  }
+
+  .paragraph--subtitulo-banner-esquerdo{
+    font-size: 10px;
   }
 }
