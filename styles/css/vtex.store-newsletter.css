@@ -35,3 +35,11 @@
   display: flex;
   margin-top: 26px;
 }
+
+@media screen and (max-width: 1000px){
+  .formSubmitContainer--submit :global(.vtex-button),
+  .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators) {
+    width: 150px;
+  }
+
+}

@@ -181,6 +181,11 @@
   position: relative;
 }
 
+.flexRowContent--footer-mobile{
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 1000px) {
   .sizeDesktop {
     margin: 0;
@@ -201,5 +206,9 @@
 
   .imageElement--assistencias-img{
     max-width: 206px!important;
+  }
+
+  .imageElement--imgs-selos{
+    width: 70px;
   }
 }

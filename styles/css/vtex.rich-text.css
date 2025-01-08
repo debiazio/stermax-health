@@ -224,6 +224,13 @@
   }
 }
 
+.container--footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .container--deals {
@@ -244,11 +251,33 @@
     bottom: 20px;
   }
 
+  .paragraph--titulo-banner-direito,
   .paragraph--titulo-banner-esquerdo{
     font-size: 18px;
   }
 
+  .paragraph--subtitulo-banner-direito,
   .paragraph--subtitulo-banner-esquerdo{
     font-size: 10px;
   }
+
+  .wrapper--texto-digitando{
+    font-size: 1rem;
+  }
+
+  .paragraph--contatos-footer-titulo{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .paragraph--linha-texto,
+  .container--texto-numeros{
+    font-size: 10px;
+  }
+
+
+  .flexColChild--container-footer-mobile{
+    height: fit-content!important;
+  }
+
 }

@@ -84,7 +84,7 @@
       ]
     }
   },
-  "flex-layout.row#newsletter":{
+  "flex-layout.row#newsletter": {
     "props": {
       "blockClass": "linha-newsletter"
     },
@@ -339,7 +339,7 @@
   },
   "flex-layout.row#selos-row1": {
     "props": {
-      "blockClass": ["container-selos-rows", "container-selos-rows-linha1" ]
+      "blockClass": ["container-selos-rows", "container-selos-rows-linha1"]
     },
     "children": [
       "image#selo1-ISO",
@@ -452,42 +452,42 @@
       "alt": "Imagem boleto"
     }
   },
-  "link#produtos":{
+  "link#produtos": {
     "props": {
       "blockClass": "footer-links",
       "href": "#",
       "label": "Produtos"
     }
   },
-  "link#manuais":{
+  "link#manuais": {
     "props": {
       "blockClass": "footer-links",
       "href": "#",
       "label": "Manuais"
     }
   },
-  "link#suporte-tecnico":{
+  "link#suporte-tecnico": {
     "props": {
       "blockClass": "footer-links",
       "href": "#",
       "label": "Suporte Técnico"
     }
   },
-  "link#politica-garantia":{
+  "link#politica-garantia": {
     "props": {
       "blockClass": "footer-links",
       "href": "#",
       "label": "Política de Garantia"
     }
   },
-  "link#trocas-devolucoes":{
+  "link#trocas-devolucoes": {
     "props": {
       "blockClass": "footer-links",
       "href": "#",
       "label": "Troca e Devoluções"
     }
   },
-  "image#whatsapp-footer":{
+  "image#whatsapp-footer": {
     "props": {
       "blockClass": "icone-whatsapp-footer",
       "src": "assets/icone-whatsapp-grande.svg",
@@ -503,42 +503,76 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#footer-texto-digitando",
+      "flex-layout.row#footer-1-mobile"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+  "flex-layout.row#footer-1-mobile": {
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
+      "blockClass": "footer-mobile",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": [
+      "flex-layout.col#coluna1-mobile",
+      "flex-layout.col#coluna2-mobile"
+    ]
   },
-  "rich-text#footer-mobile": {
+  "flex-layout.col#coluna1-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "width": "50%",
+      "blockClass": "container-footer-mobile"
+    },
+    "children": [
+      "rich-text#infos-empresa-nome",
+      "rich-text#infos-empresa-endereco",
+      "rich-text#infos-empresa-grupo",
+      "flex-layout.row#newsletter",
+      "flex-layout.row#links-mobile",
+      "flex-layout.row#links-mobile-linha2",
+      "social-networks"
+    ]
+  },
+  "flex-layout.row#links-mobile": {
+    "props": {
+      "blockClass": "links-footer-mobile"
+    },
+    "children": [
+      "link#produtos",
+      "rich-text#bullet",
+      "link#manuais",
+      "rich-text#bullet",
+      "link#suporte-tecnico"
+    ]
+  },
+  "rich-text#bullet": {
+    "props": {
+      "blockClass": "footer-links",
+      "text": "·"
     }
+  },
+
+  "flex-layout.row#links-mobile-linha2": {
+    "props": {
+      "blockClass": "links-footer-mobile"
+    },
+    "children": [
+      "link#politica-garantia",
+      "rich-text#bullet",
+      "link#trocas-devolucoes"
+    ]
+  },
+  "flex-layout.col#coluna2-mobile": {
+    "props": {
+      "width": "50%",
+      "blockClass": "container-footer-mobile"
+    },
+    "children": [
+      "rich-text#falecom",
+      "flex-layout.col#meios-contato",
+      "flex-layout.row#horarios",
+      "flex-layout.row#selos"
+    ]
+
   }
 }
