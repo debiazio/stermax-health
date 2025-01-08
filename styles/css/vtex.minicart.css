@@ -10,3 +10,14 @@
   margin-bottom: 27px;
   margin-right: 30px;
 }
+
+@media screen and (max-width: 1000px) {
+  .openIconContainer{
+    margin: 0;
+    padding: 0;
+  }
+
+  .minicartIconContainer .cartIcon{
+    width: 0.5rem;
+  }
+}

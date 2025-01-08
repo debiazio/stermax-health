@@ -5,3 +5,12 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+  .profileIcon{
+    width: 16px!important;
+  }
+
+  .cartIcon{
+    width: 2rem!important;
+  }
+}

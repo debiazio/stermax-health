@@ -160,11 +160,12 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
+      "flex-layout.row#menu-superior-linha-esquerda",
       "logo#mobile",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "flex-layout.col#search-bar-header"
     ],
     "props": {
       "blockClass": "main-header-mobile",

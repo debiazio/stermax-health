@@ -6,4 +6,6 @@
   justify-content: center;
 }
 
-
+.wrapper {
+  height: 55px;
+}

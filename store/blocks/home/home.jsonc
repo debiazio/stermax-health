@@ -342,20 +342,27 @@
     },
     "children": [
       // "video#animacao-direita"
+      "image#animacao-direita"
     ]
   },
-  "video#animacao-direita":{
+  "image#animacao-direita":{
     "props": {
       "blockClass": "video-banner",
-      "src": "https://stermax.com.br/images_idealine/pronta-entrega.mp4",
-      "loop": true,
-      "autoPlay": true,
-      "controlsType": "none",
-      "height": "520px",
-      "width": "500px",
-      "muted": true
+      "src": "https://stermax.com.br/images_idealine/pronta-entraga-stermax.gif"
     }
   },
+  // "video#animacao-direita":{
+  //   "props": {
+  //     "blockClass": "video-banner",
+  //     "src": "https://stermax.com.br/images_idealine/pronta-entraga-stermax.gif",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "controlsType": "none",
+  //     "height": "520px",
+  //     "width": "500px",
+  //     "muted": true
+  //   }
+  // },
   "flex-layout.row#shelf": {
     "children": [
       "list-context.product-list#demo1"

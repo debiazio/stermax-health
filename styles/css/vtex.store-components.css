@@ -186,6 +186,14 @@
   flex-direction: row;
 }
 
+.imageElement--video-banner{
+  /* width: 100%; */
+  height: auto; /* Mantém a proporção */
+  /* object-fit: cover; Ajusta a imagem para preencher o espaço */
+  position: relative;
+  right: -30%; /* Move metade da GIF para fora do viewport */
+}
+
 @media screen and (max-width: 1000px) {
   .sizeDesktop {
     margin: 0;
@@ -202,6 +210,7 @@
   .sizeMobile{
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
   }
 
   .imageElement--assistencias-img{
