@@ -174,9 +174,9 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
+  // "drawer": {
+  //   "children": ["menu#drawer"]
+  // },
 
   "menu#drawer": {
     "children": [
