@@ -20,8 +20,8 @@
   margin-top: -133px;
 }
 
-:global(.vtex-button__label){
+/* :global(.vtex-button__label){
   margin: 0;
-  padding: 6px;
-}
+  padding: 0;
+} */
 }

@@ -51,7 +51,7 @@
   },
   "rich-text#infos-empresa-nome": {
     "props": {
-      "blockClass": "contatos-footer-titulo",
+      "blockClass": ["contatos-footer-titulo", "footer-titulo"],
       "text": "Stermax Health"
     }
   },
@@ -146,7 +146,8 @@
   },
   "flex-layout.row#0800": {
     "props": {
-      "blockClass": "linha-contatos-icone-texto"
+      "blockClass": "linha-contatos-icone-texto",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#icone0800",
@@ -189,7 +190,8 @@
 
   "flex-layout.row#tel-fixo": {
     "props": {
-      "blockClass": "linha-contatos-icone-texto"
+      "blockClass": "linha-contatos-icone-texto",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#icone-tel-fixo",
@@ -199,8 +201,7 @@
   "flex-layout.col#icone-tel-fixo": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto",
-      "width": "10%"
+      "colSizing": "auto"
     },
     "children": [
       "image#contato-icone-telefone"
@@ -223,7 +224,8 @@
   },
   "flex-layout.row#whatsapp": {
     "props": {
-      "blockClass": "linha-contatos-icone-texto"
+      "blockClass": "linha-contatos-icone-texto",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#icone-whatsapp",
@@ -233,8 +235,7 @@
   "flex-layout.col#icone-whatsapp": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto",
-      "width": "10%"
+      "colSizing": "auto"
 
     },
     "children": [
@@ -265,7 +266,8 @@
   },
   "flex-layout.row#email": {
     "props": {
-      "blockClass": "linha-contatos-icone-texto"
+      "blockClass": "linha-contatos-icone-texto",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#icone-email",
@@ -275,8 +277,7 @@
   "flex-layout.col#icone-email": {
     "props": {
       "blockClass": "linha-contatos-icone",
-      "colSizing": "auto",
-      "width": "10%"
+      "colSizing": "auto"
     },
     "children": [
       "image#contato-icone-email"
@@ -521,7 +522,8 @@
   "flex-layout.col#coluna1-mobile": {
     "props": {
       "width": "50%",
-      "blockClass": "container-footer-mobile"
+      "blockClass": "container-footer-mobile",
+      "preventVerticalStretch": true
     },
     "children": [
       "rich-text#infos-empresa-nome",
@@ -565,14 +567,45 @@
   "flex-layout.col#coluna2-mobile": {
     "props": {
       "width": "50%",
-      "blockClass": "container-footer-mobile"
+      "blockClass": ["container-footer-mobile", "container-footer-mobile-direita"],
+      "preventVerticalStretch": true
     },
     "children": [
       "rich-text#falecom",
       "flex-layout.col#meios-contato",
       "flex-layout.row#horarios",
-      "flex-layout.row#selos"
+      "flex-layout.row#mobile-selos"
     ]
-
+  },
+  "flex-layout.row#mobile-selos": {
+    "props": {
+      "blockClass": "col-mobile-selos"
+    },
+    "children": [
+      "flex-layout.row#mobile-selos-linha1",
+      "flex-layout.row#mobile-selos-linha2"
+    ]
+  },
+  "flex-layout.row#mobile-selos-linha1":{
+    "props": {
+      "blockClass": "linha-mobile-selos",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#selo1-ISO",
+      "image#selo2-garantia-fabrica",
+      "image#selo3- anvisa"
+    ]
+  },
+  "flex-layout.row#mobile-selos-linha2":{
+    "props": {
+      "blockClass": "linha-mobile-selos",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#selo4-fab-self",
+      "image#selo5-lider",
+      "image#selo6- since"
+    ]
   }
 }

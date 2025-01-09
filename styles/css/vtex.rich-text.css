@@ -266,8 +266,14 @@
   }
 
   .paragraph--contatos-footer-titulo{
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+
+  .paragraph--footer-titulo{
+    font-weight: 400;
+    font-size: 16px;
   }
 
   .paragraph--linha-texto,

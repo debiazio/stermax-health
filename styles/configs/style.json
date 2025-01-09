@@ -70,7 +70,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
@@ -86,7 +86,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "active-background": {
@@ -102,7 +102,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "text": {
@@ -120,7 +120,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "visited-text": {
@@ -152,7 +152,7 @@
           "action-primary": "#1f80ca",
           "action-secondary": "#eef3f7",
           "emphasis": "#1f80ca",
-          "disabled": "#e3e4e6",
+          "disabled": "transparent",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
@@ -162,7 +162,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
@@ -178,7 +178,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "active-border": {
@@ -194,7 +194,7 @@
           "muted-1": "#727273",
           "muted-2": "#979899",
           "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
+          "muted-4": "transparent",
           "muted-5": "#f2f4f5"
         },
         "on": {

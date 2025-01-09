@@ -512,4 +512,41 @@
     display: flex;
     flex-direction: row;
   }
+
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) .flexCol--linha-contatos-icone{
+    width: unset;
+  }
+  .flexCol--linha-contatos-icone{
+    width: auto!important;
+  }
+
+  .flexRow--footer-mobile{
+    background-color: var(--bege-02);
+    padding-top: 40px;
+  }
+
+  .container-footer-mobile-direita{
+    padding: 0 20px 0 10px;
+  }
+
+  .flexCol--container-footer-mobile{
+    padding: 0 0 0 20px;
+  }
+
+  .flexColChild--linha-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px
+  }
+
+  .flexRowContent--linha-mobile-selos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flexRow--col-mobile-selo{
+    margin-top: 25px;
+  }
 }
