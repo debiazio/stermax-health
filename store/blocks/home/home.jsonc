@@ -20,8 +20,7 @@
     "props": {
       "height": 570,
       "preload": true,
-      "images": [
-        {
+      "images": [{
           "image": "assets/banner-home-desktop-numero1.webp",
           "mobileImage": "assets/banner-home-mobile-numero1.webp"
         },
@@ -58,7 +57,9 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel",
-      "autoplay": {"timeout": 5000}
+      "autoplay": {
+        "timeout": 5000
+      }
     }
   },
   "flex-layout.row#banner-stermaxHealth-personas": {
@@ -79,88 +80,88 @@
       "fullWidth": true
     }
   },
-// DEALS MOBILE
-"responsive-layout.mobile#deals-mobile":{
-  "children": [
-    "flex-layout.row#deals-mobile-linha1",
-    "flex-layout.row#deals-mobile-linha2"
-  ]
-},
-"flex-layout.row#deals-mobile-linha1":{
-  "props": {
-    "blockClass": "deals-mobile-row"
+  // DEALS MOBILE
+  "responsive-layout.mobile#deals-mobile": {
+    "children": [
+      "flex-layout.row#deals-mobile-linha1",
+      "flex-layout.row#deals-mobile-linha2"
+    ]
   },
-  "children": [
-    "flex-layout.col#linha1-coluna1",
-    "flex-layout.col#linha1-coluna2",
-    "flex-layout.col#linha1-coluna3"
-  ]
-},
-"flex-layout.col#linha1-coluna1":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  "flex-layout.row#deals-mobile-linha1": {
+    "props": {
+      "blockClass": "deals-mobile-row"
+    },
+    "children": [
+      "flex-layout.col#linha1-coluna1",
+      "flex-layout.col#linha1-coluna2",
+      "flex-layout.col#linha1-coluna3"
+    ]
   },
-  "children": [
-    "image#deal1",
-    "rich-text#deal1"
-  ]
-},
-"flex-layout.col#linha1-coluna2":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  "flex-layout.col#linha1-coluna1": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"
+    ]
   },
-  "children": [
-    "image#deal2",
-    "rich-text#deal2"
-  ]
-},
-"flex-layout.col#linha1-coluna3":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  "flex-layout.col#linha1-coluna2": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ]
   },
-  "children": [
-    "image#deal3",
-    "rich-text#deal3"
-  ]
-},
-// segunda linha do deals mobile
-"flex-layout.row#deals-mobile-linha2":{
-  "props": {
-    "blockClass": "deals-mobile-row"
+  "flex-layout.col#linha1-coluna3": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ]
   },
-  "children": [
-    "flex-layout.col#linha2-coluna1",
-    "flex-layout.col#linha2-coluna2",
-    "flex-layout.col#linha2-coluna3"
-  ]
-},
-"flex-layout.col#linha2-coluna1":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  // segunda linha do deals mobile
+  "flex-layout.row#deals-mobile-linha2": {
+    "props": {
+      "blockClass": "deals-mobile-row"
+    },
+    "children": [
+      "flex-layout.col#linha2-coluna1",
+      "flex-layout.col#linha2-coluna2",
+      "flex-layout.col#linha2-coluna3"
+    ]
   },
-  "children": [
-    "image#deal4",
-    "rich-text#deal4"
-  ]
-},
-"flex-layout.col#linha2-coluna2":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  "flex-layout.col#linha2-coluna1": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ]
   },
-  "children": [
-    "image#deal5",
-    "rich-text#deal5"
-  ]
-},
-"flex-layout.col#linha2-coluna3":{
-  "props": {
-    "blockClass": "deals-mobile-coluna"
+  "flex-layout.col#linha2-coluna2": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal5",
+      "rich-text#deal5"
+    ]
   },
-  "children": [
-    "image#deal6",
-    "rich-text#deal6"
-  ]
-},
+  "flex-layout.col#linha2-coluna3": {
+    "props": {
+      "blockClass": "deals-mobile-coluna"
+    },
+    "children": [
+      "image#deal6",
+      "rich-text#deal6"
+    ]
+  },
 
   //banner "não comprometa sua saúde..."
   "flex-layout.row#banner-segundo": {
@@ -169,13 +170,31 @@
       "fullWidth": false
     },
     "children": [
-      "image#banner-segundo",
+      "responsive-layout.desktop#banner-segundo",
+      "responsive-layout.mobile#banner-segundo",
       "rich-text#titulo-banner-segundo"
+    ]
+  },
+  "responsive-layout.desktop#banner-segundo":{
+    "children": [
+      "image#banner-segundo"
     ]
   },
   "image#banner-segundo": {
     "props": {
       "src": "assets/gatilho.webp",
+      "alt": "Banner não comprometa sua saúde",
+      "blockClass": "imagem-banner-segundo"
+    }
+  },
+  "responsive-layout.mobile#banner-segundo":{
+    "children": [
+      "image#banner-segundo-mobile"
+    ]
+  },
+  "image#banner-segundo-mobile": {
+    "props": {
+      "src": "assets/GATILHO MEDO - Mobile 1.webp",
       "alt": "Banner não comprometa sua saúde",
       "blockClass": "imagem-banner-segundo"
     }
@@ -186,23 +205,42 @@
       "blockClass": "titulo-banner-secundario"
     }
   },
-  "flex-layout.row#banner-terceiro":{
+  "flex-layout.row#banner-terceiro": {
     "props": {
       "blockClass": "banner-terceiro",
       "fullWidth": false
     },
     "children": [
+      "responsive-layout.desktop#banner-terceiro",
+      "responsive-layout.mobile#banner-terceiro"
+
+    ]
+  },
+  "responsive-layout.desktop#banner-terceiro": {
+    "children": [
       "image#banner-terceiro"
     ]
   },
-  "image#banner-terceiro":{
+  "image#banner-terceiro": {
     "props": {
       "blockClass": "imagem-banner-terceiro",
       "src": "assets/modelos.webp",
       "alt": "modelos de produtos Stermax health"
     }
   },
-  "flex-layout.row#secao-divisoria-link":{
+  "responsive-layout.mobile#banner-terceiro":{
+    "children": [
+      "image#banner-terceiro-mobile"
+    ]
+  },
+  "image#banner-terceiro-mobile": {
+    "props": {
+      "blockClass": "imagem-banner-terceiro",
+      "src": "assets/produtos-mobile.webp",
+      "alt": "modelos de produtos Stermax health"
+    }
+  },
+  "flex-layout.row#secao-divisoria-link": {
     "props": {
       "blockClass": "container-secao-divisoria-link",
       "horizontalAlign": "center",
@@ -213,14 +251,14 @@
       "link#ver-mais-autoclaves"
     ]
   },
-  "link#ver-mais-autoclaves":{
+  "link#ver-mais-autoclaves": {
     "props": {
       "blockClass": "link-ver-mais-autoclaves",
       "href": "#",
       "label": "VER MAIS AUTOCLAVES"
     }
   },
-  "flex-layout.row#banner-quarto":{
+  "flex-layout.row#banner-quarto": {
     "props": {
       "blockClass": "secao-banner-quarto",
       "fullWidth": true
@@ -230,7 +268,7 @@
       "flex-layout.row#banner-quarto-dir"
     ]
   },
-  "flex-layout.row#banner-quarto-esq":{
+  "flex-layout.row#banner-quarto-esq": {
     "props": {
       "blockClass": "coluna-banner-esquerdo--imagem",
       "fullWidth": true
@@ -240,7 +278,7 @@
       "flex-layout.col#coluna-2-banner-coluna-esq"
     ]
   },
-  "flex-layout.col#coluna-1-banner-coluna-esq":{
+  "flex-layout.col#coluna-1-banner-coluna-esq": {
     "props": {
       "blockClass": "coluna-imagem",
       "width": "30%"
@@ -249,7 +287,7 @@
       "image#brasil"
     ]
   },
-  "image#brasil":{
+  "image#brasil": {
     "props": {
       "blockClass": "assistencias-img",
       "src": "assets/brasil-autoclave.webp",
@@ -258,7 +296,7 @@
       "maxWidth": "406px"
     }
   },
-  "flex-layout.col#coluna-2-banner-coluna-esq":{
+  "flex-layout.col#coluna-2-banner-coluna-esq": {
     "props": {
       "blockClass": "banner-coluna2-esq",
       "width": "70%"
@@ -269,19 +307,19 @@
       "flex-layout.row#link-especialista"
     ]
   },
-  "rich-text#titulo":{
+  "rich-text#titulo": {
     "props": {
       "text": "Assistência e suporte \n sempre ao seu alcance",
       "blockClass": "titulo-banner-esquerdo"
     }
   },
-  "rich-text#subtitulo":{
+  "rich-text#subtitulo": {
     "props": {
       "text": "Com a maior rede de assistência\n técnica do Brasil,garantimos que \n você estará sempre protegido!",
       "blockClass": "subtitulo-banner-esquerdo"
     }
   },
-  "flex-layout.row#link-especialista":{
+  "flex-layout.row#link-especialista": {
     "props": {
       "blockClass": "container-link-epecialista"
     },
@@ -289,14 +327,14 @@
       "link#fale-com-especialista"
     ]
   },
-  "link#fale-com-especialista":{
+  "link#fale-com-especialista": {
     "props": {
       "href": "#",
       "label": "FALE COM UM ESPECIALISTA",
       "blockClass": "link-banner-quarto"
     }
   },
-  "flex-layout.row#banner-quarto-dir":{
+  "flex-layout.row#banner-quarto-dir": {
     "props": {
       "blockClass": "coluna-banner-direito--imagem"
     },
@@ -305,7 +343,7 @@
       "flex-layout.col#coluna-2-banner-coluna-dir"
     ]
   },
-  "flex-layout.col#coluna-1-banner-coluna-dir":{
+  "flex-layout.col#coluna-1-banner-coluna-dir": {
     "props": {
       "blockClass": "coluna-textos",
       "width": "70%"
@@ -316,26 +354,26 @@
       "link#compre-agora-em-10x"
     ]
   },
-  "rich-text#titulo-dir":{
+  "rich-text#titulo-dir": {
     "props": {
       "text": "Estoques limitados \n em pronta entrega",
       "blockClass": "titulo-banner-direito"
     }
   },
-  "rich-text#subtitulo-dir":{
+  "rich-text#subtitulo-dir": {
     "props": {
       "text": "**Garanta já sua autoclave Stermax!**\nNão perca a chance de modernizar\n sua clínica com a melhor tecnologia\n do mercado. Estoques prontos para\n envio imediato, aproveite agora!",
       "blockClass": "subtitulo-banner-direito"
     }
   },
-  "link#compre-agora-em-10x":{
+  "link#compre-agora-em-10x": {
     "props": {
       "href": "#",
       "label": "COMPRE AGORA EM ATÉ 10x SEM JUROS",
       "blockClass": "link-banner-quarto"
     }
   },
-  "flex-layout.col#coluna-2-banner-coluna-dir":{
+  "flex-layout.col#coluna-2-banner-coluna-dir": {
     "props": {
       "blockClass": "animacao-banner-direita",
       "width": "30%"
@@ -351,7 +389,7 @@
   //     "src": "https://stermax.com.br/images_idealine/pronta-entraga-stermax.gif"
   //   }
   // },
-  "video#animacao-direita":{
+  "video#animacao-direita": {
     "props": {
       "blockClass": "video-banner",
       "src": "https://stermax.com.br/images_idealine/pronta_entrega-cortado.mp4",

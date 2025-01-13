@@ -237,7 +237,7 @@
         "phone": "16:9"
       },
       "displayThumbnailsArrows": true,
-      "showNavigationArrows": true
+      "showNavigationArrows":false
     }
   },
   "flex-layout.col#right-col": {

@@ -12,7 +12,7 @@
 }
 
 .trigger--trigger-disclosure {
-  width: fit-content;
+  width: fit-content!important;
   position: absolute;
   top: 0;
   right: 0;

@@ -458,6 +458,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .flexRow--container-fotos-info-produto{
+    margin: 0 0px;
+  }
+
+
   .flexCol--spacer{
     width: 40px;
   }
