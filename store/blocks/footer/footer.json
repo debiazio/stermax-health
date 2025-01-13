@@ -541,18 +541,13 @@
     },
     "children": [
       "link#produtos",
-      "rich-text#bullet",
+
       "link#manuais",
-      "rich-text#bullet",
+
       "link#suporte-tecnico"
     ]
   },
-  "rich-text#bullet": {
-    "props": {
-      "blockClass": "footer-links",
-      "text": "·"
-    }
-  },
+
 
   "flex-layout.row#links-mobile-linha2": {
     "props": {
@@ -560,7 +555,7 @@
     },
     "children": [
       "link#politica-garantia",
-      "rich-text#bullet",
+
       "link#trocas-devolucoes"
     ]
   },
