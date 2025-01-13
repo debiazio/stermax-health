@@ -359,7 +359,7 @@
       "autoPlay": true,
       "controlsType": "none",
       "height": "auto",
-      "width": "150%",
+      "width": "100%",
       "muted": true
     }
   },

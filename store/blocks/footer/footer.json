@@ -599,7 +599,7 @@
   },
   "flex-layout.row#mobile-selos-linha2":{
     "props": {
-      "blockClass": "linha-mobile-selos",
+      "blockClass": ["linha-mobile-selos", "selos-linha-2"],
       "preventHorizontalStretch": true
     },
     "children": [

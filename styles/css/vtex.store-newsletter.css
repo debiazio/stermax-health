@@ -42,4 +42,10 @@
     width: 150px;
   }
 
+  .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators),
+  .formSubmitContainer--submit :global(.vtex-button) {
+    height: 48px;
+
+  }
+
 }

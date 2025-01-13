@@ -440,6 +440,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-wrap-mode: nowrap;
 }
 
 .flexRowContent--footer-mobile {
@@ -448,15 +449,23 @@
 }
 
 
-.flexColChild--animacao-banner-direita{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+.flexColChild--animacao-banner-direita {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {
+  .flexCol--spacer{
+    width: 40px;
+  }
+
+  .flexRow--linha-newsletter {
+    margin: 20px 0;
+  }
+
   .flexRow--deals {
     display: none;
   }
@@ -489,7 +498,7 @@
     height: unset;
   }
 
-  .flexRowContent--coluna-banner-direito--imagem{
+  .flexRowContent--coluna-banner-direito--imagem {
     display: flex;
     flex-direction: row;
   }
@@ -513,40 +522,50 @@
     flex-direction: row;
   }
 
-  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) .flexCol--linha-contatos-icone{
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) .flexCol--linha-contatos-icone {
     width: unset;
   }
-  .flexCol--linha-contatos-icone{
-    width: auto!important;
+
+  .flexCol--linha-contatos-icone {
+    width: auto !important;
   }
 
-  .flexRow--footer-mobile{
+  .flexRow--footer-mobile {
     background-color: var(--bege-02);
     padding-top: 40px;
   }
 
-  .container-footer-mobile-direita{
+  .container-footer-mobile-direita {
     padding: 0 20px 0 10px;
   }
 
-  .flexCol--container-footer-mobile{
+  .flexCol--container-footer-mobile {
     padding: 0 0 0 20px;
   }
 
-  .flexColChild--linha-texto{
+  .flexColChild--linha-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 10px
   }
 
-  .flexRowContent--linha-mobile-selos{
+  .flexRowContent--linha-mobile-selos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   }
 
-  .flexRow--col-mobile-selo{
+  .flexRow--col-mobile-selos {
     margin-top: 25px;
   }
+
+  .flexRow--selos-linha-2 {
+    margin-top: -15px;
+  }
+
+  .flexRow--menu-superior-linha-esqueda {
+    margin-left: 5px;
+  }
+
 }

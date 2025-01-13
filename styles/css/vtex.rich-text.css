@@ -286,4 +286,8 @@
     height: fit-content!important;
   }
 
+  .wrapper--footer-links{
+    padding: 0 5px;
+  }
+
 }

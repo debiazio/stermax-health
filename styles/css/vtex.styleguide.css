@@ -7,3 +7,15 @@
   background-color: #EDE6DC;
   ;
 }
+
+@media screen and (max-width: 1000px) {
+  .hideDecorators {
+    background-color: white;
+    ;
+  }
+
+  .vtex-input__suffix {
+    background-color: white;
+    ;
+  }
+}

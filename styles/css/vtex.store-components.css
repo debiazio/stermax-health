@@ -194,7 +194,17 @@
   right: -30%; /* Move metade da GIF para fora do viewport */
 }
 
+.imageElement--icone-pesquisa-mobile{
+  width: 28px;
+  margin-top: 11px;
+  margin-right: 6px;
+}
+
 @media screen and (max-width: 1000px) {
+  .autoCompleteOuterContainer :global(.vtex-input__suffix) {
+    background-color: white;
+  }
+
   .sizeDesktop {
     margin: 0;
     padding: 0;
@@ -219,5 +229,10 @@
 
   .imageElement--imgs-selos{
     width: 50px;
+    margin-left: -15px;
+  }
+
+  .searchBarContainer{
+    padding: 0;
   }
 }
