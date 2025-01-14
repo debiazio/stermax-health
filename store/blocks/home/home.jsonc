@@ -208,7 +208,8 @@
   "flex-layout.row#banner-terceiro": {
     "props": {
       "blockClass": "banner-terceiro",
-      "fullWidth": false
+      "fullWidth": false,
+      "preventHorizontalStretch": true
     },
     "children": [
       "responsive-layout.desktop#banner-terceiro",

@@ -1,3 +1,12 @@
+.flexRowContent--banner-terceiro{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--banner-terceiro .stretchChildrenWidth{
+  width: 100%;
+}
+
 .flexColChild--coluna-relacionados {
   display: flex;
   flex-direction: column;
