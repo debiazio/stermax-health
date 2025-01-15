@@ -233,6 +233,17 @@
 
 
 @media only screen and (max-width: 1000px) {
+  .paragraph--rich-text-produtos-relacionados{
+    font-size: 1.8rem;
+  }
+  .paragraph--titulo-descricao{
+    margin: 0 20px;
+    padding: 10px;
+  }
+  .wrapper--titulo-descricao{
+    font-size: 1rem;
+  }
+
   .container--deals {
     font-size:6px;
   }

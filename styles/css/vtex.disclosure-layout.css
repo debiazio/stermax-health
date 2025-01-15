@@ -32,6 +32,10 @@
 
 
 @media screen and (max-width: 1000px) {
+  .trigger--disclosure-trigger-linha--hidden,
+  .trigger--disclosure-trigger-linha--visible{
+    width: 100%;
+  }
   .content--visible {
     margin: 0px;
   }

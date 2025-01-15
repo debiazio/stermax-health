@@ -201,6 +201,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .productDescriptionContainer--descricao-produto{
+    padding: 15px;
+  }
+
+  .productNameContainer{
+    font-size: 15px;
+  }
+
   .autoCompleteOuterContainer :global(.vtex-input__suffix) {
     background-color: white;
   }

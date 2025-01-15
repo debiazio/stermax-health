@@ -467,6 +467,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .flexColChild--linha-disclosure{
+    padding: 10px 0;
+  }
+  
+  .flexRow--linha-descricao{
+    margin: 0 20px;
+  }
+
   .flexRow--container-fotos-info-produto{
     margin: 0 0px;
   }
