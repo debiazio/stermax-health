@@ -25,8 +25,8 @@
           "mobileImage": "assets/banner-home-mobile-numero1.webp"
         },
         {
-          "image": "assets/banner-home-desktop-flex-vertical.webp",
-          "mobileImage": "assets/banner-home-mobile-flex-vertical.webp"
+          "image": "assets/Artboard 32.webp",
+          "mobileImage": "assets/mobile-Artboard 32_2.webp"
         },
         {
           "image": "assets/banner-home-desktop-esterilizacao.webp",
@@ -37,12 +37,12 @@
           "mobileImage": "assets/banner-home-mobile-confianca.webp"
         },
         {
-          "image": "assets/banner-home-desktop-focada-na-saude.webp",
-          "mobileImage": "assets/banner-home-mobile-focada-na-saude.webp"
+          "image": "assets/Artboard 34.webp",
+          "mobileImage": "assets/mobile-Artboard 34_1.webp"
         },
         {
-          "image": "assets/banner-home-desktop-flex.webp",
-          "mobileImage": "assets/banner-home-mobile-flex.webp"
+          "image": "assets/Artboard 32_1.webp",
+          "mobileImage": "assets/mobile-Artboard 32_3.webp"
         }
       ]
     }
@@ -225,7 +225,7 @@
   "image#banner-terceiro": {
     "props": {
       "blockClass": "imagem-banner-terceiro",
-      "src": "assets/modelos.webp",
+      "src": "assets/Artboard 22.webp",
       "alt": "modelos de produtos Stermax health"
     }
   },
@@ -237,7 +237,7 @@
   "image#banner-terceiro-mobile": {
     "props": {
       "blockClass": "imagem-banner-terceiro",
-      "src": "assets/produtos-mobile.webp",
+      "src": "assets/mobile-Artboard 22_1.webp",
       "alt": "modelos de produtos Stermax health"
     }
   },
