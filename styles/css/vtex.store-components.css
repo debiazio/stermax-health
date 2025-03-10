@@ -1,3 +1,12 @@
+.imageElement--icone-whatsapp-footer{
+  max-width: 124px;
+}
+
+.imageElement--footer-contato-icone{
+  width: 32px;
+  margin-right: 5px;
+}
+
 .productBrand--quickview {
   text-transform: uppercase;
   font-family: var(--fonte-secundaria);

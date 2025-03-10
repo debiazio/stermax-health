@@ -167,7 +167,7 @@
   "image#contato-icone-telefone": {
     "props": {
       "blockClass": "footer-contato-icone",
-      "src": "assets/icone-telefone.svg",
+      "src": "assets/phone-bege-escuro.svg",
       "alt": "Ícone de telefone"
     }
   },
@@ -245,7 +245,7 @@
   "image#whatsapp-icon": {
     "props": {
       "blockClass": "footer-contato-icone",
-      "src": "assets/icone-whatsapp.svg",
+      "src": "assets/whatsapp.svg",
       "alt": "Ícone de whatsapp"
     }
   },
@@ -491,7 +491,7 @@
   "image#whatsapp-footer": {
     "props": {
       "blockClass": "icone-whatsapp-footer",
-      "src": "assets/icone-whatsapp-grande.svg",
+      "src": "assets/whatsapp.svg",
       "alt": "Ícone Whatsapp",
       "title": "Fale com um especialista",
       "link": {
