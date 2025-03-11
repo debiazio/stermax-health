@@ -1,85 +1,91 @@
 {
-  "store.custom#contact-us": {
+  "store.custom#contato": {
     "children": [
-      "flex-layout.row#contact-us"
+      "flex-layout.row#container-contato"
     ]
   },
 
-  "flex-layout.row#contact-us": {
+  "flex-layout.row#container-contato": {
     "props": {
-      "blockClass": "contact"
+      "blockClass": "contato"
     },
     "children": [
-      "flex-layout.col#contact-us"
+      "flex-layout.col#coluna-contato"
     ]
   },
 
-  "flex-layout.col#contact-us": {
-    "children": [
-      "rich-text#contact-us",
-      "form#contact-us"
-    ]
-  },
-  "rich-text#contact-us": {
+  "flex-layout.col#coluna-contato": {
     "props": {
-      "text": "## Contact Us"
-    }
-  },
-
-  "form#contact-us": {
-    "props": {
-      "entity": "contact",
-      "schema": "site-contact"
+      "blockClass": "coluna-contato"
     },
-    "blocks": [
-      "form-success#contact-us"
-    ],
     "children": [
-      "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"
+      "flex-layout.row#linha-contato",
+      "flex-layout.row#linha-horarios",
+      "flex-layout.row#linha-contatos"
+    ]
+  },
+  "flex-layout.row#linha-contato":{
+    "props": {
+      "blockClass": "linha-contato"
+    },
+    "children": [
+      "rich-text#titulo-contato",
+      "rich-text#texto-contato"
     ]
   },
 
-  "form-success#contact-us": {
+  "rich-text#titulo-contato": {
+    "props": {
+      "text": "## Fale com a Stermax",
+      "blockClass": "titulo-contato"
+    }
+  },
+  "rich-text#texto-contato":{
+    "props": {
+      "text": "A Stermax é uma empresa socialmente responsável, que valoriza um relacionamento justo e correto com seus clientes, com seus recursos humanos internos, com o meio ambiente, com o cumprimento das leis e com a comunidade em geral.",
+      "blockClass": "texto-horarios"
+    }
+  },
+  "flex-layout.row#linha-horarios":{
+    "props": {
+      "blockClass": "linha-horarios"
+    },
     "children": [
-      "rich-text#success-submit"
+      "rich-text#titulo-horarios",
+      "rich-text#texto-horarios"
     ]
   },
-  "rich-text#success-submit": {
+  "rich-text#titulo-horarios": {
     "props": {
-      "text": "Thanks for reaching out! We will come back shortly.",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "text": "## Atendimento",
+      "blockClass": "titulo-contato"
     }
   },
-
-  "form-input.text#title": {
+  "rich-text#texto-horarios":{
     "props": {
-      "pointer": "#/properties/title"
+      "text": "Segunda a Quinta - 08:00 às 18:00\nSexta - 08:00 às 17:00",
+      "blockClass": "texto-horarios"
     }
   },
-  "form-input.text#name": {
+  "flex-layout.row#linha-contatos":{
     "props": {
-      "pointer": "#/properties/name"
+      "blockClass": "linha-horarios"
+    },
+    "children": [
+      "rich-text#titulo-contatos",
+      "rich-text#texto-contatos"
+    ]
+  },
+  "rich-text#titulo-contatos": {
+    "props": {
+      "text": "",
+      "blockClass": "titulo-horarios"
     }
   },
-  "form-input.text#email": {
+  "rich-text#texto-contatos":{
     "props": {
-      "pointer": "#/properties/email"
-    }
-  },
-  "form-input.textarea#message": {
-    "props": {
-      "pointer": "#/properties/message"
-    }
-  },
-
-  "form-submit#contact": {
-    "props": {
-      "label": "Submit"
+      "text": "0800 721 8533\n41 9 98551 6332\n41 3668 2144\nstermax@stermax.com.br",
+      "blockClass": "texto-horarios"
     }
   }
 }

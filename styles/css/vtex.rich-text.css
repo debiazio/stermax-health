@@ -1,39 +1,50 @@
-.paragraph--rich-text-produtos-relacionados{
+.link--texto-horarios{
+  text-decoration: none;
+  color: white;
+}
+
+.paragraph--texto-horarios,
+.paragraph--texto-contato,
+.heading--titulo-contato {
+  color: white;
+}
+
+.paragraph--rich-text-produtos-relacionados {
   color: #5C5A58;
   font-family: var(--fonte-secundaria);
   font-size: 60px;
 }
 
-.wrapper--titulo-descricao{
+.wrapper--titulo-descricao {
   font-family: var(--fonte-secundaria);
   font-size: 48px;
   color: #5C5A58;
 }
 
-.paragraph--titulo-descricao{
+.paragraph--titulo-descricao {
   margin: 0 50px;
   padding: 0;
 }
 
-.container--texto-numeros{
+.container--texto-numeros {
   font-family: var(--fonte-secundaria);
 }
 
-.link--texto-numeros{
+.link--texto-numeros {
   text-decoration: none;
   color: var(--cinza-medio);
 }
 
-.paragraph--texto-numeros{
+.paragraph--texto-numeros {
   margin: 0;
   color: var(--cinza-medio);
 }
 
-.container--linha-texto{
+.container--linha-texto {
   margin-bottom: 30px;
 }
 
-.paragraph--linha-texto{
+.paragraph--linha-texto {
   margin: 0;
   padding: 0;
   font-family: var(--fonte-secundaria);
@@ -41,14 +52,14 @@
   color: var(--cinza-medio);
 }
 
-.paragraph--contatos-footer-titulo{
+.paragraph--contatos-footer-titulo {
   font-family: var(--fonte-secundaria);
   font-size: 24px;
   margin-top: 63px;
   color: var(--cinza-medio);
 }
 
-.wrapper--texto-digitando{
+.wrapper--texto-digitando {
   color: #ffffff;
   font-size: 40px;
   font-family: var(--fonte-secundaria);
@@ -56,7 +67,7 @@
 }
 
 /* Stermax Health: Pure Health, Expert Care. */
-.paragraph--texto-digitando{
+.paragraph--texto-digitando {
   margin: 0;
   padding: 0;
 }
@@ -224,7 +235,7 @@
   }
 }
 
-.container--footer-links{
+.container--footer-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -233,23 +244,25 @@
 
 
 @media only screen and (max-width: 1000px) {
-  .paragraph--rich-text-produtos-relacionados{
+  .paragraph--rich-text-produtos-relacionados {
     font-size: 1.8rem;
   }
-  .paragraph--titulo-descricao{
+
+  .paragraph--titulo-descricao {
     margin: 0 20px;
     padding: 10px;
   }
-  .wrapper--titulo-descricao{
+
+  .wrapper--titulo-descricao {
     font-size: 1rem;
   }
 
   .container--deals {
-    font-size:6px;
+    font-size: 6px;
   }
 
-  .paragraph--deals{
-     margin: 0 0 0 10px;
+  .paragraph--deals {
+    margin: 0 0 0 10px;
   }
 
   .paragraph--titulo-banner-secundario {
@@ -263,41 +276,41 @@
   }
 
   .paragraph--titulo-banner-direito,
-  .paragraph--titulo-banner-esquerdo{
+  .paragraph--titulo-banner-esquerdo {
     font-size: 18px;
   }
 
   .paragraph--subtitulo-banner-direito,
-  .paragraph--subtitulo-banner-esquerdo{
+  .paragraph--subtitulo-banner-esquerdo {
     font-size: 10px;
   }
 
-  .wrapper--texto-digitando{
+  .wrapper--texto-digitando {
     font-size: 1rem;
   }
 
-  .paragraph--contatos-footer-titulo{
+  .paragraph--contatos-footer-titulo {
     font-size: 12px;
     margin-top: 25px;
     font-weight: bold;
   }
 
-  .paragraph--footer-titulo{
+  .paragraph--footer-titulo {
     font-weight: 400;
     font-size: 16px;
   }
 
   .paragraph--linha-texto,
-  .container--texto-numeros{
+  .container--texto-numeros {
     font-size: 10px;
   }
 
 
-  .flexColChild--container-footer-mobile{
-    height: fit-content!important;
+  .flexColChild--container-footer-mobile {
+    height: fit-content !important;
   }
 
-  .wrapper--footer-links{
+  .wrapper--footer-links {
     padding: 0 5px;
   }
 
