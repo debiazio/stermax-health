@@ -261,7 +261,7 @@
   "rich-text#whatsapp": {
     "props": {
       "blockClass": "texto-numeros",
-      "text": "41 9 9971 0062"
+      "text": "41 9 9971 0062"  
     }
   },
   "flex-layout.row#email": {
@@ -470,7 +470,7 @@
   "link#suporte-tecnico": {
     "props": {
       "blockClass": "footer-links",
-      "href": "#",
+      "href": "https://stermax.store",
       "label": "Suporte Técnico"
     }
   },
@@ -484,8 +484,8 @@
   "link#trocas-devolucoes": {
     "props": {
       "blockClass": "footer-links",
-      "href": "#",
-      "label": "Troca e Devoluções"
+      "href": "/trocas-devolucoes",
+      "label": "Trocas e Devoluções"
     }
   },
   "image#whatsapp-footer": {
@@ -495,7 +495,7 @@
       "alt": "Ícone Whatsapp",
       "title": "Fale com um especialista",
       "link": {
-        "url": "https://wa.me/55419985516332"
+        "url": "https://wa.me/5541999710062"
       }
     }
   },

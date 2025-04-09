@@ -1,3 +1,8 @@
+.flexRowContent--container-trocas-devolucoes{
+  display: flex;
+  flex-direction: column;
+}
+
 .flexRowContent--linha-contato,
 .flexRowContent--linha-horarios,
 .flexRowContent--linha-icontes-canais{
@@ -6,7 +11,8 @@
   align-items: center;
 }
 
-.flexRow--contato{
+.flexRow--contato,
+.flexRow--container-trocas-devolucoes{
   padding: 20px 150px;
   background-color: #5e9dd0;
 }

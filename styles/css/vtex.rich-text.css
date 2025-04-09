@@ -1,4 +1,4 @@
-.link--texto-horarios{
+.link--texto-horarios {
   text-decoration: none;
   color: white;
 }
@@ -50,6 +50,17 @@
   font-family: var(--fonte-secundaria);
   font-size: 15px;
   color: var(--cinza-medio);
+}
+
+.link--texto-trocas-devolucoes{
+  text-decoration: none;
+  color: white;
+}
+
+
+.container--texto-trocas-devolucoes,
+.container--titulo-trocas-devolucoes {
+  color: white;
 }
 
 .paragraph--contatos-footer-titulo {

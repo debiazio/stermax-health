@@ -7,5 +7,8 @@
   },
   "store.custom#contato": {
     "path": "/contato"
+  },
+  "store.custom#trocas-devolucoes": {
+    "path": "/trocas-devolucoes"
   }
 }
