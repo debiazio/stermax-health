@@ -286,6 +286,13 @@
     "children": ["add-to-cart-button"]
   },
 
+  "shipping-simulator": {
+    "props": {
+      "shouldUpdateOrderForm": true,
+      "pricingMode": "grouped"
+    }
+  },
+
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,
