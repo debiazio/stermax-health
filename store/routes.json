@@ -10,5 +10,12 @@
   },
   "store.custom#trocas-devolucoes": {
     "path": "/trocas-devolucoes"
+  },
+  "store.custom#politica-privacidade":{
+    "path": "/politica-privacidade"
+  },
+  "store.custom#manuais":{
+    "path": "/manuais"
   }
+
 }

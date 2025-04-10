@@ -323,7 +323,7 @@
   },
   "link#fale-com-especialista": {
     "props": {
-      "href": "#",
+      "href": "https://wa.me/5541999710062",
       "label": "FALE COM UM ESPECIALISTA",
       "blockClass": "link-banner-quarto"
     }
@@ -362,7 +362,7 @@
   },
   "link#compre-agora-em-10x": {
     "props": {
-      "href": "#",
+      "href": "/pronta-entrega/stermax%20h&h?map=category-2,ft",
       "label": "COMPRE AGORA EM ATÉ 10x SEM JUROS",
       "blockClass": "link-banner-quarto"
     }

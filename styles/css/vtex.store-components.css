@@ -1,3 +1,13 @@
+.imageElement--imagem-manuais{
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.36);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.imageElement--imagem-manuais:hover{
+  box-shadow: 0px 0px 54px 7px rgba(0,0,0,0.36);
+  transform: scale(1.01);
+}
+
 .imageElement--icone-whatsapp-footer{
   max-width: 124px;
 }

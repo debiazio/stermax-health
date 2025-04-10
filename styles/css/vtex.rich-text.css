@@ -1,3 +1,7 @@
+.paragraph--titulo-manuais{
+  font-weight: bold;
+}
+
 .link--texto-horarios {
   text-decoration: none;
   color: white;

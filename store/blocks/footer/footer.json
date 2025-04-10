@@ -261,7 +261,7 @@
   "rich-text#whatsapp": {
     "props": {
       "blockClass": "texto-numeros",
-      "text": "41 9 9971 0062"  
+      "text": "41 9 9971 0062"
     }
   },
   "flex-layout.row#email": {
@@ -456,14 +456,14 @@
   "link#produtos": {
     "props": {
       "blockClass": "footer-links",
-      "href": "#",
+      "href": "STERMAX H&H",
       "label": "Produtos"
     }
   },
   "link#manuais": {
     "props": {
       "blockClass": "footer-links",
-      "href": "#",
+      "href": "/manuais",
       "label": "Manuais"
     }
   },
@@ -477,8 +477,8 @@
   "link#politica-garantia": {
     "props": {
       "blockClass": "footer-links",
-      "href": "#",
-      "label": "Política de Garantia"
+      "href": "/politica-privacidade",
+      "label": "Política de Privacidade"
     }
   },
   "link#trocas-devolucoes": {
