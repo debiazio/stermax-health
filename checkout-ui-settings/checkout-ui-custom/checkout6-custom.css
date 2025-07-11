@@ -1,12 +1,12 @@
-/* Content copied from "checkout5-custom.css" at 2019-03-01T05:12:59.334Z */
+.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper{
+  width: 100%;
+}
 
-/* /files/checkout5-custom.css */
+.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a{
+  width: 100%!important;
+  margin-top: 90px;
+}
 
-/* Displays the option to enter a foreign document */
-.document-box { display: block; }
-
-/* Displays the option to enter an international phone */
-.phone-box { display: block; }
-
-
-
+.container-cart .coupon.summary-coupon .coupon-fields .coupon-value{
+  width: 100%;
+}
