@@ -14,6 +14,12 @@
 
 
 @media screen and (max-width: 1000px) {
+  .table.cart-items tbody tr .v-custom-product-item-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   #shipping-preview-container h2 {
     text-align: left;
   }
