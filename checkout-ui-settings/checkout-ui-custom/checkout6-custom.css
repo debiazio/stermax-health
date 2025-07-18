@@ -1,12 +1,105 @@
-.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper{
+.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper {
   width: 100%;
 }
 
-.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a{
-  width: 100%!important;
+.container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a {
+  width: 100% !important;
   margin-top: 90px;
 }
 
-.container-cart .coupon.summary-coupon .coupon-fields .coupon-value{
+.container-cart .coupon.summary-coupon .coupon-fields .coupon-value {
   width: 100%;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  #shipping-preview-container h2 {
+    text-align: left;
+  }
+
+  .cart-more-options .srp-container .srp-delivery-header{
+    text-align: left;
+  }
+
+  .cart-more-options .srp-container .srp-main-title{
+    padding: 0!important;
+  }
+
+  .cart-more-options #shipping-preview-container {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .cart-more-options .cart-select-gift-placeholder {
+    display: contents !important;
+  }
+
+  .cart-more-options {
+    flex-wrap: unset;
+  }
+
+  .summary-template-holder span.link-choose-more-products-wrapper {
+    display: none !important;
+  }
+
+  .summary-template-holder .cart-links-bottom {
+    position: relative;
+  }
+
+  .container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a {
+    background-color: #FEBBCD !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0;
+    margin-top: 0 !important;
+  }
+
+  .btn-place-order-wrapper {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container-cart .cart,
+  .cart-more-options,
+  .totalizers.summary-totalizers.cart-totalizers {
+    border-radius: 16px;
+    box-shadow: 6px 6px 4px 0px #8F8F8F;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  .container-cart .link-choose-more-products-wrapper a {
+    display: none;
+  }
+
+  .container-cart .cart tbody .quantity .item-quantity-change,
+  .container-cart .cart tbody .quantity input {
+    background-color: white;
+  }
+
+  .body-cart {
+    background-color: #FCF4EE;
+  }
+
+  .container-cart .cart tbody .quantity input {
+    padding: 0px !important;
+  }
+
+  .container-cart .cart tbody .quantity a {
+    padding: 0px !important;
+  }
+
+  .full-cart .cart table tbody tr td.quantity input {
+    margin: 3px;
+  }
+
+  .summary-template-holder {
+    background-color: transparent;
+    padding: 0;
+  }
+
 }
