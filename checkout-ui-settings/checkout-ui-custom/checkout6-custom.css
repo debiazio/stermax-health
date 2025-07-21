@@ -54,8 +54,14 @@
 
 .cart-more-options .srp-container .onda-v1 .blue {
   color: black;
+
+
 }
 
+.container-cart .cart-totalizers .accordion-inner table .monetary,
+.container-cart .cart-totalizers .accordion-inner table tfoot .monetary {
+  color: black;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -72,7 +78,7 @@
   }
 
   .summary-template-holder tbody {
-    padding: 0;
+    padding: 10px;
   }
 
   .container-cart .coupon.summary-coupon .coupon-fields button.btn {
@@ -153,6 +159,10 @@
 
   .summary-template-holder .cart-links-bottom {
     position: relative;
+  }
+
+  .container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper{
+    width: 110%;
   }
 
   .container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a {
