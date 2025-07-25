@@ -1,3 +1,16 @@
+body {
+  background: #FCF5EF;
+}
+
+.btn, .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a{
+  border-radius: 16px;
+}
+
+.vcustom--vtex-omnishipping-1-x-address input, #app-container input[type=text], #app-container input[type=tel], #app-container input[type=email], #app-container select, .orderform-template .summary-note .note-textarea, .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressFormPart1.vtex-omnishipping-1-x-geolocation input, .orderform-template-holder #client-profile-data form.client-pre-email input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email select:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data select:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=text]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=email]:not(.pac-target-input), .orderform-template-holder #shipping-data select:not(.pac-target-input), .orderform-template-holder #payment-data input[type=text]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=email]:not(.pac-target-input), .orderform-template-holder #payment-data select:not(.pac-target-input), .cart-more-options .srp-container .vtex-shipping-preview-0-x-addressFormPart1.vtex-shipping-preview-0-x-geolocation input, .cart-more-options .srp-container select, .cart-more-options .srp-container input[type=text]:not(.pac-target-input), .summary-template-holder .summary-coupon fieldset.coupon-fieldset input[type=text], .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit], .table.cart-items td.quantity input, .table.cart-items tbody tr td .product-service select, .table.cart-items tr.item-attachments-content input, .table.cart-items tr.item-attachments-content select, #vtexIdContainer input{
+  font-size: 16px;
+  padding-left: 10px!important;
+}
+
 .orderform-template .cart-template.mini-cart .summary-template-holder .summary-coupon p {
   border-top: 2px solid #cbcbcb;
 }
