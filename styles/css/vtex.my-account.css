@@ -10,6 +10,68 @@
   --cinza-medio: #868181;
 }
 
+/* reset  */
+/* RESET */
+*,
+*:hover,
+*:focus {
+  /* transition:.5s ease all; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:focus {
+  outline: 0;
+}
+
+body,
+html {
+  touch-action: pan-y;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:global(.vtex-spinner_circle) {
+  color: #251203;
+}
+
+:global(input):focus-visible {
+  outline: 0;
+}
+
+/* remove background do autocomplete chrome */
+input:-webkit-autofill {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+/* ajusta bug de zoom nos inputs do iphone */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px !important;
+  }
+}
+
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* reset  */
+
+:global(.vtex-address-form-4-x-input){
+  border: 1px solid var(--cinza-medio) !important;
+}
 
 :global(.vtex-store-components-3-x-content) p {
   color: #1f80ca !important;
