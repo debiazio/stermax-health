@@ -18,7 +18,10 @@
       "slider-layout#carrossel-home-desktop"
     ],
     "props": {
-      "height": 570,
+      "fullWidth": false,
+      "height": 486,
+      "width": 1300,
+      "maxWidth": 1300,
       "preload": true,
       "images": [
         {
@@ -373,7 +376,7 @@
       "width": "30%"
     },
     "children": [
-      "video#animacao-direita"
+      // "video#animacao-direita"
       // "image#animacao-direita"
     ]
   },

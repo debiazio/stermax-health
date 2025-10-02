@@ -1,6 +1,6 @@
 .container--sticky-header {
   background-color: white;
-  height: 150px;
+  height: 82px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,5 +9,10 @@
 }
 
 .wrapper {
-  height: 55px;
+  height: 82px;
+}
+
+
+.wrapper--sticky-header{
+  max-height: 82px;
 }

@@ -1,25 +1,38 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      // "flex-layout.row#1-desktop",
+      "flex-layout.row#1-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#cabecalho-desktop"
     ]
   },
-
-  // "flex-layout.row#1-desktop": {
-  //   "children": ["telemarketing"],
-  //   "props": {
-  //     "fullWidth": true
-  //   }
-  // },
-
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "rich-text#teste"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "topo-1-header"
+    }
+  },
+  "rich-text#teste":{
+    "props": {
+      "blockClass": "rich-text-topo",
+      "text": "Segurança, Tecnologia e Confiança: Descubra Por Que a Stermax Health é a Escolha Certa para Sua Clínica"
+    }
+  },
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -42,7 +55,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#cabecalho-container-desktop"]
+    "children": [
+      "flex-layout.row#cabecalho-container-desktop"
+    ]
   },
   "flex-layout.row#cabecalho-container-desktop": {
     "props": {
@@ -57,7 +72,8 @@
   //linha menu superior esquerda
   "flex-layout.row#menu-superior-linha-esquerda": {
     "props": {
-      "blockClass": "menu-superior-linha-esqueda"
+      "blockClass": "menu-superior-linha-esqueda",
+      "whidth": "45%"
     },
     "children": [
       "flex-layout.col#category-menu"
@@ -67,12 +83,15 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
   },
   //linha menu superior central
   "flex-layout.row#menu-superior-linha-central": {
     "props": {
-      "blockClass": "menu-superior-linha-central"
+      "blockClass": "menu-superior-linha-central",
+      "whidth": "10%"
     },
     "children": [
       "flex-layout.col#logo-desktop"
@@ -83,7 +102,9 @@
       "verticalAlign": "middle",
       "blockClass": "coluna-logo"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "logo#desktop": {
     "props": {
@@ -91,15 +112,15 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/STERMAX HEALTH LOGO 1.svg",
-      "width": "243",
-      "height": "89"
+      "width": "157",
+      "height": "48"
     }
   },
-
   //linha menu superior Direita
   "flex-layout.row#menu-superior-linha-direita": {
     "props": {
-      "blockClass": "menu-supeiro-linha-direita"
+      "blockClass": "menu-supeiro-linha-direita",
+      "whidth": "45%"
     },
     "children": [
       "flex-layout.col#search-bar-header",
@@ -109,14 +130,15 @@
   "flex-layout.col#search-bar-header": {
     "props": {
       "blockClass": "search-bar-desktop"
-
     },
     "children": [
       "search-bar"
     ]
   },
   "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
     "props": {
       "openAutocompleteOnFocus": true,
       "placeholder": "Pesquisar",
@@ -124,12 +146,13 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
       "productLayout": "HORIZONTAL"
     }
   },
-
   "flex-layout.col#coluna-login-minicart": {
     "props": {
       "blockClass": "coluna-login-minicart",
@@ -145,7 +168,6 @@
       "minicart.v2"
     ]
   },
-
   "login": {
     "props": {
       "hideIconLabel": true,
@@ -153,7 +175,9 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
     "children": [
@@ -194,7 +218,6 @@
   // "drawer": {
   //   "children": ["menu#drawer"]
   // },
-
   "menu#drawer": {
     "children": [
       "menu-item#quem-somos",
@@ -205,7 +228,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",

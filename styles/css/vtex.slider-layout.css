@@ -1,3 +1,8 @@
+/* .imageElement {
+  max-height: 486px;
+  max-width: 1300px;
+} */
+
 .sliderLayoutContainer {
   justify-content: center;
 }
@@ -6,6 +11,7 @@
   background-color: transparent;
   min-height: 450px;
   padding-bottom: 50px;
+  max-width: 1300px;
 }
 
 .sliderTrackContainer {

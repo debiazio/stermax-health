@@ -2,7 +2,7 @@
   --paleta: #1f80ca;
   --stermax-azul-claro: #9fbae1;
   --background: #fffaf4;
-  --bege-02: #EDE6DC;
+  --bege-02: #F6F6F6;
   --mapa: #F9F4EC;
   --fonte-primaria: "jost-regular";
   /* --fonte-secundaria: "fraunces-regular"; */
@@ -68,6 +68,12 @@ input:-webkit-autofill {
   }
 }
 /* reset  */
+
+:global(.vtex-render__container-id-carrossel-home-desktop){
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
 :global(.vtex-address-form-4-x-input){
   border: 1px solid var(--cinza-medio) !important;
