@@ -44,8 +44,18 @@
   font-family: "fraunces-regular";
   font-display: swap;
   src:
-    url(assets/fonts/Fraunces_144pt-Regular.ttf);
+    url(assets/fonts/Fraunces_144pt-Regular.ttf),
+    url(assets/fonts/Fraunces_144pt-Regular.woff2);
 }
+
+@font-face {
+  font-family: "fraunces-bold";
+  font-display: swap;
+  src:
+    url(assets/fonts/Fraunces_72pt-Bold.woff2),
+    url(assets/fonts/Fraunces_72pt-Bold.ttf);
+}
+
 
 
 @font-face {

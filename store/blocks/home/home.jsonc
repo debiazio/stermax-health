@@ -6,8 +6,8 @@
       "responsive-layout.mobile#deals-mobile",
       "flex-layout.row#deals",
       "__fold__",
-      "flex-layout.row#banner-segundo",
-      "flex-layout.row#banner-terceiro",
+      // "flex-layout.row#banner-segundo",
+      "flex-layout.row#banner-modelos",
       "flex-layout.row#shelf",
       "flex-layout.row#secao-divisoria-link",
       "flex-layout.row#banner-quarto"
@@ -158,7 +158,6 @@
       "rich-text#deal6"
     ]
   },
-
   //banner "não comprometa sua saúde..."
   "flex-layout.row#banner-segundo": {
     "props": {
@@ -171,7 +170,7 @@
       "rich-text#titulo-banner-segundo"
     ]
   },
-  "responsive-layout.desktop#banner-segundo":{
+  "responsive-layout.desktop#banner-segundo": {
     "children": [
       "image#banner-segundo"
     ]
@@ -183,7 +182,7 @@
       "blockClass": "imagem-banner-segundo"
     }
   },
-  "responsive-layout.mobile#banner-segundo":{
+  "responsive-layout.mobile#banner-segundo": {
     "children": [
       "image#banner-segundo-mobile"
     ]
@@ -201,40 +200,395 @@
       "blockClass": "titulo-banner-secundario"
     }
   },
-  "flex-layout.row#banner-terceiro": {
+  "flex-layout.row#banner-modelos": {
     "props": {
       "blockClass": "banner-terceiro",
-      "fullWidth": false,
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
     },
     "children": [
       "responsive-layout.desktop#banner-terceiro",
       "responsive-layout.mobile#banner-terceiro"
-
     ]
   },
+  // DESKTOP
   "responsive-layout.desktop#banner-terceiro": {
     "children": [
-      "image#banner-terceiro"
+      "flex-layout.row#content-modelos"
     ]
   },
-  "image#banner-terceiro": {
+  "flex-layout.row#content-modelos": {
     "props": {
-      "blockClass": "imagem-banner-terceiro",
-      "src": "assets/Artboard 22.webp",
-      "alt": "modelos de produtos Stermax health"
+      "blockClass": "content-modelos",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#content-textos-modelos",
+      "flex-layout.row#content-colunas-imagens"
+    ]
+  },
+  "flex-layout.row#content-textos-modelos": {
+    "props": {
+      "blockClass": "content-textos-modelos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#titulomodelos",
+      "rich-text#subtitulomodelos"
+    ]
+  },
+  "rich-text#titulomodelos": {
+    "props": {
+      "blockClass": "titulo-modelos",
+      "text": "Tecnologia, biossegurança e eficiência em cada ciclo."
     }
   },
-  "responsive-layout.mobile#banner-terceiro":{
+  "rich-text#subtitulomodelos": {
+    "props": {
+      "blockClass": "subtitulo-modelos",
+      "text": "Escolha a autoclave perfeita para sua especialidade"
+    }
+  },
+  // COLUNAS DAS IMAGENS
+  "flex-layout.row#content-colunas-imagens": {
+    "props": {
+      "blockClass": "content-colunas-imagens"
+    },
     "children": [
-      "image#banner-terceiro-mobile"
+      "flex-layout.row#imagens-modelos-row1",
+      "flex-layout.row#imagens-modelos-row2",
+      "flex-layout.row#imagens-modelos-row3"
     ]
   },
-  "image#banner-terceiro-mobile": {
+  // CONTEINER DAS COLUNAS
+  "flex-layout.row#imagens-modelos-row1": {
     "props": {
-      "blockClass": "imagem-banner-terceiro",
-      "src": "assets/mobile-Artboard 22_1.webp",
-      "alt": "modelos de produtos Stermax health"
+      "blockClass": [
+        "content-linhas-imagens",
+        "coluna1-modelos"
+      ]
+    },
+    "children": [
+      "flex-layout.col#coluna21litros",
+      "flex-layout.col#coluna30litros"
+    ]
+  },
+  "flex-layout.row#imagens-modelos-row2": {
+    "props": {
+      "blockClass": [
+        "content-linhas-imagens",
+        "coluna2-modelos"
+      ]
+    },
+    "children": [
+      "flex-layout.col#coluna40litros",
+      "flex-layout.col#coluna60litros"
+    ]
+  },
+  "flex-layout.row#imagens-modelos-row3": {
+    "props": {
+      "blockClass": [
+        "content-linhas-imagens",
+        "coluna3-modelos"
+      ]
+    },
+    "children": [
+      "flex-layout.col#coluna-1-75litros"
+    ]
+  },
+  // SUB COLUNAS
+  "flex-layout.col#coluna21litros": {
+    "props": {
+      "blockClass": [
+        "colunas-menores-modelos",
+        "colunas-menores-21l"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-21l-colunas-menores-modelos",
+      "flex-layout.row#subtitulo-21l-colunas-menores-modelos"
+    ]
+  },
+  "flex-layout.col#coluna30litros": {
+    "props": {
+      "blockClass": [
+        "colunas-menores-modelos",
+        "coluna-menores-modelos-30l"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-30l-colunas-menores-modelos",
+      "flex-layout.row#subtitulo-30l-colunas-menores-modelos"
+    ]
+  },
+  "flex-layout.col#coluna40litros": {
+    "props": {
+      "blockClass": [
+        "colunas-menores-modelos",
+        "coluna-menores-modelos-40l"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-40l-colunas-menores-modelos",
+      "flex-layout.row#subtitulo-40l-colunas-menores-modelos"
+    ]
+  },
+  "flex-layout.col#coluna60litros": {
+    "props": {
+      "blockClass": [
+        "colunas-menores-modelos",
+        "coluna-menores-modelos-60l"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-60l-colunas-menores-modelos",
+      "flex-layout.row#subtitulo-60l-colunas-menores-modelos"
+    ]
+  },
+  "flex-layout.col#coluna-1-75litros": {
+    "props": {
+      "blockClass": [
+        "colunas-menores-modelos",
+        "coluna-menores-modelos-75l"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-75l-colunas-menores-modelos",
+      "flex-layout.row#subtitulo-75l-colunas-menores-modelos"
+    ]
+  },
+  // TITULOS COLUNAS
+  "flex-layout.row#titulo-21l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linhas-textos-titulos-modelos"
+    },
+    "children": [
+      "rich-text#titulo-21l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#titulo-21l-colunas-menores-modelos": {
+    "props": {
+      "text": "21 litros",
+      "blockClass": "titulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#titulo-30l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linhas-textos-titulos-modelos"
+    },
+    "children": [
+      "rich-text#titulo-30l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#titulo-30l-colunas-menores-modelos": {
+    "props": {
+      "text": "30 litros",
+      "blockClass": "titulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#titulo-40l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linhas-textos-titulos-modelos"
+    },
+    "children": [
+      "rich-text#titulo-40l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#titulo-40l-colunas-menores-modelos": {
+    "props": {
+      "text": "40 litros",
+      "blockClass": "titulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#titulo-60l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linhas-textos-titulos-modelos"
+    },
+    "children": [
+      "rich-text#titulo-60l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#titulo-60l-colunas-menores-modelos": {
+    "props": {
+      "text": "60 litros",
+      "blockClass": "titulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#titulo-75l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linhas-textos-titulos-modelos"
+    },
+    "children": [
+      "rich-text#titulo-75l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#titulo-75l-colunas-menores-modelos": {
+    "props": {
+      "text": "75 litros",
+      "blockClass": "titulos-textos-modelos"
+    }
+  },
+  // SUBTITULOS COLUNAS MENORES
+  "flex-layout.row#subtitulo-21l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linha-subtitulo-modelos"
+    },
+    "children": [
+      "rich-text#subtitulo-21l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#subtitulo-21l-colunas-menores-modelos": {
+    "props": {
+      "text": "Maior capacidade, perfeita para profissionais que realizam multiplos atendimentos e possuem instrumentais variados.",
+      "blockClass": "subtitulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#subtitulo-30l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linha-subtitulo-modelos"
+    },
+    "children": [
+      "rich-text#subtitulo-30l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#subtitulo-30l-colunas-menores-modelos": {
+    "props": {
+      "text": "Versátil, atende a maior demanda de instrumentos, projettada para suportar fluxos intermediários com eficiêcia.",
+      "blockClass": "subtitulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#subtitulo-40l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linha-subtitulo-modelos"
+    },
+    "children": [
+      "rich-text#subtitulo-40l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#subtitulo-40l-colunas-menores-modelos": {
+    "props": {
+      "text": "Ideal para clínicas com alta rotatividade de materiais.",
+      "blockClass": "subtitulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#subtitulo-60l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linha-subtitulo-modelos"
+    },
+    "children": [
+      "rich-text#subtitulo-60l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#subtitulo-60l-colunas-menores-modelos": {
+    "props": {
+      "text": "Robustez para hospitais e laboratórios, capacidade superior, maior espaço",
+      "blockClass": "subtitulos-textos-modelos"
+    }
+  },
+  "flex-layout.row#subtitulo-75l-colunas-menores-modelos": {
+    "props": {
+      "blockClass": "linha-subtitulo-modelos"
+    },
+    "children": [
+      "rich-text#subtitulo-75l-colunas-menores-modelos"
+    ]
+  },
+  "rich-text#subtitulo-75l-colunas-menores-modelos": {
+    "props": {
+      "text": "Nossa autoclave de maior capacidade projetada para máxima eficiência, grandes volumes e ciclos intensos.\n**Autoclave modelo vertical, exclusiva no mercado >>**",
+      "blockClass": [
+        "subtitulos-textos-modelos",
+        "subtitulos-textos-modelos-75l"
+      ]
+    }
+  },
+  // MOBILE
+  "responsive-layout.mobile#banner-terceiro": {
+    "children": [
+      "flex-layout.row#mobile-banner-modelos"
+    ]
+  },
+  "flex-layout.row#mobile-banner-modelos": {
+    "props": {
+      "blockClass": "content-mobile-banner-modelos"
+    },
+    "children": [
+      "flex-layout.row#content-textos-modelos",
+      "flex-layout.row#mobile-content-imagens-modelos"
+    ]
+  },
+  "flex-layout.row#mobile-content-imagens-modelos": {
+    "props": {
+      "blockClass": "content-mobile-imagens-modelos"
+    },
+    "children": [
+      "flex-layout.row#mobile-linha1",
+      "flex-layout.row#mobile-linha2",
+      "flex-layout.row#mobile-linha3"
+    ]
+  },
+  "flex-layout.row#mobile-linha1": {
+    "props": {
+      "blockClass": ["linha-mobile-modelos","linha-mobile-modelos-linha1"]
+    },
+    "children": [
+      "flex-layout.col#coluna21litros",
+      "flex-layout.col#coluna30litros"
+    ]
+  },
+  "flex-layout.row#mobile-linha2": {
+    "props": {
+      "blockClass": ["linha-mobile-modelos", "linha-mobile-modelos-linha2"]
+    },
+    "children": [
+      "flex-layout.col#coluna40litros",
+      "flex-layout.col#coluna60litros"
+    ]
+  },
+  "flex-layout.row#mobile-linha3": {
+    "props": {
+      "blockClass": "linha-mobile-modelos"
+    },
+    "children": [
+      "flex-layout.col#mobile-coluna-75litros"
+    ]
+  },
+  "flex-layout.col#mobile-coluna-75litros": {
+    "props": {
+      "blockClass": "mobile-coluna-75l"
+    },
+    "children": [
+      "flex-layout.row#mobile-75l-textos",
+      "flex-layout.row#mobile-75l-imagem"
+    ]
+  },
+  "flex-layout.row#mobile-75l-textos": {
+    "props": {
+      "blockClass": "linha-textos-mobile-75l"
+    },
+    "children": [
+      "rich-text#titulo-75l-colunas-menores-modelos",
+      "rich-text#subtitulo-75l-colunas-menores-modelos"
+    ]
+  },
+  "flex-layout.row#mobile-75l-imagem": {
+    "props": {
+      "blockClass": "linha-imagem75l-mobile"
+    },
+    "children": [
+      "image#imagem-75l-mobile"
+    ]
+  },
+  "image#imagem-75l-mobile": {
+    "props": {
+      "blockClass": "imagem-75l-mobile",
+      "src": "assets/home/banner-modelos/75l-img.webp"
     }
   },
   "flex-layout.row#secao-divisoria-link": {
