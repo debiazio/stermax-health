@@ -1,3 +1,8 @@
+.imageElement--mapa-brasil,
+.imageElement--img-assist {
+  margin-top: -130px;
+}
+
 .container {
   max-width: 1300px;
 }
@@ -274,5 +279,11 @@
     width: 65%;
     margin-top: -75%;
     margin-left: 25%;
+  }
+
+  .imageElement--mapa-brasil,
+  .imageElement--img-assist {
+    margin-top: -70px;
+    width: 70%;
   }
 }

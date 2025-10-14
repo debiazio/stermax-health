@@ -15,7 +15,6 @@
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 46px;
-
 }
 
 .flexRowContent--titulo-subtilo-assistencia {
@@ -320,8 +319,8 @@
 }
 
 .flexRow--container-footer-digitando {
-  height: 70px;
-  background-color: #CCC7C0;
+  height: 50px;
+  background-color: #BCD5E8;
 }
 
 .flexRow--container-secao-divisoria-link {
@@ -829,5 +828,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .flexRowContent--linha-imagem-mapa .stretchChildrenWidth{
+    margin-right: -5%;
+  }
+
+  .flexRowContent--linha-imagem-mapa {
+    padding-right: 0;
+  }
+
+  .flexRowContent--lado-direito{
+    margin-left: 0px;
+  }
+
+  .flexRow--container-link-epecialista{
+    margin-bottom: -20px;
+  }
+
+  .flexRow--coluna-banner-esquerdo--imagem{
+    margin-bottom: 40px;
+  }
+
+  .flexRowContent--lado-direito,
+  .flexRow--linha-titulo-assistencia{
+    margin: 0 0 0 10px;
   }
 }

@@ -127,10 +127,10 @@
   color: var(--cinza-medio);
 }
 
-.wrapper--texto-digitando {
-  color: #ffffff;
-  font-size: 40px;
-  font-family: var(--fonte-secundaria);
+.paragraph--texto-digitando {
+  color: #4C7593;
+  font-size: 24px;
+  font-family: "fraunces-regular";
   margin-top: 5px;
 }
 
@@ -170,7 +170,7 @@
   text-align: start;
 }
 
-.paragraph--subtitulo-banner-esquerdo{
+.paragraph--subtitulo-banner-esquerdo {
   font-size: 16px;
   font-family: "jost-regular";
   font-weight: 400;
@@ -392,24 +392,26 @@
     margin-bottom: unset;
   }
 
-  .paragraph--titulos-textos-modelos{
+  .paragraph--titulos-textos-modelos {
     margin: 50px 0 0;
     font-weight: bold;
     font-size: 14px;
   }
 
-  .paragraph--subtitulos-textos-modelos{
+  .paragraph--subtitulos-textos-modelos {
     font-size: 10px;
   }
 
-  .paragraph--titulo-modelos{
+  .paragraph--titulo-modelos {
     font-size: 12px;
   }
 
-  .paragraph--subtitulo-modelos{
+  .paragraph--subtitulo-modelos {
     font-size: 9px;
   }
 
-
+  .paragraph--texto-digitando {
+    font-size: 12px;
+  }
 
 }
