@@ -1,0 +1,287 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-texto-digitando",
+      //  linhas do footer
+      "flex-layout.row#footer-linha1-logo-endereço-form",
+      "flex-layout.row#footer-linha2-cotato-horário",
+      "flex-layout.row#footer-linha3-links-bandeiras"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-texto-digitando",
+      //  linhas do footer
+      "flex-layout.row#footer-linha1-logo-endereço-form",
+      "flex-layout.row#footer-linha2-cotato-horário",
+      "flex-layout.row#footer-linha3-links-bandeiras"
+    ]
+  },
+  // BANNER TEXTO ACIMA DO FOOTER
+  "flex-layout.row#footer-texto-digitando": {
+    "props": {
+      "blockClass": "container-footer-digitando"
+    },
+    "children": [
+      "rich-text#digitando"
+    ]
+  },
+  "rich-text#digitando": {
+    "props": {
+      "text": "Stermax Health: Pure Health, Expert Care.",
+      "blockClass": "texto-digitando"
+    }
+  },
+  // linhas do footer - mobile
+  // LINHA LOGO -ENDERECO, FORM E REDES SOCIAIS
+  "flex-layout.row#footer-linha1-logo-endereço-form": {
+    "props": {
+      "blockClass": "linhas-footer",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#image-logo-footer",
+      "flex-layout.row#linha-endereco",
+      "flex-layout.row#form-footer"
+    ]
+  },
+  "flex-layout.row#footer-linha3-links-bandeiras": {
+    "props": {
+      "blockClass": "linhas-footer",
+      "colSizing": "auto"
+    },
+    "children": []
+  },
+  // LINHA LOGO
+  "flex-layout.row#image-logo-footer": {
+    "props": {
+      "blockClass": "linha-image-logo-footer"
+    },
+    "children": [
+      "image#logo-footer"
+    ]
+  },
+  // LINHA ENDERECO
+  "flex-layout.row#linha-endereco": {
+    "props": {
+      "blockClass": "linha-endereco-footer"
+    },
+    "children": [
+      "rich-text#endereco-footer"
+    ]
+  },
+  // LINHA FORM
+  "flex-layout.row#form-footer": {
+    "props": {
+      "blockClass": "linha-form-footer"
+    },
+    "children": [
+      "newsletter-form#footer"
+    ]
+  },
+  // LOGO
+  "image#logo-footer": {
+    "props": {
+      "blockClass": "image-footer",
+      "src": "assets/footer/mobile/stermaxh&h-logo-footer-mobile.webp"
+    }
+  },
+  // ENDERECO FOOTER
+  "rich-text#endereco-footer": {
+    "props": {
+      "blockClass": "endereco-footer",
+      "text": "R. Emma Rohrsetzer, 1011 - Emiliano Perneta, Pinhais - PR, 83324-190"
+    }
+  },
+  // FORMULARIO FOOTER
+  "newsletter-form#footer": {
+    "props": {
+      "blockClass": "container-newsletter"
+    },
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "blockClass": "input-email",
+      "placeholderText": "E-mail"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "blockClass": "submit",
+      "submitButtonLabel": "Enviar"
+    }
+  },
+  // INICIO LINHA 2 FOOTER
+  // LINHA CONTATO E HORÁRIOS
+  "flex-layout.row#footer-linha2-cotato-horário": {
+    "props": {
+      "blockClass": "linhas-footer",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-falecomstxh",
+      "flex-layout.row#linha-contatos-footer",
+      "flex-layout.row#linha-horarios-footer"
+    ]
+  },
+  // LINHA FALE COM STERMAX HEALTH
+  "flex-layout.row#linha-falecomstxh": {
+    "props": {
+      "blockClass": "linha-fale-com-stxh"
+    },
+    "children": [
+      "rich-text#titulo-fale-com-footer"
+    ]
+  },
+  // LINHA DE CONTATOS
+  "flex-layout.row#linha-contatos-footer": {
+    "props": {
+      "blockClass": "linha-contatos-footer"
+    },
+    "children": [
+      "flex-layout.row#sublinha-contatos-footer-0800",
+      "flex-layout.row#sublinha-contatos-footer-telefone",
+      "flex-layout.row#sublinha-contatos-footer-whats",
+      "flex-layout.row#sublinha-contatos-footer-email"
+    ]
+  },
+  // LINHA HORARIOS
+  "flex-layout.row#linha-horarios-footer": {
+    "props": {
+      "blockClass": "linha-horarios-footer"
+    },
+    "children": [
+      "rich-text#horarios-footer-titulo",
+      "rich-text#horarios-footer-seg-quinta",
+      "rich-text#horarios-footer-sexta"
+    ]
+  },
+  // TITULO FALE COM
+  "rich-text#titulo-fale-com-footer": {
+    "props": {
+      "blockClass": "titulo-fale-com",
+      "text": "Fale com a Stermax Health"
+    }
+  },
+  // LINHAS CONTATOS
+  "flex-layout.row#sublinha-contatos-footer-0800": {
+    "props": {
+      "blockClass": "sublinhas-contatos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#icone-0800",
+      "rich-text#contatos-text-footer-0800"
+    ]
+  },
+  "flex-layout.row#sublinha-contatos-footer-telefone": {
+    "props": {
+      "blockClass": "sublinhas-contatos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#icone-0800",
+      "rich-text#contatos-text-footer-telefone"
+    ]
+  },
+  "flex-layout.row#sublinha-contatos-footer-whats": {
+    "props": {
+      "blockClass": "sublinhas-contatos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#icone-whatsapp",
+      "rich-text#contatos-text-footer-whats"
+    ]
+  },
+  "flex-layout.row#sublinha-contatos-footer-email": {
+    "props": {
+      "blockClass": "sublinhas-contatos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#icone-email",
+      "rich-text#contatos-text-footer-email"
+    ]
+  },
+  // ICONES FOOTER
+  // ICONE TELEFONE
+  "image#icone-0800": {
+    "props": {
+      "blockClass": "icones-footer",
+      "src": "assets/footer/mobile/icone-telefone-footer.webp"
+    }
+  },
+  // ICONE WHATSAPP
+  "image#icone-whatsapp": {
+    "props": {
+      "blockClass": "icones-footer",
+      "src": "assets/footer/mobile/icone-whatsapp-footer.webp"
+    }
+  },
+  // ICONE EMAIL
+  "image#icone-email": {
+    "props": {
+      "blockClass": "icones-footer",
+      "src": "assets/footer/mobile/icone-email-footer.webp"
+    }
+  },
+  // TEXTOS CONTATOS FOOTER
+  // 0800
+  "rich-text#contatos-text-footer-0800": {
+    "props": {
+      "blockClass": "textos-contatos",
+      "text": "0800 721 8533"
+    }
+  },
+  // TELEFONE
+  "rich-text#contatos-text-footer-telefone": {
+    "props": {
+      "blockClass": "textos-contatos",
+      "text": "41 3668 2144"
+    }
+  },
+  // WHATSAPP
+  "rich-text#contatos-text-footer-whats": {
+    "props": {
+      "blockClass": "textos-contatos",
+      "text": "41 9 9971 0062"
+    }
+  },
+  // EMAIL
+  "rich-text#contatos-text-footer-email": {
+    "props": {
+      "blockClass": "textos-contatos",
+      "text": "stermax@stermax.com.br"
+    }
+  },
+  // TEXTOS HORÁRIOS
+  "rich-text#horarios-footer-titulo":{
+    "props": {
+      "blockClass": "textos-horarios",
+      "text": "Horário de atendimento"
+    }
+  },
+  "rich-text#horarios-footer-seg-quinta":{
+    "props": {
+      "blockClass": "textos-horarios",
+      "text": "Segunda a Quinta - 08:00 às 18:00"
+    }
+  },
+  "rich-text#horarios-footer-sexta":{
+    "props": {
+      "blockClass": "textos-horarios",
+      "text": "Sexta - 08:00 às 17:00"
+    }
+  }
+}

@@ -159,18 +159,6 @@
       "rich-text#deal6"
     ]
   },
-  //banner "não comprometa sua saúde..."
-  "flex-layout.row#banner-segundo": {
-    "props": {
-      "blockClass": "secao-banner-segundo",
-      "fullWidth": false
-    },
-    "children": [
-      "responsive-layout.desktop#banner-segundo",
-      "responsive-layout.mobile#banner-segundo",
-      "rich-text#titulo-banner-segundo"
-    ]
-  },
   "responsive-layout.desktop#banner-segundo": {
     "children": [
       "image#banner-segundo"
