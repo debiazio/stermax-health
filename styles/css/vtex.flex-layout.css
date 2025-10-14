@@ -1,12 +1,57 @@
-.flexRowContent--lado-direito{
+/* footer */
+
+.flexRow--linha-final-footer{
+  background-color: #1D76BA;
+}
+
+.flexRow--linhas-footer,
+.flexRow--linhas-footer-contatos{
+  padding: 0 40px;
+}
+
+.flexRowContent--linha-footer-bandeiras{
+  margin-top: 15px;
+}
+
+.flexRowContent--linha-horarios-footer{
+  margin: 0px 0 40px 0;
+}
+
+.flexRowContent--sublinhas-contatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexRowContent--linhas-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #FFFFFF80;
+}
+
+.flexRowContent--bandeiras-row{
+  border-bottom: none!important;
+}
+
+
+.flexRowContent--linhas-footer-contatos {
+  border-bottom: 1px solid #FFFFFF80;
+}
+
+/* footer */
+
+.flexRowContent--lado-direito {
   margin-left: 50px;
 }
 
-.flexRow--container-link-epecialista{
+.flexRow--container-link-epecialista {
   margin-top: -10%;
 }
 
-.flexRow--linha-imagem-mapa{
+.flexRow--linha-imagem-mapa {
   margin-top: -20px;
 }
 
@@ -830,7 +875,7 @@
     align-items: center;
   }
 
-  .flexRowContent--linha-imagem-mapa .stretchChildrenWidth{
+  .flexRowContent--linha-imagem-mapa .stretchChildrenWidth {
     margin-right: -5%;
   }
 
@@ -838,20 +883,20 @@
     padding-right: 0;
   }
 
-  .flexRowContent--lado-direito{
+  .flexRowContent--lado-direito {
     margin-left: 0px;
   }
 
-  .flexRow--container-link-epecialista{
+  .flexRow--container-link-epecialista {
     margin-bottom: -20px;
   }
 
-  .flexRow--coluna-banner-esquerdo--imagem{
+  .flexRow--coluna-banner-esquerdo--imagem {
     margin-bottom: 40px;
   }
 
   .flexRowContent--lado-direito,
-  .flexRow--linha-titulo-assistencia{
+  .flexRow--linha-titulo-assistencia {
     margin: 0 0 0 10px;
   }
 }

@@ -1,3 +1,20 @@
+/* footer */
+
+.imageElement--img-bandeiras-footer {
+  margin: 0px 0 26px 0;
+  width: 100%;
+}
+
+.imageElement--img-footer-redes {
+  margin: 28px 0 28px 0;
+}
+
+.imageElement--image-footer {
+  margin: 53px 0 40px 0;
+}
+
+/* footer */
+
 .imageElement--mapa-brasil,
 .imageElement--img-assist {
   margin-top: -130px;

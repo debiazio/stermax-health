@@ -1,3 +1,67 @@
+/* footer */
+
+.container--texto-final-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paragraph--texto-final-footer {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "fraunces-regular";
+  font-size: 12px;
+}
+
+.link--textos-contatos {
+  text-decoration: none;
+  font-family: "fraunces-regular";
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.paragraph--textos-horarios {
+  margin: 0;
+  margin-left: 0 !important;
+}
+
+.paragraph--textos-horarios,
+.paragraph--textos-contatos {
+  font-family: "fraunces-regular";
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-left: 11.55px;
+
+}
+
+.paragraph--titulo-footer-bandeiras,
+.paragraph--titulo-textos-horarios,
+.paragraph--titulo-fale-com {
+  font-family: "domine-semibold";
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: start;
+  text-transform: capitalize;
+
+}
+
+.container--endereco-footer {
+  max-width: 273px;
+}
+
+.paragraph--endereco-footer {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "fraunces-regular";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* footer */
+
 .paragraph--subtitulos-textos-modelos {
   font-family: var(--fonte-primaria);
   font-weight: 400;
@@ -133,16 +197,6 @@
   font-family: "fraunces-regular";
   margin-top: 5px;
 }
-
-/* Stermax Health: Pure Health, Expert Care. */
-.paragraph--texto-digitando {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
 
 .container--texto-digitando {
   display: flex;

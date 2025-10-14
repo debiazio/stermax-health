@@ -8,19 +8,19 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-texto-digitando",
-      //  linhas do footer
       "flex-layout.row#footer-linha1-logo-endereço-form",
       "flex-layout.row#footer-linha2-cotato-horário",
-      "flex-layout.row#footer-linha3-links-bandeiras"
+      "flex-layout.row#footer-linha3-links-bandeiras",
+      "flex-layout.row#footer-linha-final"
     ]
   },
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footer-texto-digitando",
-      //  linhas do footer
       "flex-layout.row#footer-linha1-logo-endereço-form",
       "flex-layout.row#footer-linha2-cotato-horário",
-      "flex-layout.row#footer-linha3-links-bandeiras"
+      "flex-layout.row#footer-linha3-links-bandeiras",
+      "flex-layout.row#footer-linha-final"
     ]
   },
   // BANNER TEXTO ACIMA DO FOOTER
@@ -48,15 +48,9 @@
     "children": [
       "flex-layout.row#image-logo-footer",
       "flex-layout.row#linha-endereco",
-      "flex-layout.row#form-footer"
+      "flex-layout.row#form-footer",
+      "flex-layout.row#linha-redes-footer"
     ]
-  },
-  "flex-layout.row#footer-linha3-links-bandeiras": {
-    "props": {
-      "blockClass": "linhas-footer",
-      "colSizing": "auto"
-    },
-    "children": []
   },
   // LINHA LOGO
   "flex-layout.row#image-logo-footer": {
@@ -121,11 +115,27 @@
       "submitButtonLabel": "Enviar"
     }
   },
+  // LINHA REDES SOCIAIS
+  "flex-layout.row#linha-redes-footer": {
+    "props": {
+      "blockClass": "linha-redes-footer"
+    },
+    "children": [
+      "image#redes-footer"
+    ]
+  },
+  "image#redes-footer": {
+    "props": {
+      "blockClass": "img-footer-redes",
+      "alt": "Redes sociais",
+      "src": "assets/footer/mobile/redes-sociais-mobile.webp"
+    }
+  },
   // INICIO LINHA 2 FOOTER
   // LINHA CONTATO E HORÁRIOS
   "flex-layout.row#footer-linha2-cotato-horário": {
     "props": {
-      "blockClass": "linhas-footer",
+      "blockClass": "linhas-footer-contatos",
       "colSizing": "auto"
     },
     "children": [
@@ -266,22 +276,119 @@
     }
   },
   // TEXTOS HORÁRIOS
-  "rich-text#horarios-footer-titulo":{
+  "rich-text#horarios-footer-titulo": {
     "props": {
-      "blockClass": "textos-horarios",
+      "blockClass": "titulo-textos-horarios",
       "text": "Horário de atendimento"
     }
   },
-  "rich-text#horarios-footer-seg-quinta":{
+  "rich-text#horarios-footer-seg-quinta": {
     "props": {
       "blockClass": "textos-horarios",
       "text": "Segunda a Quinta - 08:00 às 18:00"
     }
   },
-  "rich-text#horarios-footer-sexta":{
+  "rich-text#horarios-footer-sexta": {
     "props": {
       "blockClass": "textos-horarios",
       "text": "Sexta - 08:00 às 17:00"
+    }
+  },
+  // INICIO TERCEIRA LINHA
+  // LINKS E CARD BANDEIRAS
+  "flex-layout.row#footer-linha3-links-bandeiras": {
+    "props": {
+      "blockClass": [
+        "linhas-footer-contatos",
+        "bandeiras-row"
+      ],
+      "colSizing": "auto"
+    },
+    "children": [
+      "link#footer-produtos",
+      "link#footer-manuais",
+      "link#footer-suporte-tecnico",
+      "link#footer-politica-privacidade",
+      "link#footer-trocas-devolucoes",
+      // LINHA BANDEIRAS
+      "flex-layout.row#linha-footer-bandeiras"
+    ]
+  },
+  "link#footer-produtos": {
+    "props": {
+      "blockClass": "link-footer",
+      "href": "STERMAX H&H",
+      "label": "Produtos"
+    }
+  },
+  "link#footer-manuais": {
+    "props": {
+      "blockClass": "link-footer",
+      "href": "/manuais",
+      "label": "Manuais"
+    }
+  },
+  "link#footer-suporte-tecnico": {
+    "props": {
+      "blockClass": "link-footer",
+      "href": "https://stermax.store",
+      "label": "Suporte Técnico"
+    }
+  },
+  "link#footer-politica-privacidade": {
+    "props": {
+      "blockClass": "link-footer",
+      "href": "/politica-privacidade",
+      "label": "política de privacidade"
+    }
+  },
+  "link#footer-trocas-devolucoes": {
+    "props": {
+      "blockClass": "link-footer",
+      "href": "/trocas-devolucoes",
+      "label": "trocas e devoluções"
+    }
+  },
+  // FINAL LINKS
+  // LINHA BANDEIRAS
+  "flex-layout.row#linha-footer-bandeiras": {
+    "props": {
+      "blockClass": "linha-footer-bandeiras"
+    },
+    "children": [
+      "rich-text#titulo-bandeiras",
+      "image#footer-bandeiras"
+    ]
+  },
+  // TITULO BANDEIRAS
+  "rich-text#titulo-bandeiras": {
+    "props": {
+      "text": "compre com segurança",
+      "blockClass": "titulo-footer-bandeiras"
+    }
+  },
+  // IMAGEM BANDEIRAS
+  "image#footer-bandeiras": {
+    "props": {
+      "blockClass": "img-bandeiras-footer",
+      "src": "assets/footer/mobile/bandeiras-mobile.webp",
+      "alt": "Bandeiras de cartões"
+    }
+  },
+  // LINHA FINAL FOOTER
+  "flex-layout.row#footer-linha-final": {
+    "props": {
+      "blockClass": "linha-final-footer",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#linha-final-footer"
+    ]
+  },
+  "rich-text#linha-final-footer": {
+    "props": {
+      "text": "© 2025, Stermax Health LTDA. Todos os direitos reservados",
+      "blockClass": "texto-final-footer"
     }
   }
 }

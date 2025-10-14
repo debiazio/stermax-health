@@ -1,7 +1,7 @@
 .newsletterForm--container-newsletter {
-  height: 120px;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: 100%;
   justify-content: center;
@@ -15,37 +15,30 @@
 }
 .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: #FFF9F4;
-  /* color: #868181; */
+  margin-right: 10px;
   border-radius: 35px;
-  width: 330px;
-  height: 60px;
+  width: 180px!important;
+  height: 36px!important;
   font-family: var(--fonte-secundaria);
 }
 
 
 .formSubmitContainer--submit :global(.vtex-button){
-  background-color: #FFF9F4;
+  background-color: #206498;
   border: none;
-  color: #868181;
-  font-family: var(--fonte-secundaria);
-  height: 60px;
-  width: 200px;
+  color: #FFFFFF;
+  font-family: "fraunces-regular";
+  font-size: 16px;
+  height: 36px!important;
+  width: 95px!important;
   border-radius: 35px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: flex;
-  margin-top: 26px;
 }
 
 @media screen and (max-width: 1000px){
-  .formSubmitContainer--submit :global(.vtex-button),
-  .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators) {
-    width: 150px;
-  }
 
-  .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators),
-  .formSubmitContainer--submit :global(.vtex-button) {
-    height: 48px;
 
-  }
+
 
 }

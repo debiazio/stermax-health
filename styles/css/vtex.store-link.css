@@ -1,3 +1,16 @@
+
+/* footer */
+.link--link-footer{
+  text-decoration: none;
+  color: #fff;
+  margin-top: 18px;
+  font-family: "fraunces-regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* footer */
 .link--link-manuais {
   text-decoration: none;
   color: white;
