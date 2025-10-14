@@ -10,7 +10,7 @@
       "flex-layout.row#banner-modelos",
       "flex-layout.row#shelf",
       "flex-layout.row#secao-divisoria-link",
-      "flex-layout.row#banner-quarto"
+      "flex-layout.row#ultima-section"
     ]
   },
   "list-context.image-list#carrossel-home-desktop": {
@@ -52,6 +52,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "blockClass": "carousel",
       "autoplay": {
         "timeout": 5000
@@ -203,7 +204,6 @@
   "flex-layout.row#banner-modelos": {
     "props": {
       "blockClass": "banner-terceiro",
-      "preventHorizontalStretch": true,
       "colSizing": "auto"
     },
     "children": [
@@ -220,8 +220,7 @@
   "flex-layout.row#content-modelos": {
     "props": {
       "blockClass": "content-modelos",
-      "colSizing": "auto",
-      "preventHorizontalStretch": true
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.row#content-textos-modelos",
@@ -535,7 +534,10 @@
   },
   "flex-layout.row#mobile-linha1": {
     "props": {
-      "blockClass": ["linha-mobile-modelos","linha-mobile-modelos-linha1"]
+      "blockClass": [
+        "linha-mobile-modelos",
+        "linha-mobile-modelos-linha1"
+      ]
     },
     "children": [
       "flex-layout.col#coluna21litros",
@@ -544,7 +546,10 @@
   },
   "flex-layout.row#mobile-linha2": {
     "props": {
-      "blockClass": ["linha-mobile-modelos", "linha-mobile-modelos-linha2"]
+      "blockClass": [
+        "linha-mobile-modelos",
+        "linha-mobile-modelos-linha2"
+      ]
     },
     "children": [
       "flex-layout.col#coluna40litros",
@@ -609,10 +614,10 @@
       "label": "VER MAIS AUTOCLAVES"
     }
   },
-  "flex-layout.row#banner-quarto": {
+  // SECAO FINAL
+  "flex-layout.row#ultima-section": {
     "props": {
-      "blockClass": "secao-banner-quarto",
-      "fullWidth": true
+      "blockClass": "content-ultima-section"
     },
     "children": [
       "flex-layout.row#banner-quarto-esq",
@@ -625,51 +630,31 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#coluna-1-banner-coluna-esq",
-      "flex-layout.col#coluna-2-banner-coluna-esq"
+      "flex-layout.row#textos-assistencia"
     ]
   },
-  "flex-layout.col#coluna-1-banner-coluna-esq": {
+  "flex-layout.row#textos-assistencia": {
     "props": {
-      "blockClass": "coluna-imagem",
-      "width": "30%"
+      "blockClass": "linha-titulo-assistencia",
+      "colSizing": "auto"
     },
     "children": [
-      "image#brasil"
-    ]
-  },
-  "image#brasil": {
-    "props": {
-      "blockClass": "assistencias-img",
-      "src": "assets/brasil-autoclave.webp",
-      "alt": "Assistências no Brasil",
-      "maxHeight": "429px",
-      "maxWidth": "406px"
-    }
-  },
-  "flex-layout.col#coluna-2-banner-coluna-esq": {
-    "props": {
-      "blockClass": "banner-coluna2-esq",
-      "width": "70%"
-    },
-    "children": [
-      "rich-text#titulo",
-      "rich-text#subtitulo",
+      "flex-layout.row#titulo-subtilo-assistencia",
+      "flex-layout.row#imagem-mapa",
       "flex-layout.row#link-especialista"
     ]
   },
-  "rich-text#titulo": {
+  "flex-layout.row#titulo-subtilo-assistencia": {
     "props": {
-      "text": "Assistência e suporte \n sempre ao seu alcance",
-      "blockClass": "titulo-banner-esquerdo"
-    }
+      "blockClass": "titulo-subtilo-assistencia",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#titulo",
+      "rich-text#subtitulo"
+    ]
   },
-  "rich-text#subtitulo": {
-    "props": {
-      "text": "Com a maior rede de assistência\n técnica do Brasil,garantimos que \n você estará sempre protegido!",
-      "blockClass": "subtitulo-banner-esquerdo"
-    }
-  },
+  // LINK ESPECIALISTA
   "flex-layout.row#link-especialista": {
     "props": {
       "blockClass": "container-link-epecialista"
@@ -685,26 +670,83 @@
       "blockClass": "link-banner-quarto"
     }
   },
-  "flex-layout.row#banner-quarto-dir": {
+  // IMAGEM DO MAPA DE FUNDO
+  "flex-layout.row#imagem-mapa": {
     "props": {
-      "blockClass": "coluna-banner-direito--imagem"
+      "blockClass": "linha-imagem-mapa",
+      "colSizing": "auto"
     },
     "children": [
-      "flex-layout.col#coluna-1-banner-coluna-dir",
-      "flex-layout.col#coluna-2-banner-coluna-dir"
+      "image#mapa-brasil"
     ]
   },
-  "flex-layout.col#coluna-1-banner-coluna-dir": {
+  "image#mapa-brasil": {
     "props": {
-      "blockClass": "coluna-textos",
-      "width": "70%"
+      "blockClass": "mapa-brasil",
+      "src": "assets/home/brasil-mapa.webp",
+      "alt": "Mapa do Brasil"
+    }
+  },
+  "rich-text#titulo": {
+    "props": {
+      "text": "Assistência e suporte \n sempre ao seu alcance",
+      "blockClass": "titulo-banner-esquerdo"
+    }
+  },
+  "rich-text#subtitulo": {
+    "props": {
+      "text": "Com a maior rede de assistência\n técnica do Brasil,garantimos que \n você estará sempre protegido!",
+      "blockClass": "subtitulo-banner-esquerdo"
+    }
+  },
+  "flex-layout.row#banner-quarto-dir": {
+    "props": {
+      "blockClass": "coluna-banner-esquerdo--imagem",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#textos-assistencia-dir"
+    ]
+  },
+  "flex-layout.row#textos-assistencia-dir": {
+    "props": {
+      "blockClass": ["linha-titulo-assistencia","lado-direito"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#titulo-subtilo-assistencia-dir",
+      "flex-layout.row#imagem-assistencia",
+      "flex-layout.row#link-especialista"
+    ]
+  },
+  "flex-layout.row#titulo-subtilo-assistencia-dir": {
+    "props": {
+      "blockClass": "titulo-subtilo-assistencia",
+      "colSizing": "auto"
     },
     "children": [
       "rich-text#titulo-dir",
-      "rich-text#subtitulo-dir",
-      "link#compre-agora-em-10x"
+      "rich-text#subtitulo-dir"
     ]
   },
+  "flex-layout.row#imagem-assistencia":{
+    "props": {
+      "blockClass": ["linha-imagem-mapa", "linha-assist-img"],
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#assistencia"
+    ]
+  },
+  "image#assistencia":{
+    "props": {
+      "src": "assets/home/Group 3.webp",
+      "blockClass": ["mapa-brasil", "img-assist"],
+      "alt": "Assistência"
+    }
+  },
+
+
   "rich-text#titulo-dir": {
     "props": {
       "text": "Estoques limitados \n em pronta entrega",
@@ -714,44 +756,14 @@
   "rich-text#subtitulo-dir": {
     "props": {
       "text": "**Garanta já sua autoclave Stermax!**\nNão perca a chance de modernizar\n sua clínica com a melhor tecnologia\n do mercado. Estoques prontos para\n envio imediato, aproveite agora!",
-      "blockClass": "subtitulo-banner-direito"
+      "blockClass": "subtitulo-banner-esquerdo"
     }
   },
-  "link#compre-agora-em-10x": {
-    "props": {
-      "href": "/pronta-entrega/stermax%20h&h?map=category-2,ft",
-      "label": "COMPRE AGORA EM ATÉ 10x SEM JUROS",
-      "blockClass": "link-banner-quarto"
-    }
-  },
-  "flex-layout.col#coluna-2-banner-coluna-dir": {
-    "props": {
-      "blockClass": "animacao-banner-direita",
-      "width": "30%"
-    },
-    "children": [
-      // "video#animacao-direita"
-      // "image#animacao-direita"
-    ]
-  },
-  // "image#animacao-direita":{
-  //   "props": {
-  //     "blockClass": "video-banner",
-  //     "src": "https://stermax.com.br/images_idealine/pronta-entraga-stermax.gif"
-  //   }
-  // },
-  "video#animacao-direita": {
-    "props": {
-      "blockClass": "video-banner",
-      "src": "https://stermax.com.br/images_idealine/pronta_entrega-cortado.mp4",
-      "loop": true,
-      "autoPlay": true,
-      "controlsType": "none",
-      "height": "auto",
-      "width": "100%",
-      "muted": true
-    }
-  },
+
+
+
+
+
   "flex-layout.row#shelf": {
     "children": [
       "list-context.product-list#demo1"
@@ -778,7 +790,7 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
-      "showPaginationDots": "desktopOnly"
+      "showPaginationDots": "never"
     }
   }
 }

@@ -167,19 +167,25 @@
 .paragraph--subtitulo-banner-esquerdo {
   margin: 0;
   padding: 0;
+  text-align: start;
+}
+
+.paragraph--subtitulo-banner-esquerdo{
+  font-size: 16px;
+  font-family: "jost-regular";
+  font-weight: 400;
+  color: #818181;
+  margin-top: 20px;
 }
 
 .paragraph--titulo-banner-direito,
 .paragraph--titulo-banner-esquerdo {
   font-family: "fraunces-regular";
-  font-size: 45px;
+  font-size: 36px;
   margin-top: 40px;
-}
-
-.paragraph--subtitulo-banner-direito,
-.paragraph--subtitulo-banner-esquerdo {
-  font-family: "jost-regular";
-  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  color: #636363;
 }
 
 .wrapper--titulo-banner-esquerdo,

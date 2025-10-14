@@ -31,10 +31,10 @@
 }
 
 .slide--shelf {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   padding-left: .5rem;
   padding-right: .5rem;
-  min-height: 550px;
+  /* min-height: 550px; */
 }
 
 @media only screen and (max-width: 1000px){
