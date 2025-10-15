@@ -11,7 +11,7 @@
   height: 100%;
 }
 .emailInputContainer--input-email :global(.vtex-input-prefix__group):hover {
-  border: none;
+  border-color: transparent;
 }
 .emailInputContainer--input-email :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: #FFF9F4;

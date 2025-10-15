@@ -1,3 +1,22 @@
+/* footer desktop  */
+@media screen and (min-width: 1000px) {
+  .imageElement--img-footer-redes {
+    margin: 0;
+    width: 127px;
+  }
+
+  .imageElement--image-footer {
+    width: 230px;
+    margin: 25px 0 40px 0!important;
+  }
+
+  .imageElement--img-bandeiras-footer{
+    width: 310px;
+  }
+}
+
+/* footer desktop  */
+
 /* footer */
 
 .imageElement--img-bandeiras-footer {
@@ -301,6 +320,6 @@
   .imageElement--mapa-brasil,
   .imageElement--img-assist {
     margin-top: -70px;
-    width: 70%;
+    width: 50%;
   }
 }

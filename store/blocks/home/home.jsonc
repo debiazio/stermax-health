@@ -6,7 +6,7 @@
       "responsive-layout.mobile#deals-mobile",
       "flex-layout.row#deals",
       "__fold__",
-      // "flex-layout.row#banner-segundo",
+      "flex-layout.row#banner-segundo",
       "flex-layout.row#banner-modelos",
       "flex-layout.row#shelf",
       "flex-layout.row#secao-divisoria-link",
@@ -157,6 +157,18 @@
     "children": [
       "image#deal6",
       "rich-text#deal6"
+    ]
+  },
+    //banner "não comprometa sua saúde..."
+  "flex-layout.row#banner-segundo": {
+    "props": {
+      "blockClass": "secao-banner-segundo",
+      "fullWidth": false
+    },
+    "children": [
+      "responsive-layout.desktop#banner-segundo",
+      "responsive-layout.mobile#banner-segundo",
+      "rich-text#titulo-banner-segundo"
     ]
   },
   "responsive-layout.desktop#banner-segundo": {

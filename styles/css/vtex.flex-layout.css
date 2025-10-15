@@ -1,19 +1,57 @@
+/* FOOTER DESKTOP  */
+@media screen and (min-width: 1000px) {
+
+  .flexRowContent--linha-horarios-footer,
+  .flexRowContent--linha-footer-bandeiras,
+  .flexRowContent--linha-contatos-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--linha-footer-bandeiras{
+    margin-top: 0!important;
+  }
+}
+
+.flexCol--colunas-footer-desktop-ultima {
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.flexCol--colunas-footer-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexRow--linha-footer-desktop {
+  margin: 50px 200px;
+}
+
+/* FOOTER DESKTOP  */
 /* footer */
 
-.flexRow--linha-final-footer{
+.stretchChildrenWidth .flexRow--coluna3-modelos {
+  width: 103% !important;
+  position: relative;
+  left: 6px;
+
+}
+
+.flexRow--linha-final-footer {
   background-color: #1D76BA;
 }
 
 .flexRow--linhas-footer,
-.flexRow--linhas-footer-contatos{
+.flexRow--linhas-footer-contatos {
   padding: 0 40px;
 }
 
-.flexRowContent--linha-footer-bandeiras{
+.flexRowContent--linha-footer-bandeiras {
   margin-top: 15px;
 }
 
-.flexRowContent--linha-horarios-footer{
+.flexRowContent--linha-horarios-footer {
   margin: 0px 0 40px 0;
 }
 
@@ -32,13 +70,16 @@
   border-bottom: 1px solid #FFFFFF80;
 }
 
-.flexRowContent--bandeiras-row{
-  border-bottom: none!important;
+.flexRowContent--bandeiras-row {
+  border-bottom: none !important;
 }
 
 
 .flexRowContent--linhas-footer-contatos {
   border-bottom: 1px solid #FFFFFF80;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* footer */
@@ -76,7 +117,7 @@
 }
 
 .flexRow--content-ultima-section {
-  background: linear-gradient(to right, #D8EEFF, #F9F4EC);
+  background: linear-gradient(to right, #D8EEFF, #D8EEFF, #F9F4EC,#F9F4EC);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -121,6 +162,7 @@
   background-image: url(assets/home/banner-modelos/75l-img.webp);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-position-x: 13px;
 }
 
 .flexRow--coluna1-modelos {

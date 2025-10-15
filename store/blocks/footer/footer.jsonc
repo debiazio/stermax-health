@@ -8,9 +8,7 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-texto-digitando",
-      "flex-layout.row#footer-linha1-logo-endereço-form",
-      "flex-layout.row#footer-linha2-cotato-horário",
-      "flex-layout.row#footer-linha3-links-bandeiras",
+      "flex-layout.row#footer-linha-desktop",
       "flex-layout.row#footer-linha-final"
     ]
   },
@@ -37,6 +35,61 @@
       "text": "Stermax Health: Pure Health, Expert Care.",
       "blockClass": "texto-digitando"
     }
+  },
+  // LINHA DO FOOTER -DESKTOP
+  // LINHA PRINCIPAL
+  "flex-layout.row#footer-linha-desktop": {
+    "props": {
+      "blockClass": "linha-footer-desktop",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#footer-coluna1-logo",
+      "flex-layout.col#footer-coluna2-logo",
+      "flex-layout.col#footer-coluna3-logo"
+    ]
+  },
+  //COLUNA 1 FOOTER DESKTOP -LOGO - ENDERECO - FORM - REDES
+  "flex-layout.col#footer-coluna1-logo": {
+    "props": {
+      "blockClass": "colunas-footer-desktop"
+    },
+    "children": [
+      "flex-layout.row#image-logo-footer",
+      "flex-layout.row#linha-endereco",
+      "flex-layout.row#form-footer",
+      "flex-layout.row#linha-redes-footer"
+    ]
+  },
+  //COLUNA 2 FOOTER DESKTOP - FALE COM - HORÁRIOS
+  "flex-layout.col#footer-coluna2-logo": {
+    "props": {
+      "blockClass": "colunas-footer-desktop"
+    },
+    "children": [
+      "flex-layout.row#linha-falecomstxh",
+      "flex-layout.row#desktop-linha-contatos-footer",
+      "flex-layout.row#linha-horarios-footer"
+    ]
+  },
+  //COLUNA 3 FOOTER DESKTOP - links - bandeiras
+  "flex-layout.col#footer-coluna3-logo": {
+    "props": {
+      "blockClass": [
+        "colunas-footer-desktop",
+        "colunas-footer-desktop-ultima"
+      ],
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#footer-produtos",
+      "link#footer-manuais",
+      "link#footer-suporte-tecnico",
+      "link#footer-politica-privacidade",
+      "link#footer-trocas-devolucoes",
+      // LINHA BANDEIRAS
+      "flex-layout.row#linha-footer-bandeiras"
+    ]
   },
   // linhas do footer - mobile
   // LINHA LOGO -ENDERECO, FORM E REDES SOCIAIS
@@ -153,10 +206,23 @@
       "rich-text#titulo-fale-com-footer"
     ]
   },
+  // LINHA DE CONTATOS -desktop
+  "flex-layout.row#desktop-linha-contatos-footer": {
+    "props": {
+      "blockClass": "linha-contatos-footer"
+    },
+    "children": [
+      "flex-layout.row#sublinha-contatos-footer-0800",
+      "flex-layout.row#sublinha-contatos-footer-telefone",
+      "flex-layout.row#sublinha-contatos-footer-whats",
+      "flex-layout.row#sublinha-contatos-footer-email"
+    ]
+  },
   // LINHA DE CONTATOS
   "flex-layout.row#linha-contatos-footer": {
     "props": {
-      "blockClass": "linha-contatos-footer"
+      "blockClass": "linha-contatos-footer",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.row#sublinha-contatos-footer-0800",
@@ -186,8 +252,7 @@
   // LINHAS CONTATOS
   "flex-layout.row#sublinha-contatos-footer-0800": {
     "props": {
-      "blockClass": "sublinhas-contatos",
-      "colSizing": "auto"
+      "blockClass": "sublinhas-contatos"
     },
     "children": [
       "image#icone-0800",
@@ -196,8 +261,7 @@
   },
   "flex-layout.row#sublinha-contatos-footer-telefone": {
     "props": {
-      "blockClass": "sublinhas-contatos",
-      "colSizing": "auto"
+      "blockClass": "sublinhas-contatos"
     },
     "children": [
       "image#icone-0800",
@@ -206,8 +270,7 @@
   },
   "flex-layout.row#sublinha-contatos-footer-whats": {
     "props": {
-      "blockClass": "sublinhas-contatos",
-      "colSizing": "auto"
+      "blockClass": "sublinhas-contatos"
     },
     "children": [
       "image#icone-whatsapp",
@@ -216,8 +279,7 @@
   },
   "flex-layout.row#sublinha-contatos-footer-email": {
     "props": {
-      "blockClass": "sublinhas-contatos",
-      "colSizing": "auto"
+      "blockClass": "sublinhas-contatos"
     },
     "children": [
       "image#icone-email",
@@ -353,7 +415,8 @@
   // LINHA BANDEIRAS
   "flex-layout.row#linha-footer-bandeiras": {
     "props": {
-      "blockClass": "linha-footer-bandeiras"
+      "blockClass": "linha-footer-bandeiras",
+      "preventHorizontalStretch": true
     },
     "children": [
       "rich-text#titulo-bandeiras",

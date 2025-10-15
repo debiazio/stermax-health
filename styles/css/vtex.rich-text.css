@@ -1,3 +1,27 @@
+/* footer desktop  */
+@media screen and (min-width: 1000px) {
+  .container--endereco-footer {
+    border-top: 1px solid white;
+  }
+
+  .paragraph--endereco-footer {
+    text-align: start !important;
+  }
+  
+  .paragraph--texto-final-footer{
+    font-size: 14px;
+  }
+}
+
+.paragraph--titulo-footer-bandeiras,
+.paragraph--titulo-textos-horario,
+.paragraph--textos-horarios,
+.paragraph--textos-contatos {
+  white-space: nowrap!important;
+}
+
+/* footer desktop  */
+
 /* footer */
 
 .container--texto-final-footer {
