@@ -65,7 +65,7 @@
   // IMAGEM INICIAL COLUNA ESQUERDA
   "image#roleta-premios": {
     "props": {
-      "src": "assets/roleta/black-idealovers.webp",
+      "src": "assets/roleta/imagem-titulo-stermax.webp",
       "alt": "Titulo da roleta",
       "blockClass": "titulo-img-roleta"
     }
@@ -180,14 +180,14 @@
   },
   "image#roleta-primeira-tela": {
     "props": {
-      "src": "assets/roleta/roleta-estatica.webp",
+      "src": "assets/roleta/roleta-static-stermax.webp",
       "alt": "roleta de premios",
       "blockClass": "roleta-primeira-tela"
     }
   },
   "image#tabela-primeira-tela": {
     "props": {
-      "src": "assets/roleta/tabela-premios-roleta.webp",
+      "src": "assets/roleta/tabela-stermax.webp",
       "alt": "Tabela roleta",
       "blockClass": "tabela-primeira-tela"
     }

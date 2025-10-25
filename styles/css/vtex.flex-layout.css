@@ -1,5 +1,107 @@
+/* CSS ROLETA  */
+.flexRowContent--rules-roleta-container{
+  max-width: 446px;
+  display: flex;
+  flex-direction: column;
+}
+.flexCol--coluna-direita-roleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexRow--row-form-roleta {
+  min-width: 400px;
+  margin: 0 0 70px 40px;
+}
+.flexRowContent--row-form-roleta {
+  display: flex;
+  flex-direction: column;
+}
+.flexRowContent--row-form-roleta {
+  display: flex;
+  flex-direction: column;
+}
+.flexRowContent--row-form-roleta .stretchChildrenWidth {
+  width: 90% !important;
+}
+.flexRowContent--layout2-roleta {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCol--coluna-esquerda-roleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexRow--img-trigger-roleta {
+  display: flex;
+  background-color: black;
+}
+
+.flexRowContent--conteiner-confirmacao {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
+  margin: 10px 0 10px 0;
+  padding-left: 30px;
+  gap: 5px;
+}
+
+.flexRowContent--conteiner-confirmacao {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
+  margin: 10px 0 10px 0;
+  padding-left: 30px;
+  gap: 5px;
+}
+
+/* CSS ROLETA ACIMA */
+
 /* FOOTER DESKTOP  */
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  /* CSS ROLETA SMARTPHONE */
+  .flexRowContent--row-form-roleta .stretchChildrenWidth {
+    width: unset;
+  }
+
+  .flexColChild--coluna-direita-roleta {
+    display: flex;
+    justify-content: center;
+  }
+  .flexRow--row-form-roleta {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+  }
+  .flexColChild--coluna-esquerda-roleta {
+    display: flex;
+    justify-content: center;
+  }
+  .flexCol--coluna-direita-roleta {
+    display: flex;
+    flex-direction: column;
+    margin-top: -549px;
+  }
+  .flexRowContent--rules-roleta-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    position: relative;
+    bottom: -102px;
+    padding-bottom: 15px;
+    padding: 0;
+  }
+
+
+  /* CSS ROLETA SMARTPHONE */
+
+
 
   .flexRowContent--linha-horarios-footer,
   .flexRowContent--linha-footer-bandeiras,
@@ -379,7 +481,6 @@
 .flexCol--container-meios-contato {
   display: flex;
   flex-direction: column;
-  text-wrap-mode: nowrap;
   text-wrap: nowrap;
   flex-wrap: nowrap;
   gap: 10px;
@@ -740,7 +841,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-wrap-mode: nowrap;
 }
 
 .flexRowContent--footer-mobile {
@@ -758,6 +858,20 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .flexRowContent--conteiner-confirmacao {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 0 10px 0;
+  }
+
+  .flexRowContent--conteiner-confirmacao {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 0 10px 0;
+  }
+
   .flexColChild--linha-disclosure {
     padding: 10px 0;
   }

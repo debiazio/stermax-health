@@ -1,17 +1,70 @@
-/* footer desktop  */
-@media screen and (min-width: 1000px) {
-  .container--endereco-footer {
-    border-top: 1px solid white;
-  }
 
-  .paragraph--endereco-footer {
-    text-align: start !important;
-  }
-  
-  .paragraph--texto-final-footer{
-    font-size: 14px;
-  }
+/* CSS ROLETA ABAIXO */
+.paragraph--titulo-nova-roleta{
+  color: #FFFFFF;
+  font-family: "Rubik";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
 }
+.paragraph--subtitulo-nova-roleta{
+  color: #FFFFFF;
+  font-family: "Rubik";
+  font-size: 12px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.container--titulo-form-roleta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+}
+.wrapper--titulo-form-roleta {
+  color: #ffffff;
+  font-size: 40px;
+  text-wrap: wrap;
+  text-align: center;
+}
+.paragraph--titulo-form-roleta {
+  margin: 0;
+  padding: 0;
+}
+.wrapper--titulo-form-roleta {
+  color: #ffffff;
+  text-align: center;
+  width: 300px;
+}
+.paragraph--confirm-form-roleta {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Rubik";
+  display: none;
+}
+.container--titulo-regras-roleta {
+  font-size: 14px;
+  color: #FFFFFFB2;
+}
+.container--texto-rules-roleta {
+  width: 100%;
+  font-size: 12px;
+  padding-top: 10px;
+  color: #FFFFFFB2;
+  font-family: "Rubik";
+}
+.paragraph--texto-rules-roleta {
+  margin: 0;
+}
+
+
+
+/* CSS ROLETA ACIMA */
+
 
 .paragraph--titulo-footer-bandeiras,
 .paragraph--titulo-textos-horario,
@@ -396,6 +449,32 @@
 
 
 @media only screen and (max-width: 1000px) {
+  /* CSS ROLETA ABAIXO */
+  .container--titulo-regras-roleta {
+    display: flex;
+    justify-content: center;
+  }
+  .container--texto-rules-roleta {
+    width: fit-content;
+    padding-left: 0;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .wrapper--titulo-form-roleta {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .paragraph--confirm-form-roleta {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .container--confirm-form-roleta {
+    text-align: center;
+  }
+
+
+  /* CSS ROLETA ACIMA */
+
   .paragraph--rich-text-produtos-relacionados {
     font-size: 1.8rem;
   }
@@ -493,3 +572,29 @@
   }
 
 }
+  /* footer desktop  */
+  @media screen and (min-width: 1000px) {
+    .container--endereco-footer {
+      border-top: 1px solid white;
+    }
+
+    .paragraph--endereco-footer {
+      text-align: start !important;
+    }
+
+    .paragraph--texto-final-footer{
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .paragraph--texto-rules-roleta {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+
+    .wrapper--confirm-form-roleta {
+      display: flex;
+    }
+  }

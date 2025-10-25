@@ -1,3 +1,76 @@
+/* CSS ROLETA  */
+.headerContainer--roleta-header {
+  position: relative;
+  top: 70px;
+  width: 1080px;
+  border-bottom: none;
+}
+
+.container--form-roleta {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: #0000;
+}
+
+.paper--form-roleta {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+.closeButton--botao-fechar-roleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.closeButtonLabel--botao-fechar-roleta {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS ROLETA  */
+
+@media screen and (max-width: 1024px) {
+
+  /* CSS ROLETA ABAIXO  */
+  .closeButton--botao-fechar-roleta {
+    right: 15px;
+  }
+
+  .paper--form-roleta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  /* CSS ROLETA ACIMA  */
+}
+
+@media screen and (max-width: 360px) {
+
+  /* CSS ROLETA ABAIXO  */
+  .paper--form-roleta {
+    padding-bottom: 0;
+  }
+
+  /* CSS ROLETA ACIMA  */
+}
+
 @media screen and (min-width: 40em) {
   .paper--quickview {
     height: 260px;
@@ -73,7 +146,7 @@
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) {
   border-top-color: rgb(238, 238, 238);
-  box-shadow: -4px 0px 27px -12px rgba(0,0,0,0.64);
+  box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
 }
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) .actionsContentWrapper {

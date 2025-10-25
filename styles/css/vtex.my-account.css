@@ -20,6 +20,12 @@
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* CSS ROLETA ABAIXO  */
+.emailInputContainer--inputs-form-roleta input {
+  color: #bcb2ba;
+}
+/* CSS ROLETA ACIMA  */
+
 :focus {
   outline: 0;
 }

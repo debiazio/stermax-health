@@ -1,3 +1,25 @@
+/* CSS ROLETA ABAIXO */
+.imageElement--titulo-img-roleta {
+  width: 399px;
+}
+
+.imageElement--roleta-primeira-tela {
+  width: 450px;
+  margin-top: 42px;
+}
+
+.imageElement--imagem-link-para-roleta {
+  cursor: pointer;
+}
+
+.imageElement--tabela-primeira-tela {
+  max-width: 360px;
+  max-height: 106px;
+  margin-top: 42px;
+}
+
+/* CSS ROLETA ACIMA */
+
 /* footer desktop  */
 @media screen and (min-width: 1000px) {
   .imageElement--img-footer-redes {
@@ -7,10 +29,10 @@
 
   .imageElement--image-footer {
     width: 230px;
-    margin: 25px 0 40px 0!important;
+    margin: 25px 0 40px 0 !important;
   }
 
-  .imageElement--img-bandeiras-footer{
+  .imageElement--img-bandeiras-footer {
     width: 310px;
   }
 }
@@ -321,5 +343,38 @@
   .imageElement--img-assist {
     margin-top: -70px;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* CSS ROLETA ABAIXO  */
+  .imageElement--roleta-primeira-tela {
+    padding-bottom: 10px;
+  }
+
+  .imageElement--titulo-img-roleta {
+    margin-top: 340px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+  }
+
+  .imageElement--roleta-logotipo-idelaine {
+    width: 120px;
+    margin-left: 0;
+  }
+
+  /* CSS ROLETA ACIMA  */
+}
+
+@media screen and (max-width: 400px) {
+  .imageElement--titulo-img-roleta {
+    margin-top: 360px;
+    width: 254px;
+    padding: 10px 0 10px 0;
+  }
+
+  .imageElement--roleta-primeira-tela {
+    width: 250px;
   }
 }
