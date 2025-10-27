@@ -115,17 +115,19 @@
 
 
 
-  .flexRowContent--linha-horarios-footer,
-  .flexRowContent--linha-footer-bandeiras,
-  .flexRowContent--linha-contatos-footer {
-    display: flex;
-    flex-direction: column;
-  }
 
   .flexRowContent--linha-footer-bandeiras {
     margin-top: 0 !important;
   }
 }
+
+.flexRowContent--linha-horarios-footer,
+.flexRowContent--linha-footer-bandeiras,
+.flexRowContent--linha-contatos-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .flexCol--colunas-footer-desktop-ultima {
   margin-top: 20px;
@@ -249,34 +251,38 @@
 }
 
 .flexCol--colunas-menores-21l {
-  background-image: url(assets/home/banner-modelos/21l-1.webp);
+  background-image: url(assets/home/banner-modelos/vida-21l.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-position-y: 320px;
 }
 
 .flexCol--coluna-menores-modelos-30l {
-  background-image: url(assets/home/banner-modelos/30l-2.webp);
+  background-image: url(assets/home/banner-modelos/vida-30l.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-position-y: 320px;
 }
 
 .flexCol--coluna-menores-modelos-40l {
-  background-image: url(assets/home/banner-modelos/40l-3.webp);
+  background-image: url(assets/home/banner-modelos/vida-40l.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-position-y: 320px;
 }
 
 .flexCol--coluna-menores-modelos-60l {
-  background-image: url(assets/home/banner-modelos/60l-4.webp);
+  background-image: url(assets/home/banner-modelos/vida-60l.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-position-y: 320px;
 }
 
 .flexCol--coluna-menores-modelos-75l {
-  background-image: url(assets/home/banner-modelos/75l-img.webp);
+  background-image: url(assets/home/banner-modelos/75l+mulher.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-position-x: 13px;
+  background-position-y: 4px;
 }
 
 .flexRow--coluna1-modelos {

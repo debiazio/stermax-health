@@ -5,7 +5,7 @@
       "flex-layout.row#banner-stermaxHealth-personas",
       "responsive-layout.mobile#deals-mobile",
       "flex-layout.row#deals",
-      "modal-trigger#roleta",
+      // "modal-trigger#roleta",
       "__fold__",
       "flex-layout.row#banner-segundo",
       "flex-layout.row#banner-modelos",
@@ -594,7 +594,7 @@
   "image#imagem-75l-mobile": {
     "props": {
       "blockClass": "imagem-75l-mobile",
-      "src": "assets/home/banner-modelos/75l-img.webp"
+      "src": "assets/home/banner-modelos/75l+mulher.png"
     }
   },
   "flex-layout.row#secao-divisoria-link": {
