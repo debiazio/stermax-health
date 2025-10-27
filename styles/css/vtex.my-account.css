@@ -58,7 +58,8 @@ input:-webkit-autofill {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  input[type="tel"] {
     font-size: 16px !important;
   }
 }

@@ -5,18 +5,19 @@
 
 .confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex__icon-check),
 .confirmationCheckboxContainer--aceito-termos :global(.vtex__icon-check) {
-  color: #F466BE;
+  color: #ffffff;
 }
 
 .confirmationCheckboxContainer--aceito-termos :global(.vtex-checkbox__box),
 .confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__box) {
-  background-color: #FFFFFF;
-  border-radius: 5px;
+  background-color: #2585C2;
+  border-radius: 2px;
 }
 
+.confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__label),
 .confirmationCheckboxContainer--aceito-termos :global(.vtex-checkbox__label) {
   color: #FFFFFF;
-  font-family: "Rubik";
+  font-family: "jost-regular";
   font-weight: 500;
   font-size: 10px;
 }
@@ -38,22 +39,24 @@
 .phoneInputContainer--inputs-form-roleta,
 .nameInputContainer--inputs-form-roleta,
 .emailInputContainer--inputs-form-roleta {
-  border: 2px solid #246FBF;
-  border-radius: 10px;
+  border-radius: 100px;
+  margin-bottom: 6px;
 }
 
 .phoneInputContainer--inputs-form-roleta :global(.vtex-styleguide-9-x-input)::placeholder,
 .nameInputContainer--inputs-form-roleta :global(.vtex-styleguide-9-x-input)::placeholder,
 .emailInputContainer--inputs-form-roleta :global(.vtex-styleguide-9-x-input)::placeholder {
   color: #3D3D3D91 !important;
-  font-family: "Rubik";
+  font-family: "jost-regular";
   font-weight: 400;
   font-size: 12px;
 }
 
+.confirmationCheckboxContainer--aceito-termos :global(.vtex-checkbox__line-container),
 .confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__line-container) {
   display: flex;
   text-align: left;
+  align-items: center;
 }
 
 .newsletterForm--formulario-roleta {
@@ -99,16 +102,18 @@
 
 .formSubmitContainer--submit-button :global(.vtex-button) {
   border: none;
-  background-color: #F466BE;
+  background-color: #2585C2;
   color: #ffffff;
   font-size: 16px;
+  font-weight: 900;
+  font-family: "jost-regular";
   cursor: pointer;
   border-radius: 8px;
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .formSubmitContainer--submit-button :global(.vtex-button):hover {
-  background-color: #FF44B7BD;
+  background-color: #B4B4B43D;
   color: #969696;
 }
 

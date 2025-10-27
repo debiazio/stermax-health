@@ -65,7 +65,7 @@
   // IMAGEM INICIAL COLUNA ESQUERDA
   "image#roleta-premios": {
     "props": {
-      "src": "assets/roleta/imagem-titulo-stermax.webp",
+      "src": "assets/roleta/imagem-titulo-stermax-2.webp",
       "alt": "Titulo da roleta",
       "blockClass": "titulo-img-roleta"
     }
@@ -180,14 +180,14 @@
   },
   "image#roleta-primeira-tela": {
     "props": {
-      "src": "assets/roleta/roleta-static-stermax.webp",
+      "src": "assets/roleta/Roleta-StermaxHealth-Completa.webp",
       "alt": "roleta de premios",
       "blockClass": "roleta-primeira-tela"
     }
   },
   "image#tabela-primeira-tela": {
     "props": {
-      "src": "assets/roleta/tabela-stermax.webp",
+      "src": "assets/roleta/tabela-stermax-2.webp",
       "alt": "Tabela roleta",
       "blockClass": "tabela-primeira-tela"
     }
