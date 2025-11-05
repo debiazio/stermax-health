@@ -67,7 +67,8 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass": "linha-desconto-e-valor-productsummary"
     },
     "children": [
       "product-selling-price#summary",

@@ -1,3 +1,11 @@
+.flexRowContent--linha-desconto-e-valor-productsummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 /* CSS ROLETA  */
 
 .flexRowContent--rules-roleta-container {
@@ -1071,7 +1079,7 @@
   .flexCol--colunas-menores-21l,
   .flexCol--coluna-menores-modelos-30l,
   .flexCol--coluna-menores-modelos-40l,
-  .flexCol--coluna-menores-modelos-60l{
+  .flexCol--coluna-menores-modelos-60l {
     background-position-y: 120px;
   }
 
