@@ -1,3 +1,8 @@
+.savingsValue--summary::before{
+  content: " ";
+  white-space: pre;
+}
+
 .installments--summary :global(.vtex-button){
   background-color: transparent;
   color: #5C5A58;
