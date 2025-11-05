@@ -1,3 +1,9 @@
+.skuSelectorName,
+.productDescriptionText--descricao-produto,
+.shippingTableBody{
+  color: #979899!important;
+}
+
 /* CSS ROLETA ABAIXO */
 .imageElement--roleta-primeira-tela {
   width: 450px;
